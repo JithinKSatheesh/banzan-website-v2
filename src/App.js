@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import './bootstrap/css/bootstrap.min.css'
+import './App.css'
 
-function App() {
+import Home from './Components/Home'
+import Games from './Components/Games'
+import Labs from './Components/Labs'
+import Comics from './Components/Comics'
+import Store from './Components/Store'
+// import Test from './test2-1'
+
+import LeftSideMenu from './Components/LeftSideMenu'
+import Navbar from './Components/Navbar'
+import RightSideMenu from './Components/RightSideMenu'
+import { YellowBg, ZenBg } from './Components/DummyBg'
+
+export default function App(props) {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <BrowserRouter>
+        <Navbar />
+        <LeftSideMenu />
+        <RightSideMenu />
+        <ZenBg/>
+        <YellowBg/>
+        <Switch>
+          <Route path="/games" component={Games} />
+          <Route path="/labs" component={Labs} />
+          <Route path="/comics" component={Comics} />
+          <Route path="/store" component={Store} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+

@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+html{
+  margin: 0;
+  padding: 0;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.text-dark{
+  color: #2c2c2c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .bg-dark{
+  background-color: #000000 !important;
+} */
+
+
+
+.p-1{
+  padding: 10px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.d3{
+  font-size: 5em;
+  
+}
+
+.f1{
+  font-size: 1em;
+}
+
+.f1-5{
+  font-size: 1.5em;
+}
+
+.f2{
+  font-size: 2em;
+}
+
+.f3{
+  font-size: 3em;
+}
+
+.space-20{
+  width: 100%;
+  height: 20px;
+}
+
+.space-50{
+  width: 100%;
+  height: 50px;
+}
+.space-100{
+  width: 100%;
+  height: 100px;
+}
+
+.Maincontainer{
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  /* background-color: #c42f48; */
+  /* background-color: #21212127; */
+  /* z-index: 1000; */
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  padding-top: 10px;
+
+}
+
+._navbar{
+  position: fixed;
+  top:'0';
+  width: 100%;
+  z-index: 10000;
+  /* background-color: rebeccapurple; */
+
+}
+
+.nav-container{
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links{
+  display: flex;
+  justify-content: flex-end;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.links{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px;
+  margin-left: 20px;
+  height: 50px;
+  /* color: #c42f48; */
+  text-decoration: none;
 }
+
+.logo{
+  height: 50px;
+  margin: 10px;
+  /* background-color: #c42f48; */
+}
+
+.scrollBox{
+  position: relative;
+  width: 100%;
+  height: 100%;  
+}
+
+
+.displayThings{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 400px;
+  background-color: #fcc812;
+  margin: auto;
+  z-index: -100;
+}
+
+
+/* ============================= */
