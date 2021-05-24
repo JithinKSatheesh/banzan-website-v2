@@ -9,6 +9,9 @@ import _test_tube from '../Assets/test_tube.png';
 import _scroll from '../Assets/scroll.png';
 // import { ArrowDown } from './ArrowDown/ArrowDown';
 
+const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
+const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`)
+
 export const LabsHeroPage = ({ scrollPos }) => {
 
     const mouseXY = (x,y)=>([ (x - window.innerWidth / 2) / 10, -(y - window.innerHeight / 2) / 10 ])
@@ -50,11 +53,14 @@ export const LabsHeroPage = ({ scrollPos }) => {
                     </Slide>
                     <div className="space-50"></div>
                     <Slide bottom >
-                        <div 
-                            style={{lineHeight:'30px'}}
+                        <animated.div 
+                            style={{
+                                lineHeight:'30px',
+                                transform: scrollPos.to(transfromSlide_S1)
+                            }}
                             className="h6 text-bold text-light  p-2">
                             When we aren’t working on a serious product or a client project, we end up creating more awesomeness…highlighting a few concepts that we ended up with. Wanna know more about these? Kick us up through a note, who knows together we can redefine awesomeness!
-                        </div>
+                        </animated.div>
                     </Slide>
                 </div>
                 <div className="col-12 col-md-6 ">

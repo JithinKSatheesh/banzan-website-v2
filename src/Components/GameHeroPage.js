@@ -18,7 +18,7 @@ export const GameHeroPage = ({scrollPos}) => {
             position: "relative",
             margin: 'auto',
             maxWidth: '850px',
-            width: '100%',
+            width: '90%',
           
         },
     };

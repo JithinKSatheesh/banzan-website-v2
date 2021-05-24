@@ -12,13 +12,21 @@ export default function Navbar(props) {
     let location = useLocation().pathname
 
     const [yellowTheme,setTheme] = useState(true)
+    const [yellowTheme_nav,setThemeNav] = useState(true)
 
     useEffect(()=>{
-        if(location === '/labs'||location === '/comics' ){
+        if(location === '/comics'||location === '/services' ||location === '/investors' ){
             setTheme(false)
+            setThemeNav(false)
+        }
+        else if(location === '/labs'){
+            setTheme(false)
+            setThemeNav(true)
         }
         else{
             setTheme(true)
+            setThemeNav(true)
+            
         }
 
     },[location])    
@@ -36,10 +44,11 @@ export default function Navbar(props) {
                 <div className="nav-links ">
                     <div className="d-none d-md-block">
                         {/* <Link to='/' className="links text-dark">Home</Link> */}
-                        <Link to='/comics' className="links text-dark">COMICS</Link>
-                        <Link to='/games' className="links text-dark">GAMES</Link>
-                        <Link to='/labs' className="links text-dark">LABS</Link>
-                        <Link to='/store' className="links text-dark">STORE</Link>
+                        <Link to='/comics' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>COMICS</Link>
+                        <Link to='/games' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>GAMES</Link>
+                        <Link to='/services' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>SERVICES</Link>
+                        <Link to='/store' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>STORE</Link>
+                        <Link to='/labs' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>LABS</Link>
                     </div>
                 </div>
             </div>

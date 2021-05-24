@@ -1,14 +1,19 @@
 import React,{useRef} from 'react'
 import {useSpring} from 'react-spring'
 
-import { ComicsHeroPage } from './ComicsHeroPage'
 
-export default function Comics(props) {
 
-    const comicRef = useRef()
+
+import { AboutHeroPage } from './AboutHeroPage';
+
+export default function About(props) {
+
+    
+    const aboutRef = useRef()
+    
     
     const _style ={
-        comics_container:{
+        about_container:{
             position: 'fixed',
             width: '100%',
             marginTop: '50px',
@@ -24,23 +29,23 @@ export default function Comics(props) {
     }))
 
     const handleScroll = ()=>{
-        const scrollPos = comicRef.current.scrollTop;
+        const scrollPos = aboutRef.current.scrollTop;
         console.log("calling",)
         setSpringVal({scrollPos})
 
     }
+
 
     return (
         <>
         <div className="Maincontainer">
             <div 
                 onScroll={handleScroll}
-                ref={comicRef}
-                style={_style.comics_container}>
-                <ComicsHeroPage scrollPos={scrollPos} />
+                ref={aboutRef}
+                style={_style.about_container}>
+                <AboutHeroPage scrollPos={scrollPos} />
             </div>
-        </div>
-            
+        </div> 
         </>
     )
 }

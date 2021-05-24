@@ -13,17 +13,17 @@ export const YellowBg = () => {
     width : '100%'
   }))
 
-  useEffect(()=>{
+  // useEffect(()=>{
     
-    if(location.pathname === '/store'){
-      setSpringVal({width : '10%'})
-    }
-    else{
-      setSpringVal({width : '100%'})
-    }
+  //   if(location.pathname === '/store'){
+  //     setSpringVal({width : '100%'})
+  //   }
+  //   else{
+  //     setSpringVal({width : '100%'})
+  //   }
   
 
-  },[location])
+  // },[location])
 
  
 
@@ -61,8 +61,12 @@ export const ZenBg = () => {
     if(location.pathname === '/labs'){
       setSpringVal({width : '50%'})
     }
-    else if(location.pathname === '/comics'){
+    else if(location.pathname === '/comics'||location.pathname === '/services'||location.pathname === '/investors'){
       setSpringVal({width : '100%'})
+    }
+    
+    else if(location.pathname === '/store'){
+      setSpringVal({width : '10%'})
     }
     else{
      

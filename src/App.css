@@ -1,6 +1,7 @@
 html{
   margin: 0;
   padding: 0;
+ 
   
 }
 
@@ -9,18 +10,33 @@ body{
   padding: 0;
   position: fixed;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif !important;
+   /* font-family: 'Times New Roman', Times, serif !important; */
 }
 
+::placeholder { 
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
 
 
 .text-dark{
   color: #2c2c2c;
+  /* color: #0c0c0cf0; */
 }
 
 /* .bg-dark{
   background-color: #000000 !important;
 } */
+.link-hover{
+  text-decoration: none;
+}
+.link-hover:hover{
+  text-decoration: line-through;
+  text-decoration-thickness: 0.3em;
 
+}
 
 
 .p-1{
@@ -29,6 +45,10 @@ body{
 
 .text-bold{
   font-weight: bold;
+}
+
+.text-now{
+  color: #c42f48;
 }
 
 .d3{

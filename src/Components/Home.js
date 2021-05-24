@@ -1,7 +1,4 @@
 import React from 'react'
-import  LeftSideMenu from './LeftSideMenu'
-import RightSideMenu from './RightSideMenu'
-import Navbar from './Navbar'
 import ScrollBox from './ScrollBox'
 
 import Fade from 'react-reveal/Fade';

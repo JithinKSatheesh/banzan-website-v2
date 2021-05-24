@@ -1,13 +1,13 @@
 import React,{useRef} from 'react'
 import {useSpring} from 'react-spring'
 
-import { LabsHeroPage } from './LabsHeroPage'
-import { LabsIdeasShowcase } from './LabsIdeasShowcase'
+// import _service_img_3 from '../Assets/service_img_3.png'
+import { ServicesFormPage } from './ServicesFormPage';
+import { ServicesHeroPage } from './ServicesHeroPage';
 
+export default function Services(props) {
 
-export default function Labs(props) {
-
-    const labRef = useRef(null)
+    const serviceRef = useRef(null)
 
     const[{scrollPos},setSpringVal] = useSpring(()=>({
         scrollPos : 0,
@@ -15,7 +15,7 @@ export default function Labs(props) {
     }))
     
     const _style ={
-        labs_container:{
+        services_container:{
             position: 'fixed',
             width: '100%',
             marginTop: '50px',
@@ -29,26 +29,29 @@ export default function Labs(props) {
 
     const handleScroll = ()=>{
 
-        const scrollPos = labRef.current.scrollTop;
+        const scrollPos = serviceRef.current.scrollTop;
         console.log("calling",)
         setSpringVal({scrollPos})
 
     }
 
+    
+
     return (
         <>
-        <div className="Maincontainer">
+         <div className="Maincontainer">
             <div 
-                ref={labRef}
+                ref={serviceRef}
                 onScroll={handleScroll}
-                style={_style.labs_container}>
-                <LabsHeroPage scrollPos={scrollPos} />
-                <LabsIdeasShowcase  scrollPos={scrollPos} />
+                style={_style.services_container}>
+                <ServicesHeroPage scrollPos={scrollPos} />
+                <ServicesFormPage/>
             </div>
         </div>
-            
+               
         </>
     )
 }
+
 
 

@@ -8,12 +8,17 @@ import Games from './Components/Games'
 import Labs from './Components/Labs'
 import Comics from './Components/Comics'
 import Store from './Components/Store'
+import Services from './Components/Services'
+import About from './Components/About'
 // import Test from './test2-1'
 
 import LeftSideMenu from './Components/LeftSideMenu'
 import Navbar from './Components/Navbar'
 import RightSideMenu from './Components/RightSideMenu'
 import { YellowBg, ZenBg } from './Components/DummyBg'
+import { SocialIcons } from './Components/SocialIcons'
+import Investors from './Components/Investors'
+import Inmedia from './Components/InMedia'
 
 export default function App(props) {
   
@@ -26,13 +31,18 @@ export default function App(props) {
         <RightSideMenu />
         <ZenBg/>
         <YellowBg/>
-        <Switch>
-          <Route path="/games" component={Games} />
-          <Route path="/labs" component={Labs} />
-          <Route path="/comics" component={Comics} />
-          <Route path="/store" component={Store} />
-          <Route path="/" component={Home} />
-        </Switch>
+          <Switch>
+            <Route path="/games" component={Games} />
+            <Route path="/labs" component={Labs} />
+            <Route path="/comics" component={Comics} />
+            <Route path="/store" component={Store} />
+            <Route path="/services" component={Services} />
+            <Route path="/about" component={About} />
+            <Route path="/investors" component={Investors} />
+            <Route path="/inmedia" component={Inmedia} />
+            <Route path="/" component={Home} />
+          </Switch>
+        <SocialIcons/>
       </BrowserRouter>
     </div>
   )

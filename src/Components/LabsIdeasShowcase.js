@@ -7,6 +7,11 @@ import Zoom from 'react-reveal/Zoom'
 
 import {animated} from 'react-spring'
 
+const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
+const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`)
+
+const _rightSwipeIcon = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+
 
 const _ideaList = [
     {
@@ -32,8 +37,7 @@ const _ideaList = [
 ];
 
 
-const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
-const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`)
+
 
 export const LabsIdeasShowcase = ({scrollPos}) => {
 
@@ -125,14 +129,14 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
                     <div className="space-20"></div>
                     <animated.div 
                         style={{transform: scrollPos.to(transfromSlide_N1)}}
-                        className="text-left h6 text-white">
-                        Drag to left or right
+                        className="text-left small text-white">
+                        <span className="bg-dark p-2"> Drag to left or right</span> 
                     </animated.div>
                     <div className="space-20"></div>
 
                 </div>
                 <Zoom>
-                    <div className="col-12" style={_style.labs_ideas_container}>
+                    <div className="col-12"  style={_style.labs_ideas_container}>
                         <ScrollMenu
                             hideSingleArrow={true}
                             arrowLeft={<Leftarrow />}
@@ -148,13 +152,17 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
                     <div className="space-100"></div>
                     <div className="space-100"></div>
                     <animated.div 
-                        style={{transform: scrollPos.to(transfromSlide_N1)}}
+                        style={{
+                            transform: scrollPos.to(transfromSlide_N1),
+                            cursor:'pointer'
+                        }}
                         className="h1 text-white">
                         Share your idea
+                        &nbsp;
+                        {_rightSwipeIcon}
                     </animated.div>
                     <div className="space-100"></div>
-                    <div className="space-100"></div>
-                    <div className="space-100"></div>
+                
                     
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
+
 import _numzy_page from '../Assets/numzy_app.png';
 import _numzy_icon from '../Assets/numzy_icon.png';
 import _bablah_icon from '../Assets/bablah_game_icon.png';
@@ -19,7 +20,7 @@ export const GamesShowCasePage = ({scrollPos}) => {
 
     const _style = {
         showcase_container: {
-            width: '100%',
+            width: '90%',
             maxWidth: '850px',
             margin: 'auto',
         },
@@ -39,17 +40,19 @@ export const GamesShowCasePage = ({scrollPos}) => {
             <ShowCaseApps
                 scrollPos={scrollPos}
                 _style={_style}
-                app_image={_numzy_page}
-                app_icon={_numzy_icon}
-                heading={"NUMZY"}
-                desc={"NUMZY is our first baby out!It’s a simple, crazy number game that apart from being fun, tests your agility, vision,speed, simple calculations and brain power.It’s timeless fun for all ages."} />
-            <ShowCaseApps
-                scrollPos={scrollPos}
-                _style={_style}
                 app_image={_bablah_icon}
                 app_icon={_bablah_app}
                 heading={"Yes/No with BaBla"}
                 desc={"Yes/No with BaBlah is a fun Q&A game that rejuvenates your mood with quirky Q’s! BaBlah is a cute Monk who lives in the virtual world of Instagram as a daily comic strip."} />
+            
+            <ShowCaseApps
+                scrollPos={scrollPos}
+                _style={_style}
+                app_image={_numzy_page}
+                app_icon={_numzy_icon}
+                heading={"NUMZY"}
+                desc={"NUMZY is our first baby out!It’s a simple, crazy number game that apart from being fun, tests your agility, vision,speed, simple calculations and brain power.It’s timeless fun for all ages."} />
+         
             <div className="row">
                 <div className="col-12">
                     <div className="space-100"></div>

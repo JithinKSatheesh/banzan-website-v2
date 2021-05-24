@@ -1,0 +1,81 @@
+import React from 'react'
+
+import Slide from 'react-reveal/Slide';
+
+export default function Investors(props) {
+
+
+    const _style ={
+        investors_container:{
+            position: 'fixed',
+            width: '100%',
+            marginTop: '50px',
+            height: '100%',
+            overflowY: 'scroll',
+            overflowX:'hidden'
+        }
+    }
+    
+
+    return (
+        <>
+        <div className="Maincontainer">
+            <div 
+                style={_style.investors_container}>
+                <InverstorHeroPage/>
+            </div>
+        </div> 
+            
+        </>
+    )
+}
+
+const InverstorHeroPage = ()=>{
+
+    const _linkedin_icon = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+
+
+    const _style = {
+        investor_hero_container: {
+            position: "relative",
+            margin: 'auto',
+            maxWidth: '850px',
+            width: '95%',
+        },
+    };
+    return(
+        <div style={_style.investor_hero_container} >
+            <div className="row">
+                <div className="col-12">
+                    <div className="space-100"></div>
+                </div>
+                <div className="col-12">
+                    <Slide top>
+                        <div className="display-2 text-white text-bold">
+                            Investors & <br /> Partnerships
+                        </div>
+                    </Slide>
+                </div>
+                <Slide bottom >
+                    <div 
+                        style={{lineHeight:'30px'}}
+                        className="col-12 col-md-8 offset-md-3 text-white h5">
+                        <div className="space-50"></div>
+
+                        If you believe in our story and vision and would like to play an impactful role together, please do get in touch with the Founder 
+                        
+                        &nbsp;<a className='text-decoration-none' href="" rel='' target="_blank" > 
+                            <span className="text-warning text-bold " >
+                                here
+                                &nbsp;
+                                {_linkedin_icon}
+                            </span> </a>
+                        
+                        
+                    </div>
+                </Slide>
+
+            </div>
+        </div>
+    )
+}
