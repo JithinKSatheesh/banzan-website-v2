@@ -109,6 +109,11 @@ export const InMeidaHeroPage = () => {
                         </div>
                     </Fade>
                 </div>
+                <div className="col-12">
+                    <div className="space-100"></div>
+                    <div className="space-100"></div>
+                    <div className="space-100"></div>
+                </div>
             </div>
         </div>
     );

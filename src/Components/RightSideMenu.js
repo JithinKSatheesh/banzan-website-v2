@@ -80,7 +80,7 @@ export default function RightSideMenu() {
 
     
     useEffect(()=>{
-        if(location === '/comics'||location === '/services'||location === '/investors'){
+        if(location === '/comics'||location === '/services'||location === '/investors'||location === '/contact'){
             setTheme(false)
         }
         else{

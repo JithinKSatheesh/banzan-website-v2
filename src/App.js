@@ -10,6 +10,7 @@ import Comics from './Components/Comics'
 import Store from './Components/Store'
 import Services from './Components/Services'
 import About from './Components/About'
+import Contact from './Components/Contact'
 // import Test from './test2-1'
 
 import LeftSideMenu from './Components/LeftSideMenu'
@@ -40,6 +41,7 @@ export default function App(props) {
             <Route path="/about" component={About} />
             <Route path="/investors" component={Investors} />
             <Route path="/inmedia" component={Inmedia} />
+            <Route path="/contact" component={Contact} />
             <Route path="/" component={Home} />
           </Switch>
         <SocialIcons/>

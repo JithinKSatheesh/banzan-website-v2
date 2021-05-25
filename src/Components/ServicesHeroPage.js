@@ -29,7 +29,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
             position: "relative",
             margin: 'auto',
             maxWidth: '850px',
-            width: '100%',
+            width: '90%',
         },
         service_img_container: {
             height: '300px',

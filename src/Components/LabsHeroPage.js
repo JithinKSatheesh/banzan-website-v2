@@ -14,6 +14,8 @@ const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`)
 
 export const LabsHeroPage = ({ scrollPos }) => {
 
+    const isMobile = window.innerWidth < 400
+
     const mouseXY = (x,y)=>([ (x - window.innerWidth / 2) / 10, -(y - window.innerHeight / 2) / 10 ])
     const changePos = (x,y) => (`translate(${-x}px,${y}px)`)
     const changePosNeg = (x,y) => (`translate(${x * 0.5}px,${-y * 0.5}px)`)
@@ -27,7 +29,7 @@ export const LabsHeroPage = ({ scrollPos }) => {
             position: "relative",
             margin: 'auto',
             maxWidth: '850px',
-            width: '100%',
+            width: '90%',
         },
         labs_hero_img_box: {
             height: '300px',
@@ -58,7 +60,7 @@ export const LabsHeroPage = ({ scrollPos }) => {
                                 lineHeight:'30px',
                                 transform: scrollPos.to(transfromSlide_S1)
                             }}
-                            className="h6 text-bold text-light  p-2">
+                            className={`h6 text-bold text-light ${isMobile&& 'bg-dark'}  p-2  `} >
                             When we aren’t working on a serious product or a client project, we end up creating more awesomeness…highlighting a few concepts that we ended up with. Wanna know more about these? Kick us up through a note, who knows together we can redefine awesomeness!
                         </animated.div>
                     </Slide>

@@ -112,7 +112,7 @@ body{
 
 .nav-container{
   position: relative;
-  width: 100%;
+  width: 95%;
   max-width: 850px;
   margin: auto;
   display: flex;

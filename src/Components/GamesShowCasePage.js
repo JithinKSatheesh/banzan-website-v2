@@ -7,14 +7,18 @@ import _numzy_icon from '../Assets/numzy_icon.png';
 import _bablah_icon from '../Assets/bablah_game_icon.png';
 import _bablah_app from '../Assets/bablah_game_app.png';
 
-
 import {animated} from 'react-spring'
+
+const _right_icon = <svg fill='#c42f48'  width="14" height="14" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+const _circle = <svg fill='#c42f48' width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>
+
+
 
 const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
 const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`) 
+const transfromSlide_S2 = (val)=>(`translate(0px,${val * 0.05}px)`) 
 const transfromSlide_N2 = (val)=>(`translate(0px,-${val * 0.05}px)`) 
 
-const _circle = <svg fill='#c42f48' width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>
 
 export const GamesShowCasePage = ({scrollPos}) => {
 
@@ -117,6 +121,18 @@ const ShowCaseApps = ({ _style, app_image, app_icon, heading, desc,scrollPos }) 
                 <div className="small text-dark text-bold">
                     {desc}
                 </div>
+
+                <animated.div 
+                    style={{transform: scrollPos.to(transfromSlide_S2) }}
+                    className="h6 ">
+                    <a  href="" 
+                        target="_blank" rel='noreferrer'
+                        className='text-decoration-none text-bold text-now'>
+                    Check out
+                    &nbsp;
+                    {_right_icon}
+                    </a> 
+                </animated.div>
             </Slide>
 
         </div>

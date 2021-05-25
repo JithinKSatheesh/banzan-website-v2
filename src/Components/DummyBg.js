@@ -52,8 +52,8 @@ export const ZenBg = () => {
   let location = useLocation()
  
   const [{width},setSpringVal] = useSpring(()=>({
-    width : '0%'
-    
+    width : '0%',
+    config: { mass: 2, tension: 120, friction: 50 },
   }))
 
   useEffect(()=>{
@@ -64,7 +64,9 @@ export const ZenBg = () => {
     else if(location.pathname === '/comics'||location.pathname === '/services'||location.pathname === '/investors'){
       setSpringVal({width : '100%'})
     }
-    
+    else if(location.pathname === '/contact'){
+      setSpringVal({width : '100%'})
+    }
     else if(location.pathname === '/store'){
       setSpringVal({width : '10%'})
     }
