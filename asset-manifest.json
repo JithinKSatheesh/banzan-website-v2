@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/banzan-website-v2/static/css/main.a10e118f.chunk.css",
-    "main.js": "/banzan-website-v2/static/js/main.09debd51.chunk.js",
-    "main.js.map": "/banzan-website-v2/static/js/main.09debd51.chunk.js.map",
+    "main.js": "/banzan-website-v2/static/js/main.ab795e8f.chunk.js",
+    "main.js.map": "/banzan-website-v2/static/js/main.ab795e8f.chunk.js.map",
     "runtime-main.js": "/banzan-website-v2/static/js/runtime-main.4bbed07c.js",
     "runtime-main.js.map": "/banzan-website-v2/static/js/runtime-main.4bbed07c.js.map",
-    "static/js/2.56387a18.chunk.js": "/banzan-website-v2/static/js/2.56387a18.chunk.js",
-    "static/js/2.56387a18.chunk.js.map": "/banzan-website-v2/static/js/2.56387a18.chunk.js.map",
+    "static/js/2.60b20b4b.chunk.js": "/banzan-website-v2/static/js/2.60b20b4b.chunk.js",
+    "static/js/2.60b20b4b.chunk.js.map": "/banzan-website-v2/static/js/2.60b20b4b.chunk.js.map",
     "static/js/3.47c3d86b.chunk.js": "/banzan-website-v2/static/js/3.47c3d86b.chunk.js",
     "static/js/3.47c3d86b.chunk.js.map": "/banzan-website-v2/static/js/3.47c3d86b.chunk.js.map",
     "index.html": "/banzan-website-v2/index.html",
     "static/css/main.a10e118f.chunk.css.map": "/banzan-website-v2/static/css/main.a10e118f.chunk.css.map",
-    "static/js/2.56387a18.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.56387a18.chunk.js.LICENSE.txt",
+    "static/js/2.60b20b4b.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.60b20b4b.chunk.js.LICENSE.txt",
     "static/media/bablah.c72787f4.png": "/banzan-website-v2/static/media/bablah.c72787f4.png",
     "static/media/bablah_ferrari.fe94d8a5.png": "/banzan-website-v2/static/media/bablah_ferrari.fe94d8a5.png",
     "static/media/bablah_game_app.8069c239.png": "/banzan-website-v2/static/media/bablah_game_app.8069c239.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4bbed07c.js",
-    "static/js/2.56387a18.chunk.js",
+    "static/js/2.60b20b4b.chunk.js",
     "static/css/main.a10e118f.chunk.css",
-    "static/js/main.09debd51.chunk.js"
+    "static/js/main.ab795e8f.chunk.js"
   ]
 }
