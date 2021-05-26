@@ -51,6 +51,10 @@ body{
   color: #c42f48;
 }
 
+.bg-now{
+  background-color: #c42f48;
+}
+
 .d3{
   font-size: 5em;
   

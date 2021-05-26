@@ -83,7 +83,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                                 lineHeight: '30px',
                                 transform:scrollPos.to(transfromSlide_S1)
                                  }} 
-                                 className="h5 text-white">
+                                 className="h5 text-white text-bold">
                             We extend our skills & expertise in the niche areas of Content, Creatives, Communication, Development & Consultancy
                         </animated.div>
                     </Slide>

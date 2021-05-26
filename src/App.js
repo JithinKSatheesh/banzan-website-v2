@@ -11,6 +11,8 @@ import Store from './Components/Store'
 import Services from './Components/Services'
 import About from './Components/About'
 import Contact from './Components/Contact'
+import Inmedia from './Components/InMedia'
+import Careers from './Components/Careers'
 // import Test from './test2-1'
 
 import LeftSideMenu from './Components/LeftSideMenu'
@@ -19,7 +21,6 @@ import RightSideMenu from './Components/RightSideMenu'
 import { YellowBg, ZenBg } from './Components/DummyBg'
 import { SocialIcons } from './Components/SocialIcons'
 import Investors from './Components/Investors'
-import Inmedia from './Components/InMedia'
 
 export default function App(props) {
   
@@ -42,6 +43,8 @@ export default function App(props) {
             <Route path="/investors" component={Investors} />
             <Route path="/inmedia" component={Inmedia} />
             <Route path="/contact" component={Contact} />
+            <Route path="/careers" component={Careers} />
+            <Route path="/store" component={Store} />
             <Route path="/" component={Home} />
           </Switch>
         <SocialIcons/>

@@ -53,19 +53,17 @@ const HomeHeroScreen = ()=>{
             position:"relative",
             margin:'auto',
             maxWidth : '850px',
-            width:'100%',
-            backgroundColor:'#c42f48',
+            width:'90%',
+            backgroundColor:'white',
             height:'70%',
             borderRadius:'20px',
             paddingTop:'50px',
+            border:'20px solid #c42f48',
             boxShadow: '0px 0px 5px 5px #21212127',
         },
         hero_screen_inner_box:{
-            position:"relative",
-            backgroundColor:'white',
-            borderRadius:'20px',
-            height:'90%',
-            width:'90%',
+            height:'100%',
+            width:'100%',
             margin:'auto',
         }
     }
@@ -75,7 +73,9 @@ const HomeHeroScreen = ()=>{
              <Fade>
             <div style={_style.hero_screen_Outter_box}>
                 <div style={_style.hero_screen_inner_box} >
-
+                    <div className="text-center">
+                    Under construction
+                    </div>
                 </div>
             </div>
             </Fade>

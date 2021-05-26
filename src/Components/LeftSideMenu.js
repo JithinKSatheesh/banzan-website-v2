@@ -88,7 +88,15 @@ import {useSpring,animated} from 'react-spring'
 
 
     useEffect(()=>{
-        if(location === '/comics'||location === '/services'||location === '/store'||location === '/labs'||location === '/investors'||location === '/contact' ){
+        if(
+            location === '/comics'
+            ||location === '/services'
+            ||location === '/store'
+            ||location === '/labs'
+            ||location === '/investors'
+            ||location === '/contact' 
+            ||location === '/careers'
+            ){
             setTheme(false)
         }
         else{

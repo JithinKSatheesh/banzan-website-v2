@@ -26,7 +26,16 @@ export const SocialIcons = () => {
   const [yellowTheme,setTheme] = useState(true)
 
   useEffect(()=>{
-      if(location === '/labs'||location === '/comics' || location === '/services'|| location === '/store'|| location === '/investors'|| location === '/contact' ){
+      if(
+        location === '/labs'
+        ||location === '/comics' 
+        || location === '/services'
+        || location === '/store'
+        || location === '/investors'
+        || location === '/contact' 
+        || location === '/careers' 
+        
+        ){
           setTheme(false)
       }
       else{

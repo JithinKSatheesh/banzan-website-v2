@@ -31,15 +31,15 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             position: "relative",
             margin: 'auto',
             maxWidth: '850px',
-            width: '100%',
+            width: '90%',
         },
         comic_cartoons_container: {
             position: "relative",
-            width: '95%',
+            width: '100%',
             height: '100%',
             maxHeight: '400px',
             overflow: 'hidden',
-            border: '20px solid white',
+            // border: '20px solid white',
             borderRadius: '10px',
             margin:'auto'
         },
@@ -51,7 +51,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             right: 0,
             height: "100%",
             width: "100%",
-            opacity: 0.79,
+            opacity: 0.60,
             backgroundColor: "#0c0c0c",
         },
         comic_overlay_text: {
@@ -65,7 +65,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             color: 'white',
             margin:'10px',
             lineHeight: isMobile ? '30px' : '50px',
-            fontSize: isMobile ? '1em' : '1.5em'
+            // fontSize: isMobile ? '1em' : '1.5em'
             // backgroundColor: "#0c0c0c",
         }
     };
@@ -89,7 +89,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 ">
                     <Slide top>
                         <animated.div
                             style={{ transform: scrollPos.to(transfromSlide_N1) }}
@@ -97,17 +97,23 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                             Comics
                         </animated.div>
                     </Slide>
+                    <div className="space-50"></div>
+                    <Slide bottom >
+                        <div className="h5 text-white">
+                            We are building a global Comic franchise from India. Our hero doesn’t fight villains, doesn’t kill anyone, doesn’t have a romantic partner but he’s still fun & pure joy to hang around with.
+                        </div>
+                    </Slide>
                 </div>
                 <div className="col-12">
                     <div className="space-50"></div>
                     <Fade>
                         <div style={_style.comic_cartoons_container}>
-                            <img style={{ width: '100%' }} src={_comic_bg} alt="" />
+                            <img style={{ width: '100%', height: isMobile?'100%':'' }} src={_comic_bg} alt="" />
                             <div style={_style.comic_overlay}></div>
                             <div
-                                className=" p-2 "
+                                className=" p-2 h5 text-bold"
                                 style={_style.comic_overlay_text}>
-                                We are building a global Comic franchise from India. Our hero doesn’t fight villains, doesn’t kill anyone, doesn’t have a romantic partner but he’s still fun & pure joy to hang around with.
+                               
                             </div>
 
                         </div>

@@ -58,7 +58,7 @@ export const ZenBg = () => {
 
   useEffect(()=>{
 
-    if(location.pathname === '/labs'){
+    if(location.pathname === '/labs'||location.pathname === '/careers'){
       setSpringVal({width : '50%'})
     }
     else if(location.pathname === '/comics'||location.pathname === '/services'||location.pathname === '/investors'){
@@ -68,7 +68,7 @@ export const ZenBg = () => {
       setSpringVal({width : '100%'})
     }
     else if(location.pathname === '/store'){
-      setSpringVal({width : '10%'})
+      setSpringVal({width : '40%'})
     }
     else{
      

@@ -9,6 +9,8 @@ import _inmeida_downloads from '../Assets/inmeida_downloads.png';
 import _inmeida_news_icon from '../Assets/inmedia_news_icon.png';
 import _ellipse from '../Assets/Ellipse.png';
 
+const _icon_jump = <svg  fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
+
 export const InMeidaHeroPage = () => {
 
     const mouseXY = (x,y)=>([ (x - window.innerWidth / 2) / 10, -(y - window.innerHeight / 2) / 10 ])
@@ -80,7 +82,14 @@ export const InMeidaHeroPage = () => {
                     <RenderCard>
                         <div className="space-20"></div>
                          <div className="text-center h5">
-                         News artice 1
+                         News artice 1 &nbsp; {_icon_jump}
+                         </div>
+                        <div className="space-20"></div>
+                    </RenderCard>
+                    <RenderCard>
+                        <div className="space-20"></div>
+                         <div className="text-center h5">
+                         News artice 2 &nbsp; {_icon_jump}
                          </div>
                         <div className="space-20"></div>
                     </RenderCard>

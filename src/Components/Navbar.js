@@ -9,6 +9,7 @@ import _logo2 from '../Assets/logo2.png'
 import { NavMenu } from './NavMenu';
 
 const _NavData = [
+ 
     {
         id:'1',
         name:'COMICS',
@@ -75,11 +76,17 @@ export default function Navbar(props) {
     const [toggleMenu,setToggleMenu] = useState(false)
 
     useEffect(()=>{
-        if(location === '/comics'||location === '/services' ||location === '/investors'||location === '/contact' ){
+        if( 
+            location === '/comics'
+            ||location === '/services' 
+            ||location === '/investors'
+            ||location === '/contact'  
+            ){
+
             setTheme(false)
             setThemeNav(false)
         }
-        else if(location === '/labs'){
+        else if(location === '/labs'||location === '/careers'||location === '/store'){
             setTheme(false)
             setThemeNav(true)
         }
@@ -107,19 +114,13 @@ export default function Navbar(props) {
         <div className="_navbar">
             <div className="space-20"></div>
             <div className="nav-container">
-                <div className="logo">
+                <div className="logo ">
                     <Link to='/'>
                     <img style={{height:'30px'}} src={yellowTheme?_logo:_logo2} alt="" />
                     </Link>
                 </div>
-                <div className="nav-links ">
+                <div className="nav-links  pt-2 ">
                     <div className="d-none d-md-block">
-                        {/* <Link to='/' className="links text-dark">Home</Link> */}
-                        {/* <Link to='/comics' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>COMICS</Link>
-                        <Link to='/games' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>GAMES</Link>
-                        <Link to='/services' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>SERVICES</Link>
-                        <Link to='/store' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>STORE</Link>
-                        <Link to='/labs' className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>LABS</Link> */}
                         <RenderNavList data={_NavData} />
                     </div>
                     <div className="d-block d-md-none">

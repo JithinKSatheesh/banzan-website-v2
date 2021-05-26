@@ -1,8 +1,10 @@
 import React from 'react';
 
+const _send_icon = <svg fill='white' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+const _circle = <svg fill='#fcc812' width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>
+
 export const ServicesFormPage = () => {
 
-    const _circle = <svg fill='#fcc812' width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>
 
     const _style = {
         form_container: {
@@ -60,8 +62,10 @@ export const ServicesFormPage = () => {
                     <div className="space-50"></div>
                     <div
                         style={{ cursor: 'pointer' }}
-                        className="h4 text-white">
-                        SEND
+                        className="h4 text-white text-center text-bold">
+                        SEND 
+                        &nbsp;
+                        {_send_icon}
                     </div>
                 </div>
             </div>

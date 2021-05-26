@@ -64,7 +64,7 @@ const InverstorHeroPage = ()=>{
 
                         If you believe in our story and vision and would like to play an impactful role together, please do get in touch with the Founder 
                         
-                        &nbsp;<a className='text-decoration-none' href="" rel='' target="_blank" > 
+                        &nbsp;<a className='text-decoration-none' href="https://www.linkedin.com/in/mukeshdev/" rel='noreferrer' target="_blank" > 
                             <span className="text-warning text-bold " >
                                 here
                                 &nbsp;

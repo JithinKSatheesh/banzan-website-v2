@@ -46,7 +46,7 @@ export const GamesShowCasePage = ({scrollPos}) => {
                 _style={_style}
                 app_image={_bablah_icon}
                 app_icon={_bablah_app}
-                heading={"Yes/No with BaBla"}
+                heading={"Yes/No with BaBlah"}
                 desc={"Yes/No with BaBlah is a fun Q&A game that rejuvenates your mood with quirky Q’s! BaBlah is a cute Monk who lives in the virtual world of Instagram as a daily comic strip."} />
             
             <ShowCaseApps
