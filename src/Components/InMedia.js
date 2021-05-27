@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useRef} from 'react'
+import {useSpring} from 'react-spring'
+import { ZenBg } from './DummyBg';
 
 import { InMeidaHeroPage } from './InMeidaHeroPage';
 
@@ -6,6 +8,9 @@ import { InMeidaHeroPage } from './InMeidaHeroPage';
 
 
 export default function Inmedia(props) {
+
+    const comicRef = useRef()
+    
 
     const _style ={
         _container:{
@@ -18,13 +23,29 @@ export default function Inmedia(props) {
         }
     }
 
+    const[{scrollPos},setSpringVal] = useSpring(()=>({
+        scrollPos : 0,
+        // config: { mass: 5, tension: 350, friction: 40 }
+    }))
+
+    const handleScroll = ()=>{
+        const scrollPos = comicRef.current.scrollTop;
+        console.log("calling",)
+        setSpringVal({scrollPos})
+
+    }
+
+
 
     return (
         <>
         <div className="Maincontainer">
+            <ZenBg/>
             <div 
+                onScroll={handleScroll}
+                ref={comicRef}
                 style={_style._container}>
-                <InMeidaHeroPage  />
+                <InMeidaHeroPage scrollPos={scrollPos}  />
             </div>
         </div>   
         </>

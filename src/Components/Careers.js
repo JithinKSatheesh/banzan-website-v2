@@ -1,14 +1,16 @@
-import React from 'react'
-import _career_img from '../Assets/careers_img_.png'
+import React,{useRef} from 'react'
 
-import {animated,useSpring} from 'react-spring'
-import Fade from 'react-reveal/Fade'
-import Slide from 'react-reveal/Slide'
+import {useSpring} from 'react-spring'
+import { CareersHeroPage } from './CareersHeroPage'
+import { ZenBg } from './DummyBg'
 
-const _send_icon = <svg fill='white' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+export const _send_icon = <svg fill='#1b1d1c' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
 
 export default function Careers(props) {
     
+    const comicRef = useRef()
+
+
     const _style ={
         _container:{
             position: 'fixed',
@@ -21,142 +23,29 @@ export default function Careers(props) {
     }
 
 
+    const[{scrollPos},setSpringVal] = useSpring(()=>({
+        scrollPos : 0,
+        // config: { mass: 5, tension: 350, friction: 40 }
+    }))
+
+    const handleScroll = ()=>{
+        const scrollPos = comicRef.current.scrollTop;
+        console.log("calling",)
+        setSpringVal({scrollPos})
+
+    }
     return (
         <>
         <div className="Maincontainer">
+            <ZenBg/>
             <div 
+                onScroll={handleScroll}
+                ref={comicRef}
                 style={_style._container}>
-                <CareersHeroPage/>
+                <CareersHeroPage scrollPos={scrollPos}/>
             </div>
         </div>   
         </>
     )
 }
 
-const CareersHeroPage = ()=>{
-
-    const _style = {
-        _hero_container: {
-            position: "relative",
-            margin: 'auto',
-            maxWidth: '850px',
-            width: '95%',
-        },
-        img_style:{
-            border:'10px solid #c42f48',
-            borderRadius:'20px',
-            boxShadow: '0px 0px 5px 5px #21212127',
-        }
-        
-    };
-
-
-
-    return(
-        <div  style={_style._hero_container}>
-            <div className="row">
-                <div className="col-12">
-                    <div className="space-50"></div>
-                    <div className="space-20"></div>
-                    <Slide top>
-                    <div className="display-4 text-bold text-white">
-                        Careers
-                    </div>
-                    </Slide>
-                    <div className="space-50"></div>
-                </div>
-                <div className="col-12 p-2">
-                <Fade>
-                    <img style={_style.img_style} className="img-fluid" src={_career_img} alt="" />
-                </Fade>
-                </div>
-                <div className="col-12">
-                    <div className="space-100"></div>
-                    <div className="space-100"></div>
-                    
-                </div>
-                <div className="col-12">
-                    <div className="h1 text-bold text-white">
-                        Let’s see <span className='text-dark' >what you got?!</span>
-                    </div>
-                    <div className="space-50"></div>
-                </div>
-                <div className="col-12 col-md-6">
-                    <RenderCareerForm/>
-                </div>
-                <div className="col-12">
-                    <div className="space-100"></div>
-                    <div className="space-100"></div>
-                </div>
-            </div>
-
-        </div>
-    )
-}
-
-
-const RenderCareerForm = ()=>{
-
-    const _style={
-      
-        input_field: {
-            width: '100%',
-            border: 'none',
-            backgroundColor: '#c42f48',
-            borderBottom: "5px solid #fcc812",
-            fontSize: '1em',
-            color: 'white',
-            fontWeight: 'bold',
-            outline: 'none',
-        }
-    }
-
-    return(
-        <div className="row">
-            <div className="col-12">
-            <div className="form">
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Your name"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Email"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Phone no"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Your highest level of education"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Why us?"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="space-50"></div>
-                    <div
-                        style={{ cursor: 'pointer' }}
-                        className="h4 text-white text-center text-bold">
-                        SEND 
-                        &nbsp;
-                        {_send_icon}
-                    </div>
-                </div>
-                </div>
-            </div>
-            
-        
-    )
-}

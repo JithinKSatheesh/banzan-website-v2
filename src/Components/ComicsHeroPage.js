@@ -15,8 +15,9 @@ import _icon_bablah from '../Assets/icon_bablah.png';
 import _icon_twitter from '../Assets/icon_twitter.png';
 import _icon_facebook from '../Assets/icon_facebook.png';
 import _icon_instgram from '../Assets/icon_instgram.png';
+import { Footer } from './Footer';
 
-const _arrow_down = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
 
 export const ComicsHeroPage = ({ scrollPos }) => {
 
@@ -51,23 +52,22 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             right: 0,
             height: "100%",
             width: "100%",
-            opacity: 0.60,
-            backgroundColor: "#0c0c0c",
+            opacity: 0.30,
+            backgroundColor: "black",
         },
-        comic_overlay_text: {
+        comic_overlay_2: {
             position: "absolute",
             top: 0,
             bottom: 0,
             left: 0,
             right: 0,
             height: "100%",
-            width: "100%",
-            color: 'white',
-            margin:'10px',
-            lineHeight: isMobile ? '30px' : '50px',
-            // fontSize: isMobile ? '1em' : '1.5em'
-            // backgroundColor: "#0c0c0c",
+            width: "50%",
+            opacity: 0.60,
+            backgroundColor: "black",
         }
+  
+    
     };
 
 
@@ -93,13 +93,13 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     <Slide top>
                         <animated.div
                             style={{ transform: scrollPos.to(transfromSlide_N1) }}
-                            className="display-3 text-bold text-white">
+                            className="display-3 text-bold text-dark">
                             Comics
                         </animated.div>
                     </Slide>
                     <div className="space-50"></div>
                     <Slide bottom >
-                        <div className="h5 text-white">
+                        <div className="text-dark text-bold">
                             We are building a global Comic franchise from India. Our hero doesn’t fight villains, doesn’t kill anyone, doesn’t have a romantic partner but he’s still fun & pure joy to hang around with.
                         </div>
                     </Slide>
@@ -107,14 +107,11 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                 <div className="col-12">
                     <div className="space-50"></div>
                     <Fade>
-                        <div style={_style.comic_cartoons_container}>
+                        <div className='shadow' style={_style.comic_cartoons_container}>
                             <img style={{ width: '100%', height: isMobile?'100%':'' }} src={_comic_bg} alt="" />
                             <div style={_style.comic_overlay}></div>
-                            <div
-                                className=" p-2 h5 text-bold"
-                                style={_style.comic_overlay_text}>
-                               
-                            </div>
+                            <div style={_style.comic_overlay_2}></div>
+                            
 
                         </div>
                     </Fade>
@@ -154,12 +151,12 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     <Fade>
                         <animated.div 
                             style={{transform: scrollPos.to(transfromSlide_N1)}}
-                            className="h1 text-center text-white text-bold">
+                            className="h1 text-center text-dark text-bold">
                             Presenting Bablah!
                         </animated.div>
                     </Fade>
                     <div className="space-20"></div>
-                    <div className="h4 text-white text-center">
+                    <div className="h4 text-dark text-center">
                         The monk who need the Ferrari!
                     </div>
                     <div className="space-50"></div>
@@ -178,11 +175,13 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         <RenderSocialLink image_url={_icon_facebook} link="" />
                         <RenderSocialLink image_url={_icon_instgram} link="" />
                     </animated.div>
+                    <animated.div 
+                        style={{transform: scrollPos.to(transfromSlide_N1)}}
+                        className="col-12">
+                            <Footer/>
+                    </animated.div>
                 </div>
-                <div className="col-12">
-                    <div className="space-100"></div>
-                 
-                </div>
+                
             </div>
         </div>
 

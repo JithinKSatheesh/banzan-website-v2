@@ -11,13 +11,14 @@ import {animated} from 'react-spring'
 
 const _right_icon = <svg fill='#1b1d1c'  width="14" height="14" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
 const _circle = <svg fill='#c42f48' width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>
-
+const _puzzle_icon = <svg fill='#fbe05a' width="100" height="100" viewBox="0 0 24 24"><path d="M2.479 18c.978 0 1.309-.524 1.708-.922.813-.816 1.813-.469 1.813.847v6.075h6.075c1.315 0 1.663-1 .847-1.813-.398-.399-.922-.73-.922-1.708 0-1.087 1.108-2.479 3-2.479s3 1.392 3 2.479c0 .978-.524 1.309-.922 1.708-.816.813-.469 1.813.847 1.813h6.075v-6.075c0-1.315-1-1.663-1.813-.847-.399.398-.73.922-1.708.922-1.087 0-2.479-1.108-2.479-3s1.392-3 2.479-3c.978 0 1.309.524 1.708.922.813.816 1.813.469 1.813-.847v-6.075h-6.075c-1.315 0-1.663-1-.847-1.813.398-.399.922-.73.922-1.708 0-1.087-1.108-2.479-3-2.479s-3 1.392-3 2.479c0 .978.524 1.309.922 1.708.816.813.469 1.813-.847 1.813h-6.075v6.075c0 1.315-1 1.663-1.813.847-.399-.398-.73-.922-1.708-.922-1.087 0-2.479 1.108-2.479 3s1.392 3 2.479 3z"/></svg>
 
 
 const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
 const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`) 
 const transfromSlide_S2 = (val)=>(`translate(0px,${val * 0.05}px)`) 
 const transfromSlide_N2 = (val)=>(`translate(0px,-${val * 0.05}px)`) 
+const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`)
 
 
 export const GamesShowCasePage = ({scrollPos}) => {
@@ -58,6 +59,18 @@ export const GamesShowCasePage = ({scrollPos}) => {
                 desc={"NUMZY is our first baby out!It’s a simple, crazy number game that apart from being fun, tests your agility, vision,speed, simple calculations and brain power.It’s timeless fun for all ages."} />
          
             <div className="row">
+                <div className="col-12 col-md-6 offset-md-6">
+                    <animated.span
+                        style={{
+                            position:'absolute',
+                            marginLeft:'200px',
+                            marginTop:'700px',
+                            transform:scrollPos.to(transfromSlide_NN1),
+                        }}
+                    >
+                        {_puzzle_icon}
+                    </animated.span>
+                </div>
                 <div className="col-12">
                     <div className="space-100"></div>
                     <div className="text-center">
@@ -71,6 +84,8 @@ export const GamesShowCasePage = ({scrollPos}) => {
                         Banzan Studios © 2021
                     </div>
                     <div className="space-100"></div>
+                    <div className="space-100"></div>
+                   
                 </div>
             </div>
 
@@ -140,7 +155,6 @@ const ShowCaseApps = ({ _style, app_image, app_icon, heading, desc,scrollPos }) 
         </div>
         <div className="col-12 ">
             <div className="space-50"></div>
-
         </div>
     </div>)
 }

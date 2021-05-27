@@ -1,9 +1,12 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
+import Zoom from 'react-reveal/Zoom'
+import { ZenBg } from './DummyBg'
 
-const _send_icon = <svg fill='white' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
 
+const _send_icon = <svg fill='#1b1d1c' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+const _message_icon = <svg fill='#fbe05a'  width="204" height="204" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
 export default function Contact(props) {
     
     const _style ={
@@ -21,6 +24,7 @@ export default function Contact(props) {
     return (
         <>
         <div className="Maincontainer">
+            <ZenBg/>
             <div 
                 style={_style._container}>
                 <ContactFormPage  />
@@ -43,8 +47,8 @@ const ContactFormPage = ()=>{
         input_field: {
             width: '100%',
             border: 'none',
-            backgroundColor: '#c42f48',
-            borderBottom: "5px solid #fcc812",
+            backgroundColor: '#fbe05a',
+            borderBottom: "5px solid #c42f48",
             fontSize: '1em',
             color: 'white',
             fontWeight: 'bold',
@@ -60,7 +64,7 @@ const ContactFormPage = ()=>{
             <div className="col-12 col-md-6">
                 <div className="space-100"></div>
                 <Slide top>
-                <div className="h3 text-white">
+                <div className="h3 text-dark">
                     Drop us a message
                 </div>
                 </Slide>
@@ -107,13 +111,19 @@ const ContactFormPage = ()=>{
                     <div className="space-50"></div>
                     <div
                        style={{ cursor: 'pointer' }}
-                       className="h4 text-white text-center text-bold">
+                       className="h4 text-dark text-center text-bold">
                        SEND 
                        &nbsp;
                        {_send_icon}
                     </div>
                 </div>
                 </Fade>
+            </div>
+            <div className="col-6 d-none d-md-block text-center">
+                <div className="space-100"></div>
+                <div className="space-100"></div>
+                    {_message_icon}
+              
             </div>
             <div className="col-12">
                 <div className="space-100"></div>

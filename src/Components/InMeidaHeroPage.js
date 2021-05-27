@@ -8,10 +8,16 @@ import _inmedia_insta from '../Assets/inmedia_insta.png';
 import _inmeida_downloads from '../Assets/inmeida_downloads.png';
 import _inmeida_news_icon from '../Assets/inmedia_news_icon.png';
 import _ellipse from '../Assets/Ellipse.png';
+import { Footer } from './Footer';
 
 const _icon_jump = <svg  fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></svg>
 
-export const InMeidaHeroPage = () => {
+
+
+export const InMeidaHeroPage = ({scrollPos}) => {
+    
+    const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
+    const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`)
 
     const mouseXY = (x,y)=>([ (x - window.innerWidth / 2) / 10, -(y - window.innerHeight / 2) / 10 ])
     const changePos = (x,y) => (`translate(${-x}px,${y}px)`)
@@ -40,9 +46,11 @@ export const InMeidaHeroPage = () => {
     const RenderCard = ({ children }) => {
         return (
             <Zoom>
-                <div style={{
+                <div 
+                className='shadow'
+                style={{
                     width: '100%',
-                    border: '10px solid #c42f48',
+                    // border: '10px solid #c42f48',
                     borderRadius: '10px',
                     backgroundColor: '#c42f48',
                     color: 'white',
@@ -70,7 +78,9 @@ export const InMeidaHeroPage = () => {
                     </Slide>
                         
                 </div>
-                <div className="col-12 col-md-6">
+                <animated.div 
+                    style={{transform:scrollPos.to(transfromSlide_NN1)}}
+                    className="col-12 col-md-6">
                     <div className="space-50"></div>
 
                     <RenderCard>
@@ -93,8 +103,10 @@ export const InMeidaHeroPage = () => {
                          </div>
                         <div className="space-20"></div>
                     </RenderCard>
-                </div>
-                <div className="col-12 col-md-6">
+                </animated.div>
+                <animated.div 
+                    style={{transform:scrollPos.to(transfromSlide_S1)}}
+                    className="col-12 col-md-6">
                     <Fade>
                         <div
                             className="d-none d-md-block"
@@ -117,10 +129,9 @@ export const InMeidaHeroPage = () => {
 
                         </div>
                     </Fade>
-                </div>
+                </animated.div>
                 <div className="col-12">
-                    <div className="space-100"></div>
-                    <div className="space-100"></div>
+                    <Footer/>
                     <div className="space-100"></div>
                 </div>
             </div>

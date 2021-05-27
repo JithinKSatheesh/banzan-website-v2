@@ -21,6 +21,9 @@ export const YellowBg = () => {
     else if(location.pathname === '/services'){
       setSpringVal({width : '45%'})
     }
+    else if(location.pathname === '/store'){
+      setSpringVal({width : '60%'})
+    }
     else{
       setSpringVal({width : '50%'})
     }
@@ -51,7 +54,7 @@ export const YellowBg = () => {
 };
 
 
-export const ZenBg = () => {
+export const WhiteBg = () => {
 
   let location = useLocation()
  
@@ -62,20 +65,8 @@ export const ZenBg = () => {
 
   useEffect(()=>{
 
-    if(location.pathname === '/labs'||location.pathname === '/careers'){
-      setSpringVal({width : '0%'})
-    }
-    else if(location.pathname === '/comics'||location.pathname === '/services'||location.pathname === '/investors'){
-      setSpringVal({width : '0%'})
-    }
-    else if(location.pathname === '/games'){
-      setSpringVal({width : '0%'})
-    }
-    else if(location.pathname === '/contact'){
-      setSpringVal({width : '100%'})
-    }
-    else if(location.pathname === '/store'){
-      setSpringVal({width : '40%'})
+    if(location.pathname === '/store'){
+      setSpringVal({width : '35%'})
     }
     else{
      
@@ -95,6 +86,44 @@ export const ZenBg = () => {
       // backgroundColor:'#c42f48',
       backgroundColor:'white',
       zIndex : 20
+    }
+  }
+
+  return (
+    <animated.div className='shadow' style={_style.bg_container}>
+      
+    </animated.div>
+  );
+};
+
+
+
+export const ZenBg = () => {
+
+ 
+  const [{width,right},setSpringVal] = useSpring(()=>({
+    width : '0%',
+    right:'',
+    from:{width:'0%',right:''},
+    to:async(next)=>{
+      await next({width:'100%'})
+      await next({width:'0%'})
+      
+    },
+    // config: { mass: 2, tension: 120, friction: 50 },
+  }))
+
+ 
+
+  const _style = {
+    bg_container:{
+      position:'fixed',
+      width: width,
+      height:'100%',
+      top:'0',
+      // backgroundColor:'#c42f48',
+      backgroundColor:'#c42f48',
+      zIndex : 1000
     }
   }
 

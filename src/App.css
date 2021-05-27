@@ -38,7 +38,8 @@ body{
 }
 
 .hr-dash{
-  border :1px dashed #1b1d1c ;
+  border :2px dashed #f8d249 ;
+  /* border :1px dashed #1b1d1c ; */
 }
 
 .shadow{

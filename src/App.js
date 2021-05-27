@@ -16,9 +16,11 @@ import Careers from './Components/Careers'
 // import Test from './test2-1'
 
 import LeftSideMenu from './Components/LeftSideMenu'
+import RightSideText from './Components/RightSideText'
+import RightBottomIcon from './Components/RightBottomIcon'
 import Navbar from './Components/Navbar'
-import RightSideMenu from './Components/RightSideMenu'
-import { YellowBg, ZenBg } from './Components/DummyBg'
+// import RightSideMenu from './Components/RightSideMenu'
+import { YellowBg, WhiteBg } from './Components/DummyBg'
 import { SocialIcons } from './Components/SocialIcons'
 import Investors from './Components/Investors'
 
@@ -30,8 +32,10 @@ export default function App(props) {
       <BrowserRouter>
         <Navbar />
         <LeftSideMenu />
-        <RightSideMenu />
-        <ZenBg/>
+        <RightSideText/>
+        <RightBottomIcon/>
+        {/* <RightSideMenu /> */}
+        <WhiteBg/>
         <YellowBg/>
           <Switch>
             <Route path="/games" component={Games} />

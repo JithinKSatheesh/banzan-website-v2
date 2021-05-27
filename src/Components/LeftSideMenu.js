@@ -26,16 +26,15 @@ import {useSpring,animated} from 'react-spring'
 
     
     
-    const _bg = yellowTheme?'#c42f48' : '#fcc812'
-    const _color = yellowTheme?'#fcc812' : '#c42f48'
+    const _bg = '#c42f48'
+    const _color = '#fcc812'
 
 
     const _style = {
         pop_menu_container: {
             position: 'fixed',
             zIndex: '100000',
-            // top: 'calc(50% - 155px)',
-            top: mediaQuery<= '400'? '50%':'calc(50% - 155px)',
+            top: mediaQuery<= '400'? '50%':'calc(50% - 200px)',
             display: 'flex',
             // transform: `${show? 'translateX(-150px)' : 'translateX(-280px)'} `,
             transform: posX.to(_slideto),
@@ -63,7 +62,7 @@ import {useSpring,animated} from 'react-spring'
             justifyContent: 'space-between'
         },
         menu_list_box: {
-            height: '300px',
+            height: '400px',
             width: '300px',
             backgroundColor: _bg,
             boxShadow: '0px 0px 5px 5px #21212127',
@@ -92,23 +91,23 @@ import {useSpring,animated} from 'react-spring'
 
 
 
-    useEffect(()=>{
-        if(
-            location === '/comics'
-            ||location === '/store'
-            ||location === '/labs'
-            ||location === '/investors'
-            ||location === '/contact' 
-            ||location === '/careers'
-            ){
-            setTheme(false)
-        }
-        else{
-            setTheme(true)
+    // useEffect(()=>{
+    //     if(
+    //         location === '/comics'
+    //         ||location === '/store'
+    //         ||location === '/labs'
+    //         ||location === '/investors'
+    //         ||location === '/contact' 
+    //         ||location === '/careers'
+    //         ){
+    //         setTheme(false)
+    //     }
+    //     else{
+    //         setTheme(true)
             
-        }
+    //     }
 
-    },[location])  
+    // },[location])  
 
     const RenderListItems = ({name,url,style})=>{
 
@@ -132,8 +131,11 @@ import {useSpring,animated} from 'react-spring'
             style={_style.pop_menu_container}>
             {/* --menu---- */}
             <div style={_style.menu_list_box}>
-                <RenderListItems style={_style.menu_list_items} name={"INVESTORS"} url='/investors'  />
+                <RenderListItems style={_style.menu_list_items} name={"ABOUT"} url='/about'  />
                 <RenderListItems style={_style.menu_list_items} name={"IN MEDIA"} url='/inmedia'  />
+                <RenderListItems style={_style.menu_list_items} name={"INVESTORS"} url='/investors'  />
+                <RenderListItems style={_style.menu_list_items} name={"CAREERS"} url='/careers'  />
+                <RenderListItems style={_style.menu_list_items} name={"CONTACT"} url='/contact'  />
             </div>
             {/* --pull handle---- */}
             <div  

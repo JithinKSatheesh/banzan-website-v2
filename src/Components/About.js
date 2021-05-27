@@ -5,6 +5,7 @@ import {useSpring} from 'react-spring'
 
 
 import { AboutHeroPage } from './AboutHeroPage';
+import { ZenBg } from './DummyBg';
 
 export default function About(props) {
 
@@ -39,6 +40,7 @@ export default function About(props) {
     return (
         <>
         <div className="Maincontainer">
+            <ZenBg/>
             <div 
                 onScroll={handleScroll}
                 ref={aboutRef}

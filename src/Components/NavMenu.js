@@ -5,7 +5,7 @@ import Slide from 'react-reveal/Slide';
 
 export const NavMenu = ({ toggle, NavList }) => {
 
-    const _close_icon = <svg fill="#c42f48" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>;
+    const _close_icon = <svg fill="white" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>;
 
 
     const [{ width_, opacity_ }] = useSpring(() => ({
@@ -29,7 +29,7 @@ export const NavMenu = ({ toggle, NavList }) => {
             height: '100%',
         },
         animation_container: {
-            backgroundColor: 'black',
+            backgroundColor: '#c42f48',
             width: width_,
             margin: 'auto',
             height: '100%'
@@ -50,7 +50,7 @@ export const NavMenu = ({ toggle, NavList }) => {
                 {data.map(value => (
                     <div onClick={() => toggle(false)} key={value.id} className="m-2">
                         <div className="space-20"></div>
-                        <Link to={value.to} className='text-decoration-none p-2 text-warning text-bold h4'> {value.name} </Link>
+                        <Link to={value.to} className='text-decoration-none p-2 text-white text-bold '> {value.name} </Link>
                     </div>
                 ))}
             </>

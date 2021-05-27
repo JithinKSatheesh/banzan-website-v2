@@ -98,6 +98,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                             We extend our skills & expertise in the niche areas of Content, Creatives, Communication, Development & Consultancy
                         </animated.div>
                     </Slide>
+                    <div className="space-50"></div>
                 </div>
 
                 <div className="col-6">

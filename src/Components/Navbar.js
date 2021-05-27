@@ -132,7 +132,7 @@ export default function Navbar(props) {
                     </div>
                     <div className="d-block d-md-none">
                            <div className='' onClick={()=>setToggleMenu(true)}>   
-                                <NavHarmBurger _color={yellowTheme_nav?'#c42f48': 'white'} />
+                                <NavHarmBurger _color={'#c42f48'} />
                             </div> 
                     </div>
                     
