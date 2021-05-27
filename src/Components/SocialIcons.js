@@ -29,7 +29,6 @@ export const SocialIcons = () => {
       if(
         location === '/labs'
         ||location === '/comics' 
-        || location === '/services'
         || location === '/store'
         || location === '/investors'
         || location === '/contact' 

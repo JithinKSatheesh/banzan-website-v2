@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Source+Sans+Pro&display=swap');
+
 html{
   margin: 0;
   padding: 0;
@@ -10,13 +12,18 @@ body{
   padding: 0;
   position: fixed;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif !important;
+  background-color: #f8d249;
+  /* font-family: 'Rubik', sans-serif  !important; */
+  font-family: 'Source Sans Pro', sans-serif !important;
+  /* font-family: Arial, Helvetica, sans-serif !important; */
    /* font-family: 'Times New Roman', Times, serif !important; */
 }
 
+
+
 ::placeholder { 
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
+  color : #1b1d1c;
   opacity: 1; /* Firefox */
 }
 
@@ -26,15 +33,40 @@ body{
   /* color: #0c0c0cf0; */
 }
 
+.text-weight-light{
+  font-weight: 500;
+}
+
+.hr-dash{
+  border :1px dashed #1b1d1c ;
+}
+
+.shadow{
+  box-shadow: '0px 0px 5px 5px #21212127',
+}
+
+.button-box{
+  width:'100px';
+  height:'50px';
+  box-shadow: '0px 0px 5px 5px #21212127';
+  background-color: white;
+  color: #1b1d1c;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 /* .bg-dark{
   background-color: #000000 !important;
 } */
+
 .link-hover{
   text-decoration: none;
+  transition: font-size 0.4s ease;
 }
 .link-hover:hover{
-  text-decoration: line-through;
-  text-decoration-thickness: 0.3em;
+  /* text-decoration: line-through;
+  text-decoration-thickness: 0.3em; */
+  font-size: 1.3em;
 
 }
 
@@ -129,10 +161,15 @@ body{
   
 }
 
+.nav-select{
+  background-color: white;
+  color: #1b1d1c;
+  padding: 10px;
+  border-radius: 20px;
+}
 
 .links{
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1em;
   margin: 10px;
   margin-left: 20px;
   height: 50px;

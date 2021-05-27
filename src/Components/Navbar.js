@@ -101,7 +101,14 @@ export default function Navbar(props) {
     const RenderNavList = ({data})=>{
         return(
             data.map(value=>(
-                <Link key={value.id} to={value.to} className={`links ${yellowTheme_nav?'text-dark': 'text-white'} `}>{value.name}</Link> 
+                <Link 
+                    key={value.id} 
+                    className={`links text-dark
+                    
+                    ${value.to === location && 'nav-select shadow'}  
+                    text-bold `}
+                    to={value.to} >
+                            {value.name}</Link> 
             ))
         )
     }
@@ -116,7 +123,7 @@ export default function Navbar(props) {
             <div className="nav-container">
                 <div className="logo ">
                     <Link to='/'>
-                    <img style={{height:'30px'}} src={yellowTheme?_logo:_logo2} alt="" />
+                    <img style={{height:'30px'}} src={_logo} alt="" />
                     </Link>
                 </div>
                 <div className="nav-links  pt-2 ">

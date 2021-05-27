@@ -13,17 +13,20 @@ export const YellowBg = () => {
     width : '100%'
   }))
 
-  // useEffect(()=>{
+  useEffect(()=>{
     
-  //   if(location.pathname === '/store'){
-  //     setSpringVal({width : '100%'})
-  //   }
-  //   else{
-  //     setSpringVal({width : '100%'})
-  //   }
+    if(location.pathname === '/games'){
+      setSpringVal({width : '40%'})
+    }
+    else if(location.pathname === '/services'){
+      setSpringVal({width : '45%'})
+    }
+    else{
+      setSpringVal({width : '50%'})
+    }
   
 
-  // },[location])
+  },[location])
 
  
 
@@ -34,13 +37,14 @@ export const YellowBg = () => {
       height:'100%',
       top:'0',
       left:'0',
-      backgroundColor:'#f9c847',
+      // backgroundColor:'#f9c847',
+      backgroundColor:'#fbe05a',
       zIndex : 10,
     }
   }
 
   return (
-    <animated.div style={_style.bg_container}>
+    <animated.div  style={_style.bg_container}>
 
     </animated.div>
   );
@@ -59,10 +63,13 @@ export const ZenBg = () => {
   useEffect(()=>{
 
     if(location.pathname === '/labs'||location.pathname === '/careers'){
-      setSpringVal({width : '50%'})
+      setSpringVal({width : '0%'})
     }
     else if(location.pathname === '/comics'||location.pathname === '/services'||location.pathname === '/investors'){
-      setSpringVal({width : '100%'})
+      setSpringVal({width : '0%'})
+    }
+    else if(location.pathname === '/games'){
+      setSpringVal({width : '0%'})
     }
     else if(location.pathname === '/contact'){
       setSpringVal({width : '100%'})
@@ -85,13 +92,14 @@ export const ZenBg = () => {
       height:'100%',
       top:'0',
       left:'0',
-      backgroundColor:'#c42f48',
+      // backgroundColor:'#c42f48',
+      backgroundColor:'white',
       zIndex : 20
     }
   }
 
   return (
-    <animated.div style={_style.bg_container}>
+    <animated.div className='shadow' style={_style.bg_container}>
       
     </animated.div>
   );

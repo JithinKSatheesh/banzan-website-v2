@@ -15,7 +15,12 @@ import {useSpring,animated} from 'react-spring'
     const [yellowTheme,setTheme] = useState(true)
     const [{posX},setSpringVal] = useSpring(()=>({
         posX : -280,
-        
+        from:{posX:-280},
+        to: async (next) =>{
+            await next({posX:-150})
+            await next({posX:-280})
+        },
+        config: { mass: 10, tension: 850, friction: 100 },
     }))
     
 
@@ -90,7 +95,6 @@ import {useSpring,animated} from 'react-spring'
     useEffect(()=>{
         if(
             location === '/comics'
-            ||location === '/services'
             ||location === '/store'
             ||location === '/labs'
             ||location === '/investors'

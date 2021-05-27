@@ -16,6 +16,12 @@ export default function RightSideMenu() {
     const [yellowTheme,setTheme] = useState(true)
     const [{posX},setSpringVal] = useSpring(()=>({
         posX : 280,
+        from:{posX:280},
+        to: async (next) =>{
+            await next({posX:150})
+            await next({posX:280})
+        },
+        config: { mass: 10, tension: 850, friction: 100 },
        
     }))
 

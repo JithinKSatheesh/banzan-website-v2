@@ -45,7 +45,7 @@ export default function Services(props) {
                 onScroll={handleScroll}
                 style={_style.services_container}>
                 <ServicesHeroPage scrollPos={scrollPos} />
-                <ServicesFormPage/>
+                <ServicesFormPage scrollPos={scrollPos}/>
             </div>
         </div>
                

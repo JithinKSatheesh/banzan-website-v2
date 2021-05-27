@@ -9,7 +9,7 @@ import _bablah_app from '../Assets/bablah_game_app.png';
 
 import {animated} from 'react-spring'
 
-const _right_icon = <svg fill='#c42f48'  width="14" height="14" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+const _right_icon = <svg fill='#1b1d1c'  width="14" height="14" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
 const _circle = <svg fill='#c42f48' width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12"/></svg>
 
 
@@ -67,6 +67,9 @@ export const GamesShowCasePage = ({scrollPos}) => {
 
                     </div>
                     <div className="space-100"></div>
+                    <div className="text-center  text-dark">
+                        Banzan Studios © 2021
+                    </div>
                     <div className="space-100"></div>
                 </div>
             </div>
@@ -91,7 +94,7 @@ const ShowCaseApps = ({ _style, app_image, app_icon, heading, desc,scrollPos }) 
                                             height: '200px',
                                         
                                     }} 
-                            className='img-fluid' 
+                            className='img-fluid shadow' 
                             src={app_image} alt="" />
                     </div>
                     <div style={{ position: 'absolute', width: '100px', height: '100px', transform: 'translate(150px,150px)' }}>
@@ -100,7 +103,7 @@ const ShowCaseApps = ({ _style, app_image, app_icon, heading, desc,scrollPos }) 
                                         height: '100px' ,
                                         transform:scrollPos.to(transfromSlide_N1)
                                     }} 
-                            className='img-fluid' 
+                            className='img-fluid shadow' 
                             src={app_icon} alt="" />
                     </div>
                 </div>
@@ -118,22 +121,21 @@ const ShowCaseApps = ({ _style, app_image, app_icon, heading, desc,scrollPos }) 
                 </animated.div>
             </Slide>
             <Slide bottom>
-                <div className="small text-dark text-bold">
+                <div className=" text-dark text-bold">
                     {desc}
                 </div>
-
-                <animated.div 
-                    style={{transform: scrollPos.to(transfromSlide_S2) }}
-                    className="h6 ">
+            </Slide>
+            <animated.div style={{transform: scrollPos.to(transfromSlide_S2)}}>
+                <div className="" >
                     <a  href="" 
                         target="_blank" rel='noreferrer'
-                        className='text-decoration-none text-bold text-now'>
+                        className='text-decoration-none text-bold button-box'>
                     Check out
                     &nbsp;
                     {_right_icon}
                     </a> 
-                </animated.div>
-            </Slide>
+                </div>
+            </animated.div>
 
         </div>
         <div className="col-12 ">
