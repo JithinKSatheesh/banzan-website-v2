@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/banzan-website-v2/static/css/main.a10e118f.chunk.css",
-    "main.js": "/banzan-website-v2/static/js/main.ab795e8f.chunk.js",
-    "main.js.map": "/banzan-website-v2/static/js/main.ab795e8f.chunk.js.map",
+    "main.css": "/banzan-website-v2/static/css/main.4adf1c14.chunk.css",
+    "main.js": "/banzan-website-v2/static/js/main.418e7ae7.chunk.js",
+    "main.js.map": "/banzan-website-v2/static/js/main.418e7ae7.chunk.js.map",
     "runtime-main.js": "/banzan-website-v2/static/js/runtime-main.4bbed07c.js",
     "runtime-main.js.map": "/banzan-website-v2/static/js/runtime-main.4bbed07c.js.map",
-    "static/js/2.60b20b4b.chunk.js": "/banzan-website-v2/static/js/2.60b20b4b.chunk.js",
-    "static/js/2.60b20b4b.chunk.js.map": "/banzan-website-v2/static/js/2.60b20b4b.chunk.js.map",
+    "static/js/2.fc15bedc.chunk.js": "/banzan-website-v2/static/js/2.fc15bedc.chunk.js",
+    "static/js/2.fc15bedc.chunk.js.map": "/banzan-website-v2/static/js/2.fc15bedc.chunk.js.map",
     "static/js/3.47c3d86b.chunk.js": "/banzan-website-v2/static/js/3.47c3d86b.chunk.js",
     "static/js/3.47c3d86b.chunk.js.map": "/banzan-website-v2/static/js/3.47c3d86b.chunk.js.map",
     "index.html": "/banzan-website-v2/index.html",
-    "static/css/main.a10e118f.chunk.css.map": "/banzan-website-v2/static/css/main.a10e118f.chunk.css.map",
-    "static/js/2.60b20b4b.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.60b20b4b.chunk.js.LICENSE.txt",
+    "static/css/main.4adf1c14.chunk.css.map": "/banzan-website-v2/static/css/main.4adf1c14.chunk.css.map",
+    "static/js/2.fc15bedc.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.fc15bedc.chunk.js.LICENSE.txt",
     "static/media/bablah.c72787f4.png": "/banzan-website-v2/static/media/bablah.c72787f4.png",
     "static/media/bablah_ferrari.fe94d8a5.png": "/banzan-website-v2/static/media/bablah_ferrari.fe94d8a5.png",
     "static/media/bablah_game_app.8069c239.png": "/banzan-website-v2/static/media/bablah_game_app.8069c239.png",
     "static/media/bablah_game_icon.638f3007.png": "/banzan-website-v2/static/media/bablah_game_icon.638f3007.png",
     "static/media/careers_img_.1c056746.png": "/banzan-website-v2/static/media/careers_img_.1c056746.png",
     "static/media/comic_bg.07020fb5.png": "/banzan-website-v2/static/media/comic_bg.07020fb5.png",
-    "static/media/game_logo.be3dd2bb.png": "/banzan-website-v2/static/media/game_logo.be3dd2bb.png",
+    "static/media/games_console.f26c0bb0.png": "/banzan-website-v2/static/media/games_console.f26c0bb0.png",
     "static/media/icon_bablah.1f93c088.png": "/banzan-website-v2/static/media/icon_bablah.1f93c088.png",
     "static/media/icon_instgram.371560d2.png": "/banzan-website-v2/static/media/icon_instgram.371560d2.png",
     "static/media/inmedia_insta.18719c82.png": "/banzan-website-v2/static/media/inmedia_insta.18719c82.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4bbed07c.js",
-    "static/js/2.60b20b4b.chunk.js",
-    "static/css/main.a10e118f.chunk.css",
-    "static/js/main.ab795e8f.chunk.js"
+    "static/js/2.fc15bedc.chunk.js",
+    "static/css/main.4adf1c14.chunk.css",
+    "static/js/main.418e7ae7.chunk.js"
   ]
 }
