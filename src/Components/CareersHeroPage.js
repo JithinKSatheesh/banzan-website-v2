@@ -6,7 +6,7 @@ import {animated} from 'react-spring'
 
 import { Footer } from './Footer';
 import _career_img from '../Assets/careers_img_.png';
-import { _send_icon } from './Careers';
+import { CareerFormPage } from './CareerFormPage';
 
 const _work_icon = <svg fill='#fbe05a' width="104" height="104" viewBox="0 0 24 24"><path d="M22 2v20h-20v-20h20zm2-2h-24v24h24v-24zm-4 7h-8v1h8v-1zm0 5h-8v1h8v-1zm0 5h-8v1h8v-1zm-10.516-11.304l-.71-.696-2.553 2.607-1.539-1.452-.698.71 2.25 2.135 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304zm0 5l-.71-.696-2.552 2.607-1.539-1.452-.698.709 2.249 2.136 3.25-3.304z"/></svg>
 
@@ -67,7 +67,7 @@ export const CareersHeroPage = ({ scrollPos }) => {
                 <animated.div 
                     style={{transform:scrollPos.to(transfromSlide_S1)}}
                     className="col-12 col-md-6">
-                        <RenderCareerForm />
+                        <CareerFormPage />
                 </animated.div>
                 <animated.div 
                     style={{transform:scrollPos.to(transfromSlide_N1)}}
@@ -87,67 +87,4 @@ export const CareersHeroPage = ({ scrollPos }) => {
 };
 
 
-const RenderCareerForm = () => {
 
-    const _style = {
-        input_field: {
-            width: '100%',
-            border: 'none',
-            backgroundColor: '#fbe05a',
-            borderBottom: "5px solid #c42f48",
-            fontSize: '1em',
-            color: '#1b1d1c',
-            fontWeight: 'bold',
-            outline: 'none',
-        }
-    };
-
-    return (
-        <div className="row">
-            <div className="col-12">
-                <div className="form">
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Your name"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Email"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Phone no"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Your highest level of education"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="form-group p-3">
-                        <input
-                            placeholder="Why us?"
-                            style={_style.input_field}
-                            type="text" />
-                    </div>
-                    <div className="space-50"></div>
-                    <div
-                        style={{ cursor: 'pointer' }}
-                        className="h4 text-dark text-center text-bold">
-                        SEND
-                        &nbsp;
-                        {_send_icon}
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    );
-};

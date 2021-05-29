@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import _leftarrow_img from '../Assets/leftarrow.png';
 import _rightarrow_img from '../Assets/rightarrow.png';
@@ -160,10 +162,12 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
                             transform: scrollPos.to(transfromSlide_N1),
                             cursor:'pointer'
                         }}
-                        className="h1 text-dark">
+                        className=" ">
+                        <Link to={'/contact'} className=" h1 text-dark text-decoration-none" >
                         Share your idea
                         &nbsp;
                         {_rightSwipeIcon}
+                        </Link>
                     </animated.div>
                 </div>
                 <div className="col-12 col-md-6 offset-md-6 text-center">

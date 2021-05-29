@@ -42,10 +42,10 @@ export default function RightBottomIcon() {
     return (
         <Zoom>
             <div 
-                className="d-none d-md-flex text-bold"
+                className="d-none d-md-flex text-bold "
                 style={_style.pop_menu_container}>
                     <div style={_style.menu_handle}>
-                            <Link to='/contact'>
+                            <Link  to='/contact'>
                                     {message}
                             </Link>
                     </div>
