@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/banzan-website-v2/static/css/main.03b14c89.chunk.css",
-    "main.js": "/banzan-website-v2/static/js/main.9e5d82ba.chunk.js",
-    "main.js.map": "/banzan-website-v2/static/js/main.9e5d82ba.chunk.js.map",
-    "runtime-main.js": "/banzan-website-v2/static/js/runtime-main.4bbed07c.js",
-    "runtime-main.js.map": "/banzan-website-v2/static/js/runtime-main.4bbed07c.js.map",
-    "static/js/2.6092c62e.chunk.js": "/banzan-website-v2/static/js/2.6092c62e.chunk.js",
-    "static/js/2.6092c62e.chunk.js.map": "/banzan-website-v2/static/js/2.6092c62e.chunk.js.map",
-    "static/js/3.47c3d86b.chunk.js": "/banzan-website-v2/static/js/3.47c3d86b.chunk.js",
-    "static/js/3.47c3d86b.chunk.js.map": "/banzan-website-v2/static/js/3.47c3d86b.chunk.js.map",
+    "main.css": "/banzan-website-v2/static/css/main.aa1d0e3d.chunk.css",
+    "main.js": "/banzan-website-v2/static/js/main.1f5f99f2.chunk.js",
+    "main.js.map": "/banzan-website-v2/static/js/main.1f5f99f2.chunk.js.map",
+    "runtime-main.js": "/banzan-website-v2/static/js/runtime-main.31f21f01.js",
+    "runtime-main.js.map": "/banzan-website-v2/static/js/runtime-main.31f21f01.js.map",
+    "static/js/2.7237225a.chunk.js": "/banzan-website-v2/static/js/2.7237225a.chunk.js",
+    "static/js/2.7237225a.chunk.js.map": "/banzan-website-v2/static/js/2.7237225a.chunk.js.map",
+    "static/js/3.29574a1c.chunk.js": "/banzan-website-v2/static/js/3.29574a1c.chunk.js",
+    "static/js/3.29574a1c.chunk.js.map": "/banzan-website-v2/static/js/3.29574a1c.chunk.js.map",
     "index.html": "/banzan-website-v2/index.html",
-    "static/css/main.03b14c89.chunk.css.map": "/banzan-website-v2/static/css/main.03b14c89.chunk.css.map",
-    "static/js/2.6092c62e.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.6092c62e.chunk.js.LICENSE.txt",
+    "static/css/main.aa1d0e3d.chunk.css.map": "/banzan-website-v2/static/css/main.aa1d0e3d.chunk.css.map",
+    "static/js/2.7237225a.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.7237225a.chunk.js.LICENSE.txt",
     "static/media/bablah.c72787f4.png": "/banzan-website-v2/static/media/bablah.c72787f4.png",
     "static/media/bablah_ferrari.fe94d8a5.png": "/banzan-website-v2/static/media/bablah_ferrari.fe94d8a5.png",
     "static/media/bablah_game_app.8069c239.png": "/banzan-website-v2/static/media/bablah_game_app.8069c239.png",
@@ -47,9 +47,9 @@
     "static/media/trophy.89a84d31.png": "/banzan-website-v2/static/media/trophy.89a84d31.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4bbed07c.js",
-    "static/js/2.6092c62e.chunk.js",
-    "static/css/main.03b14c89.chunk.css",
-    "static/js/main.9e5d82ba.chunk.js"
+    "static/js/runtime-main.31f21f01.js",
+    "static/js/2.7237225a.chunk.js",
+    "static/css/main.aa1d0e3d.chunk.css",
+    "static/js/main.1f5f99f2.chunk.js"
   ]
 }
