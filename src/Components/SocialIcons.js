@@ -54,17 +54,17 @@ export const SocialIcons = () => {
     <div style={_style.webStyle} className='d-none d-md-flex'>
       <div style={_style.icon_wrap}>
         <div className="mb-3 m-1">
-          <a rel="noreferrer" href="https://facebook.com" target="_blank">
+          <a rel="noreferrer" href="https://www.facebook.com/BanzanStudios/" target="_blank">
             {_facebook_icon}
           </a>
         </div>
         <div className="mb-3 m-1">
-          <a rel="noreferrer" href="https://facebook.com" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/company/banzanstudios/" target="_blank">
             {_linkedin_icon}
           </a>
         </div>
         <div className="mb-3 m-1">
-          <a rel="noreferrer" href="https://facebook.com" target="_blank">
+          <a rel="noreferrer" href="https://www.instagram.com/gobablah/" target="_blank">
             {_instgram_icon}
           </a>
         </div>

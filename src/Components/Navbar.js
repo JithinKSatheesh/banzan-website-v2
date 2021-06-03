@@ -61,7 +61,7 @@ const _NavData_bottom = [
     {
         id:'14',
         name:'CONTACT',
-        to:'/contact'
+        to:'/contact/us'
     },
 ]
 

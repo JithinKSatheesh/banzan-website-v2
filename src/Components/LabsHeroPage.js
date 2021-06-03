@@ -53,7 +53,7 @@ export const LabsHeroPage = ({ scrollPos }) => {
                 </div>
                 <div className="col-12 col-md-6">
                     <Slide top >
-                        <div className="display-3 text-bold text-dark">
+                        <div className="display-3 text-bold text-dark text-center text-md-start">
                             Labs
                         </div>
                     </Slide>
@@ -64,7 +64,7 @@ export const LabsHeroPage = ({ scrollPos }) => {
                                 lineHeight:'30px',
                                 transform: scrollPos.to(transfromSlide_S1)
                             }}
-                            className={`text-bold   `} >
+                            className={`text-bold   text-center text-md-start  `} >
                             When we aren’t working on a serious product or a client project, we end up creating more awesomeness…highlighting a few concepts that we ended up with. Wanna know more about these? Kick us up through a note, who knows together we can redefine awesomeness!
                         </animated.div>
                     </Slide>
@@ -104,10 +104,10 @@ export const LabsHeroPage = ({ scrollPos }) => {
                 </div>
                 <div className="col-12">
                     <div className="space-50"></div>
-                    <div className="space-20"></div>
+                    
                     {/* <img src={_scroll} alt="" /> */}
-                    <div className="space-20"></div>
-                    {_round_icon_down}&nbsp; scroll down
+                    
+                    {_round_icon_down}&nbsp; 
                     <div className="space-20"></div>
                     <div className='hr-dash' />
                     <div className="space-20"></div>

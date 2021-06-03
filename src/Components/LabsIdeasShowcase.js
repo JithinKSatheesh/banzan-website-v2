@@ -131,7 +131,7 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
         <div style={_style.labs_hero_container}>
             <div className="row">
                 <div className="col-12">
-                    <div className="space-100"></div>
+                    <div className="space-20"></div>
                     <div className="space-20"></div>
                     <animated.div 
                         style={{transform: scrollPos.to(transfromSlide_N1)}}
@@ -144,7 +144,7 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
                 <Zoom>
                     <div className="col-12"  style={_style.labs_ideas_container}>
                         <ScrollMenu
-                            hideSingleArrow={true}
+                            hideSingleArrow={false}
                             arrowLeft={<Leftarrow />}
                             arrowRight={<Rightarrow />}
                             inertiaScrolling={true}
@@ -163,7 +163,7 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
                             cursor:'pointer'
                         }}
                         className=" ">
-                        <Link to={'/contact'} className=" h1 text-dark text-decoration-none" >
+                        <Link to={'/contact/labs'} className=" h1 text-dark text-bold text-decoration-none" >
                         Share your idea
                         &nbsp;
                         {_rightSwipeIcon}

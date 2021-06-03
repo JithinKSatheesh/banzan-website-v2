@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { animated } from 'react-spring'
+import {ProgressBar} from './ProgressBar'
 
 import _logo_b from '../Assets/logo_b.png'
 import { Footer } from './Footer';
@@ -189,11 +190,12 @@ export const ServicesFormPage = ({ scrollPos }) => {
                     </div>
                     <div className="space-20"></div>
                     {values.sending ?
-                        <div className="text-center text-dark text-bold">   
-                            <div class="spinner-border text-dark" role="status">
-                                
+                        <>
+                            <div className="h6 text-center text-danger">
+                                connecting to server...
                             </div>
-                        </div>
+                            <ProgressBar/>
+                        </>
                         :
                         <div
                             // onClick={() => sendMail()}

@@ -127,7 +127,7 @@ export const AboutHeroPage = ({ scrollPos }) => {
                     
                     <div style={{width:'100%',height:'10px',backgroundColor:'#c42f48'}}></div>
                     <div className="space-20"></div>
-                    <div className=" text-bold">
+                    <div className=" text-bold text-center text-md-start">
                         Banzan Studios is Kerala’s 1st and soon to be India’s finest Character based Digital Entertainment startup.
                         We are building a Global comic/cartoon franchise from India. 
                     </div>
@@ -160,7 +160,7 @@ export const AboutHeroPage = ({ scrollPos }) => {
                             lineHeight:'30px',
                             // fontSize:'1.3em',
                         }}
-                        className="text-bold">
+                        className="text-bold text-center text-md-start">
                         The team comes with over 30+ years of experience across Education, Entertainment, E-commerce & many other B2C businesses. Banzan 2.0 was born during the eventful year of 2020 and has since entertained lakhs of audience, every single day, through multiple channels and content formats.
                     </div>
                 </div>

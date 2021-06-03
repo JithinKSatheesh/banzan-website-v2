@@ -17,7 +17,7 @@ const transfromSlide_SS1 = (val)=>(`translate(0px,${val * 0.5}px)`)
 const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`)
 
 
-const _round_icon_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg>
+const _round_icon_down = <svg fill='#1b1d1c' width="34" height="34" viewBox="0 0 24 24"><path d="M17 10.645v-2.29c-1.17-.417-1.907-.533-2.28-1.431-.373-.9.07-1.512.6-2.625l-1.618-1.619c-1.105.525-1.723.974-2.626.6-.9-.373-1.017-1.116-1.431-2.28h-2.29c-.412 1.158-.53 1.907-1.431 2.28h-.001c-.9.374-1.51-.07-2.625-.6l-1.617 1.619c.527 1.11.973 1.724.6 2.625-.375.901-1.123 1.019-2.281 1.431v2.289c1.155.412 1.907.531 2.28 1.431.376.908-.081 1.534-.6 2.625l1.618 1.619c1.107-.525 1.724-.974 2.625-.6h.001c.9.373 1.018 1.118 1.431 2.28h2.289c.412-1.158.53-1.905 1.437-2.282h.001c.894-.372 1.501.071 2.619.602l1.618-1.619c-.525-1.107-.974-1.723-.601-2.625.374-.899 1.126-1.019 2.282-1.43zm-8.5 1.689c-1.564 0-2.833-1.269-2.833-2.834s1.269-2.834 2.833-2.834 2.833 1.269 2.833 2.834-1.269 2.834-2.833 2.834zm15.5 4.205v-1.077c-.55-.196-.897-.251-1.073-.673-.176-.424.033-.711.282-1.236l-.762-.762c-.52.248-.811.458-1.235.283-.424-.175-.479-.525-.674-1.073h-1.076c-.194.545-.25.897-.674 1.073-.424.176-.711-.033-1.235-.283l-.762.762c.248.523.458.812.282 1.236-.176.424-.528.479-1.073.673v1.077c.544.193.897.25 1.073.673.177.427-.038.722-.282 1.236l.762.762c.521-.248.812-.458 1.235-.283.424.175.479.526.674 1.073h1.076c.194-.545.25-.897.676-1.074h.001c.421-.175.706.034 1.232.284l.762-.762c-.247-.521-.458-.812-.282-1.235s.529-.481 1.073-.674zm-4 .794c-.736 0-1.333-.597-1.333-1.333s.597-1.333 1.333-1.333 1.333.597 1.333 1.333-.597 1.333-1.333 1.333zm-4 3.071v-.808c-.412-.147-.673-.188-.805-.505s.024-.533.212-.927l-.572-.571c-.389.186-.607.344-.926.212s-.359-.394-.506-.805h-.807c-.146.409-.188.673-.506.805-.317.132-.533-.024-.926-.212l-.572.571c.187.393.344.609.212.927-.132.318-.396.359-.805.505v.808c.408.145.673.188.805.505.133.32-.028.542-.212.927l.572.571c.39-.186.608-.344.926-.212.318.132.359.395.506.805h.807c.146-.409.188-.673.507-.805h.001c.315-.131.529.025.924.213l.572-.571c-.186-.391-.344-.609-.212-.927s.397-.361.805-.506zm-3 .596c-.552 0-1-.447-1-1s.448-1 1-1 1 .447 1 1-.448 1-1 1z"/></svg>
 
 
 const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
@@ -78,16 +78,16 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                     <div className="space-50"></div>
                     <div className="space-20"></div>
                 </div>
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6 text-center text-md-start">
                     <Slide top >
                         <animated.div 
                             style={{transform:scrollPos.to(transfromSlide_N1)}}
                             className="display-4 text-bold text-dark">
-                            Brand&nbsp;Boutique/ Services
+                            Banzan’s&nbsp;<br />Brand&nbsp;Boutique
                         </animated.div>
                     </Slide>
 
-                    <div className="space-50"></div>
+                    <div className="space-20"></div>
                     <Slide bottom >
                         <animated.div 
                             style={{ 
@@ -98,7 +98,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                             We extend our skills & expertise in the niche areas of Content, Creatives, Communication, Development & Consultancy
                         </animated.div>
                     </Slide>
-                    <div className="space-50"></div>
+                    <div className="space-20"></div>
                 </div>
 
                 <div className="col-6">
@@ -131,11 +131,10 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                     </Fade>
                 </div>
 
-                <div className="space-20"></div>
                 <div 
                     // style={{transform:'translateX(-100px)'}} 
                     className="">
-                    {_round_icon_down}&nbsp; scroll down
+                    {_round_icon_down}&nbsp; 
                     <div className="space-20"></div>
                     <div className='hr-dash' />
                 </div>
@@ -194,8 +193,12 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                 <div className="col-12">
                     <animated.div 
                         style={{transform:scrollPos.to(transfromSlide_S1)}}
-                        className="h1 text-bold text-dark">
-                        Let's talk &nbsp; {_arrow_down}
+                        className="h5  text-dark text-center text-md-start text-bold">
+                            If ‘Customer Engagement’ is your TOP priority,
+                            <div className="space-20"></div> 
+                        <div className="h3 text-bold">
+                            let’s talk! &nbsp; {_arrow_down}
+                        </div>
                     </animated.div>
                     <div className="space-100"></div>
                     <div className="space-100"></div>

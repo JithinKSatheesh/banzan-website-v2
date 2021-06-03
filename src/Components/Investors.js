@@ -55,7 +55,7 @@ const InverstorHeroPage = ()=>{
                 </div>
                 <div className="col-12">
                     <Slide top delay={500} >
-                        <div className="display-2 text-dark text-bold">
+                        <div className="display-2 text-dark text-bold text-center text-md-start">
                             Investors & <br /> Partnerships
                         </div>
                     </Slide>
@@ -63,7 +63,7 @@ const InverstorHeroPage = ()=>{
                 <Slide bottom delay={500} >
                     <div 
                         style={{lineHeight:'30px'}}
-                        className="col-12 col-md-8 offset-md-3 text-dark text-bold">
+                        className="col-12 col-md-8 offset-md-3 text-dark text-bold text-center text-md-start">
                         <div className="space-50"></div>
 
                         If you believe in our story and vision and would like to play an impactful role together, please do get in touch with the Founder 

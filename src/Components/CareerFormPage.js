@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { _send_icon } from './Careers';
+import {ProgressBar} from './ProgressBar'
 
 export const CareerFormPage = () => {
 
@@ -167,10 +168,12 @@ export const CareerFormPage = () => {
                     </div>
                     <div className="space-20"></div>
                     {values.sending ?
-                        <div className="text-center text-dark text-bold">   
-                            <div class="spinner-border text-dark" role="status">
+                        <>
+                            <div className="h6 text-center text-danger">
+                                connecting to server...
                             </div>
-                        </div>
+                            <ProgressBar/>
+                        </>
                         :
                         <div
                             // onClick={() => sendMail()}

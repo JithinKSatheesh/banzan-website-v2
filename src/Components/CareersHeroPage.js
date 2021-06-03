@@ -41,7 +41,7 @@ export const CareersHeroPage = ({ scrollPos }) => {
                     <Slide top>
                         <animated.div 
                             style={{transform:scrollPos.to(transfromSlide_NN1)}}
-                            className="display-4 text-bold text-dark">
+                            className="display-4 text-bold text-dark text-center text-md-start">
                             Careers
                         </animated.div>
                     </Slide>
@@ -59,7 +59,7 @@ export const CareersHeroPage = ({ scrollPos }) => {
                 <div className="col-12">
                     <animated.div 
                         style={{transform:scrollPos.to(transfromSlide_S1)}}
-                        className="h1 text-bold text-dark">
+                        className="h1 text-bold text-dark text-center text-md-start">
                         Let’s see <span className='text-now'>what you got?!</span>
                         <div className="space-50"></div>
                     </animated.div>

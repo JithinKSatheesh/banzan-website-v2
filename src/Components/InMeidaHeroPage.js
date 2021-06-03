@@ -72,7 +72,7 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                 </div>
                 <div className="col-12">
                     <Slide top>
-                        <div className="h1 text-bold text-now">
+                        <div className="h1 text-bold text-now text-center text-md-start">
                            In media
                         </div>
                     </Slide>
@@ -90,18 +90,26 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                         <img className='img-fluid' src={_inmeida_downloads} alt="" />
                     </RenderCard>
                     <RenderCard>
-                        <div className="space-20"></div>
-                         <div className="text-center h5">
-                         News artice 1 &nbsp; {_icon_jump}
-                         </div>
-                        <div className="space-20"></div>
+                        <a
+                            className=' text-decoration-none' target='_blank' rel='noreffer'
+                            href="https://socialgrow.info/how-to-write-effective-captions-for-instagram-posts/">
+                            <div className="space-20"></div>
+                            <div className="text-center h5 text-white">
+                            Bablah featured in socialgrow &nbsp; {_icon_jump}
+                            </div>
+                            <div className="space-20"></div>
+                        </a>
                     </RenderCard>
                     <RenderCard>
-                        <div className="space-20"></div>
-                         <div className="text-center h5">
-                         News artice 2 &nbsp; {_icon_jump}
-                         </div>
-                        <div className="space-20"></div>
+                        <a
+                            className=' text-decoration-none' target='_blank' rel='noreffer'
+                            href="https://businessperiscope.com/banzan-ventures/">
+                            <div className="space-20"></div>
+                            <div className="text-center h5 text-white">
+                            Banzan on buisnessperiscope &nbsp; {_icon_jump}
+                            </div>
+                            <div className="space-20"></div>
+                        </a>
                     </RenderCard>
                 </animated.div>
                 <animated.div 

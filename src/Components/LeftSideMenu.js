@@ -135,7 +135,7 @@ import {useSpring,animated} from 'react-spring'
                 <RenderListItems style={_style.menu_list_items} name={"IN MEDIA"} url='/inmedia'  />
                 <RenderListItems style={_style.menu_list_items} name={"INVESTORS"} url='/investors'  />
                 <RenderListItems style={_style.menu_list_items} name={"CAREERS"} url='/careers'  />
-                <RenderListItems style={_style.menu_list_items} name={"CONTACT"} url='/contact'  />
+                <RenderListItems style={_style.menu_list_items} name={"CONTACT"} url='/contact/us'  />
             </div>
             {/* --pull handle---- */}
             <div  

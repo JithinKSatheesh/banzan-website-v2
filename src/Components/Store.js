@@ -6,9 +6,19 @@ import Slide from 'react-reveal/Slide'
 import {Link} from 'react-router-dom'
 
 import _store_cup from '../Assets/store_cup.png'
+import _store_cup_2 from '../Assets/store_cup_2.png'
 import _store_shirt_1 from '../Assets/store_shirt_1.png'
 import _store_shirt_2 from '../Assets/store_shirt_2.png'
+import _store_shirt_3 from '../Assets/store_shirt_3.png'
+import _store_shirt_4 from '../Assets/store_shirt_4.png'
+import _store_shirt_5 from '../Assets/store_shirt_5.png'
+import _store_shirt_6 from '../Assets/store_shirt_6.png'
+import _store_shirt_7 from '../Assets/store_shirt_7.png'
+import _store_shirt_8 from '../Assets/store_shirt_8.png'
 import _store_book from '../Assets/store_book.png'
+import _store_book_2 from '../Assets/store_book_2.png'
+import _store_badge from '../Assets/store_badge.png'
+import _store_fans_collage from '../Assets/store_fans_collage.png'
 import { Footer } from './Footer'
 
 const _right_icon = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-9-8v6h-15v4h15v6z"/></svg>
@@ -73,11 +83,20 @@ const StoreHeroPage=({scrollPos})=>{
             width: '90%',
         },
         img_style:{
-            border:'10px solid #c42f48',
-            borderRadius:'20px',
+            // border:'10px solid #c42f48',
+            border:'10px solid white',
+            borderRadius:'10px',
             boxShadow: '0px 0px 5px 5px #21212127',
             height:'150px',
             margin:'10px'
+        },
+        img_fan:{
+            width:'100%',
+            maxWidth:'550px',
+            border:'10px solid white',
+            borderRadius:'10px',
+            boxShadow: '0px 0px 5px 5px #21212127',
+
         }
         
     };
@@ -86,7 +105,7 @@ const StoreHeroPage=({scrollPos})=>{
     const RenderImage=({image})=>{
 
         return(
-            <img style={_style.img_style} src={image} alt="" />
+            <img className='bg-white' style={_style.img_style} src={image} alt="" />
         )
     }
 
@@ -102,13 +121,13 @@ const StoreHeroPage=({scrollPos})=>{
                 <div className="col-12 col-md-6">
                     <Slide top >
                         <animated.div style={{ transform: scrollPos.to(transfromSlide_N1)}}
-                            className="display-3 text-bold" >
+                            className="display-3 text-bold text-center text-md-start" >
                             Store
                         </animated.div>
                     </Slide>
                     <div className="space-50"></div>
                     <Slide bottom >
-                        <animated.div style={{ transform: scrollPos.to(transfromSlide_S1)}} className="h5 text-bold ">
+                        <animated.div style={{ transform: scrollPos.to(transfromSlide_S1)}} className=" text-bold text-center text-md-start ">
                         We run a line of merchandise with our Comic hero. Check out his store
                         </animated.div>
                     </Slide>
@@ -116,7 +135,7 @@ const StoreHeroPage=({scrollPos})=>{
                 <div className="col-12 col-md-6">
                     <div className="space-50"></div>
                     <animated.div style={{ transform: scrollPos.to(transfromSlide_N1)}}>
-                        <a href="" rel='noreferrer' target='_blank' className='text-decoration-none' >
+                        <a href="https://mydukaan.io/bablah" rel='noreferrer' target='_blank' className='text-decoration-none' >
                             <div className="col-8 col-md-6 offset-3 p-3 bg-now text-white text-bold shadow ">
                                 Visit store&nbsp;{_right_icon}
                             </div>
@@ -131,28 +150,55 @@ const StoreHeroPage=({scrollPos})=>{
                     className="col-12 text-center">
                         <div className="space-100"></div>
                         <RenderImage image={_store_cup}/>
+                        <RenderImage image={_store_cup_2}/>
                         <RenderImage image={_store_shirt_1}/>
                         <RenderImage image={_store_shirt_2}/>
+                        <RenderImage image={_store_shirt_6}/>
+                        <RenderImage image={_store_shirt_7}/>
+                        <RenderImage image={_store_shirt_8}/>
+                        <RenderImage image={_store_shirt_3}/>
+                        <RenderImage image={_store_shirt_4}/>
+                        <RenderImage image={_store_badge}/>
                         <RenderImage image={_store_book}/>
+                        <RenderImage image={_store_book_2}/>
                 </animated.div>
                 </Fade>
+                <animated.div 
+                    style={{transform: scrollPos.to(transfromSlide_N1)}}
+                    className="col-12 text-center">
+                    <div className="space-50"></div>
+                    <div className="h4 text-dark text-bold">
+                       #fanShots from users
+                    </div>
+                    <div className="space-20"></div>
+                    <animated.img 
+                         style={{..._style.img_fan }}
+                        src={_store_fans_collage} alt="" />
+                </animated.div>
                 <div className="col-12">
                     <div className="space-100"></div>
                     <animated.div 
                          style={{ transform: scrollPos.to(transfromSlide_N1)}}
-                        className="h6 text-center text-bold">
-                        Get in touch in case you need any help with launching your Merchandise
+                        className=" text-center text-bold">
+                        We also extend our help to Creators who’d like to launch their own line of Merchandise.
+                        <br />
+                        Get in touch in case you are thinking/planning in those lines.
                         
                     </animated.div>
                     <div className="space-20"></div>
                     <div className='text-center' >
                             <span className='bg-now p-1 shadow'>
-                                < Link to="/contact" className='text-white text-decoration-none text-bold' > 
+                                < Link to="/contact/store" className='text-white text-decoration-none text-bold' > 
                                     Contact us &nbsp; {_right_icon}
                                 </Link>
                             </span>
                         </div>
                     
+                    <div className="space-100"></div>
+                </div>
+                
+                <div className="col-12">
+                    <Footer/>
                     <div className="space-100"></div>
                 </div>
                 <div className="col-12">
@@ -164,10 +210,6 @@ const StoreHeroPage=({scrollPos})=>{
                      >
                         {_coffee_icon}
                     </animated.div>
-                </div>
-                <div className="col-12">
-                    <Footer/>
-                    <div className="space-100"></div>
                 </div>
         </div>
     )

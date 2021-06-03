@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import {useParams} from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
 import Zoom from 'react-reveal/Zoom'
 import { ZenBg } from './DummyBg'
+import { Footer } from './Footer'
+import { ProgressBar } from './ProgressBar'
 
 
 const _send_icon = <svg fill='#1b1d1c' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" /></svg>
@@ -34,8 +37,33 @@ export default function Contact(props) {
     )
 }
 
+const getMessage = (source)=>{
+
+    let message = ''
+
+    switch(source){
+        case 'games':{
+            message =  "Share your game idea"
+            break
+        }
+        case 'labs':{
+            message = 'Share your awesome idea'
+            break
+        }
+        default :{
+            message = 'Your mesaage'
+        }
+    }
+    return message
+}
+
 
 const ContactFormPage = () => {
+
+    const {source} = useParams()
+    console.log("source: ",source)
+
+    
 
     const _style = {
         form_container: {
@@ -120,12 +148,12 @@ const ContactFormPage = () => {
             <div className="col-12 col-md-6">
                 <div className="space-100"></div>
                 <Slide top>
-                    <div className="h3 text-dark text-bold ">
+                    <div className="h3 text-dark text-bold text-center text-md-start ">
                         Drop us a message
                     </div>
                 </Slide>
                 <Slide bottom>
-                    <div className=" text-dark">
+                    <div className=" text-dark text-center text-md-start">
                         & we’d get started soon!
                     </div>
                 </Slide>
@@ -187,7 +215,7 @@ const ContactFormPage = () => {
                             <textarea
                                 rows={2}
                                 name='message'
-                                placeholder="Message"
+                                placeholder={`${getMessage(source)}`}
                                 style={{ ..._style.input_field, height: '50px' }}
                                 value={values.message}
                                 onChange={handleChange('message')}
@@ -198,12 +226,15 @@ const ContactFormPage = () => {
                         <div className="h6 text-now text-center">
                             {values.error && <> {values.error} </>}
                         </div>
+                      
                         <div className="space-20"></div>
                         {values.sending ?
-                            <div className="text-center text-dark text-bold">   
-                                <div class="spinner-border text-dark" role="status">
+                            <>
+                                <div className="h6 text-center text-danger">
+                                    connecting to server...
                                 </div>
-                            </div>
+                                <ProgressBar/>
+                            </>
                             :
                             <div
                                 // onClick={() => sendMail()}
@@ -230,9 +261,12 @@ const ContactFormPage = () => {
             </div>
             <div className="col-12">
                 <div className="space-100"></div>
+                <Footer/>
                 <div className="space-100"></div>
             </div>
 
         </div>
     )
 }
+
+

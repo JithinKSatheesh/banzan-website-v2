@@ -46,7 +46,7 @@ export default function App(props) {
             <Route path="/about" component={About} />
             <Route path="/investors" component={Investors} />
             <Route path="/inmedia" component={Inmedia} />
-            <Route path="/contact" component={Contact} />
+            <Route path="/contact/:source" component={Contact} />
             <Route path="/careers" component={Careers} />
             <Route path="/store" component={Store} />
             <Route path="/" component={Home} />
