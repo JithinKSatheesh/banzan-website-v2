@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/banzan-website-v2/static/css/main.a1ea9685.chunk.css",
-    "main.js": "/banzan-website-v2/static/js/main.bf71f46d.chunk.js",
-    "main.js.map": "/banzan-website-v2/static/js/main.bf71f46d.chunk.js.map",
+    "main.js": "/banzan-website-v2/static/js/main.1fa8e00d.chunk.js",
+    "main.js.map": "/banzan-website-v2/static/js/main.1fa8e00d.chunk.js.map",
     "runtime-main.js": "/banzan-website-v2/static/js/runtime-main.31f21f01.js",
     "runtime-main.js.map": "/banzan-website-v2/static/js/runtime-main.31f21f01.js.map",
     "static/js/2.8500e8d5.chunk.js": "/banzan-website-v2/static/js/2.8500e8d5.chunk.js",
@@ -70,6 +70,6 @@
     "static/js/runtime-main.31f21f01.js",
     "static/js/2.8500e8d5.chunk.js",
     "static/css/main.a1ea9685.chunk.css",
-    "static/js/main.bf71f46d.chunk.js"
+    "static/js/main.1fa8e00d.chunk.js"
   ]
 }
