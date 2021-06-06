@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/banzan-website-v2/static/css/main.c28cced7.chunk.css",
-    "main.js": "/banzan-website-v2/static/js/main.4d496b23.chunk.js",
-    "main.js.map": "/banzan-website-v2/static/js/main.4d496b23.chunk.js.map",
+    "main.css": "/banzan-website-v2/static/css/main.a1ea9685.chunk.css",
+    "main.js": "/banzan-website-v2/static/js/main.f878219d.chunk.js",
+    "main.js.map": "/banzan-website-v2/static/js/main.f878219d.chunk.js.map",
     "runtime-main.js": "/banzan-website-v2/static/js/runtime-main.31f21f01.js",
     "runtime-main.js.map": "/banzan-website-v2/static/js/runtime-main.31f21f01.js.map",
-    "static/js/2.137e9846.chunk.js": "/banzan-website-v2/static/js/2.137e9846.chunk.js",
-    "static/js/2.137e9846.chunk.js.map": "/banzan-website-v2/static/js/2.137e9846.chunk.js.map",
+    "static/js/2.96c69d67.chunk.js": "/banzan-website-v2/static/js/2.96c69d67.chunk.js",
+    "static/js/2.96c69d67.chunk.js.map": "/banzan-website-v2/static/js/2.96c69d67.chunk.js.map",
     "static/js/3.29574a1c.chunk.js": "/banzan-website-v2/static/js/3.29574a1c.chunk.js",
     "static/js/3.29574a1c.chunk.js.map": "/banzan-website-v2/static/js/3.29574a1c.chunk.js.map",
     "index.html": "/banzan-website-v2/index.html",
-    "static/css/main.c28cced7.chunk.css.map": "/banzan-website-v2/static/css/main.c28cced7.chunk.css.map",
-    "static/js/2.137e9846.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.137e9846.chunk.js.LICENSE.txt",
+    "static/css/main.a1ea9685.chunk.css.map": "/banzan-website-v2/static/css/main.a1ea9685.chunk.css.map",
+    "static/js/2.96c69d67.chunk.js.LICENSE.txt": "/banzan-website-v2/static/js/2.96c69d67.chunk.js.LICENSE.txt",
     "static/media/bablah.c72787f4.png": "/banzan-website-v2/static/media/bablah.c72787f4.png",
     "static/media/bablah_ferrari_chase.ec255bdb.png": "/banzan-website-v2/static/media/bablah_ferrari_chase.ec255bdb.png",
     "static/media/bablah_game_app.8069c239.png": "/banzan-website-v2/static/media/bablah_game_app.8069c239.png",
@@ -68,8 +68,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.31f21f01.js",
-    "static/js/2.137e9846.chunk.js",
-    "static/css/main.c28cced7.chunk.css",
-    "static/js/main.4d496b23.chunk.js"
+    "static/js/2.96c69d67.chunk.js",
+    "static/css/main.a1ea9685.chunk.css",
+    "static/js/main.f878219d.chunk.js"
   ]
 }
