@@ -17,7 +17,7 @@ const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`)
 
 export const LabsHeroPage = ({ scrollPos }) => {
 
-    const isMobile = window.innerWidth < 400
+    // const isMobile = window.innerWidth < 400
 
     const mouseXY = (x,y)=>([ (x - window.innerWidth / 2) / 10, -(y - window.innerHeight / 2) / 10 ])
     const changePos = (x,y) => (`translate(${-x}px,${y}px)`)

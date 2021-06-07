@@ -8,9 +8,6 @@ import {useSpring} from 'react-spring'
 
 
 
-
-const theme_mode = 'yellow'
-
 export default function Games(props) {
 
     const gameRef = useRef(null)
@@ -45,7 +42,6 @@ export default function Games(props) {
     const handleScroll = ()=>{
 
         const scrollPos = gameRef.current.scrollTop;
-        console.log("calling",)
         setSpringVal({scrollPos})
 
     }

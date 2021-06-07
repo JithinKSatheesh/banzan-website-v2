@@ -1,7 +1,5 @@
 import React from 'react';
 import { animated } from 'react-spring';
-import Slide from 'react-reveal/Slide';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import _callout_banzan from '../Assets/callout_banzan.png';
 import _callout_bablah from '../Assets/callout_bablah.png';
@@ -70,11 +68,11 @@ export const AboutHeroPage = ({ scrollPos }) => {
                     <div className="space-20"></div>
                 </div>
                 <div className="col-12">
-                    <Slide top>
+                    <Fade delay={500} top>
                         <div className="display-3 text-dark text-bold">
                             ABOUT
                         </div>
-                    </Slide>
+                    </Fade>
                 </div>
                 <div className="space-20"></div>
                 <animated.div

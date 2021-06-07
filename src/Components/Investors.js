@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 import { Footer } from './Footer';
 import { ZenBg } from './DummyBg';
 
@@ -54,13 +54,13 @@ const InverstorHeroPage = ()=>{
                     <div className="space-100"></div>
                 </div>
                 <div className="col-12">
-                    <Slide top delay={500} >
+                    <Fade top delay={500} >
                         <div className="display-2 text-dark text-bold text-center text-md-start">
                             Investors & <br /> Partnerships
                         </div>
-                    </Slide>
+                    </Fade>
                 </div>
-                <Slide bottom delay={500} >
+                <Fade bottom delay={500} >
                     <div 
                         style={{lineHeight:'30px'}}
                         className="col-12 col-md-8 offset-md-3 text-dark text-bold text-center text-md-start">
@@ -77,7 +77,7 @@ const InverstorHeroPage = ()=>{
                         
                         
                     </div>
-                </Slide>
+                </Fade>
                 <div className="col-12">
                     <Footer/>
                 </div>

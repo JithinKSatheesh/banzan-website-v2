@@ -10,7 +10,7 @@ import Zoom from 'react-reveal/Zoom'
 import {animated} from 'react-spring'
 import { Footer } from './Footer';
 
-const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
+// const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
 const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`)
 const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`)
 const transfromSlide_NN2 = (val)=>(`translate(0px,-${val * 0.3}px)`)
@@ -23,22 +23,27 @@ const _ideaList = [
     {
         id: 1,
         topic: 'Bartex',
-        desc: 'Sed ut perspiciatis',
+        desc: ' © 2021',
     },
     {
         id: 2,
         topic: 'Smash',
-        desc: 'Some desc',
+        desc: ' © 2021',
     },
     {
         id: 3,
         topic: 'Dev/Asur',
-        desc: 'Some desc',
+        desc: ' © 2021',
     },
     {
         id: 4,
         topic: 'Runner',
-        desc: 'Some desc',
+        desc: ' © 2021',
+    },
+    {
+        id: 5,
+        topic: 'TriQz',
+        desc: ' © 2021',
     },
 ];
 

@@ -1,18 +1,18 @@
 import React,{useState,useEffect} from 'react';
 import Zoom from 'react-reveal/Zoom';
-import {Link,useLocation} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 import {useSpring,animated} from 'react-spring'
 
  export default function LeftSideMenu() {
      
     let mediaQuery = window.innerWidth
-    let location = useLocation().pathname
+    // let location = useLocation().pathname
     const _slideto = (x)=> `translateX(${x}px)`
 
 
     const [show,setShow] = useState(false)
-    const [yellowTheme,setTheme] = useState(true)
+    // const [yellowTheme,setTheme] = useState(true)
     const [{posX},setSpringVal] = useSpring(()=>({
         posX : -280,
         from:{posX:-280},

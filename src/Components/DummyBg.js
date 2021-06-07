@@ -40,7 +40,6 @@ export const YellowBg = () => {
       height:'100%',
       top:'0',
       left:'0',
-      // backgroundColor:'#f9c847',
       backgroundColor:'#fbe05a',
       zIndex : 10,
     }
@@ -121,7 +120,6 @@ export const ZenBg = () => {
       width: width,
       height:'100%',
       top:'0',
-      // backgroundColor:'#c42f48',
       backgroundColor:'#c42f48',
       zIndex : 1000
     }

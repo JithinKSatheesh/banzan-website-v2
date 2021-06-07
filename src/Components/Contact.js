@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState ,useRef } from 'react'
 import {useParams} from 'react-router-dom'
+import {animated,useSpring} from 'react-spring'
+
 import Fade from 'react-reveal/Fade'
-import Slide from 'react-reveal/Slide'
-import Zoom from 'react-reveal/Zoom'
+
+
 import { ZenBg } from './DummyBg'
 import { Footer } from './Footer'
 import { ProgressBar } from './ProgressBar'
@@ -10,6 +12,7 @@ import { ProgressBar } from './ProgressBar'
 
 const _send_icon = <svg fill='#1b1d1c' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" /></svg>
 const _message_icon = <svg fill='#fbe05a' width="204" height="204" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>
+
 export default function Contact(props) {
 
     const _style = {
@@ -23,14 +26,27 @@ export default function Contact(props) {
         }
     }
 
+    const msgRef = useRef(null)
+
+    const[{scrollPos},setSpringVal] = useSpring(()=>({
+        scrollPos : 0,
+    }))
+
+    const handleScroll = ()=>{
+        const scrollPos = msgRef.current.scrollTop;
+        setSpringVal({scrollPos})
+
+    }
 
     return (
         <>
             <div className="Maincontainer">
                 <ZenBg />
                 <div
+                    ref={msgRef}
+                    onScroll={handleScroll}
                     style={_style._container}>
-                    <ContactFormPage />
+                    <ContactFormPage scrollPos={scrollPos}  />
                 </div>
             </div>
         </>
@@ -58,12 +74,15 @@ const getMessage = (source)=>{
 }
 
 
-const ContactFormPage = () => {
+const ContactFormPage = ({scrollPos}) => {
 
     const {source} = useParams()
     console.log("source: ",source)
 
-    
+    const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
+    const transfromSlide_SS1 = (val)=>(`translate(0px,${val * 0.5}px)`) 
+    const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`) 
+    const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`) 
 
     const _style = {
         form_container: {
@@ -147,18 +166,20 @@ const ContactFormPage = () => {
 
             <div className="col-12 col-md-6">
                 <div className="space-100"></div>
-                <Slide top>
-                    <div className="h3 text-dark text-bold text-center text-md-start ">
+                <Fade top delay={500} >
+                    <animated.div 
+                         style={{transform: scrollPos.to(transfromSlide_N1) }}
+                        className="h3 text-dark text-bold text-center text-md-start ">
                         Drop us a message
-                    </div>
-                </Slide>
-                <Slide bottom>
+                    </animated.div>
+                </Fade>
+                <Fade bottom>
                     <div className=" text-dark text-center text-md-start">
                         & we’d get started soon!
                     </div>
-                </Slide>
+                </Fade>
                 <div className="space-50"></div>
-                <Fade>
+                <Fade >
                     <form onSubmit={sendMail} className="form">
                         <div className="form-group p-3">
                             <input
@@ -253,12 +274,14 @@ const ContactFormPage = () => {
                     </form>
                 </Fade>
             </div>
-            <div className="col-6 d-none d-md-block text-center">
+            <animated.div 
+                style={{transform: scrollPos.to(transfromSlide_NN1) }}
+                className="col-6 d-none d-md-block text-center">
                 <div className="space-100"></div>
                 <div className="space-100"></div>
                 {_message_icon}
 
-            </div>
+            </animated.div>
             <div className="col-12">
                 <div className="space-100"></div>
                 <Footer/>

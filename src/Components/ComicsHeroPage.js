@@ -11,7 +11,7 @@ import Zoom from 'react-reveal/Zoom';
 import _comic_bg from '../Assets/comic_collage.png';
 import _bablah from '../Assets/bablah.png';
 import _pop_stick from '../Assets/pop_stick.png';
-import _bablah_ferrari from '../Assets/bablah_ferrari.png';
+import _bablah_ferrari from '../Assets/bablah_ferrari_chase.png';
 import _icon_bablah from '../Assets/icon_bablah.png';
 import _icon_twitter from '../Assets/icon_twitter.png';
 import _icon_facebook from '../Assets/icon_facebook.png';
@@ -160,14 +160,18 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     <div className="h4 text-dark text-center">
                         The monk who need the Ferrari!
                     </div>
+                    <div className="space-100"></div>
                     <div className="space-50"></div>
+                   
                     <div className="text-center">
                         <animated.img 
                             className='img-fluid'
                             style={{transform: scrollPos.to(transfromSlide_N1)}}
                             src={_bablah_ferrari} alt="" />
                     </div>
+                   
                     <div className="space-100"></div>
+                    <div className="space-50"></div>
                 </div>
                 <div className="col-12">
                     

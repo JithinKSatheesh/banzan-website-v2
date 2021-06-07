@@ -30,7 +30,6 @@ export default function Labs(props) {
     const handleScroll = ()=>{
 
         const scrollPos = labRef.current.scrollTop;
-        console.log("calling",)
         setSpringVal({scrollPos})
 
     }

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
 import {animated} from 'react-spring'
 
 import { Footer } from './Footer';
@@ -38,17 +37,17 @@ export const CareersHeroPage = ({ scrollPos }) => {
                 <div className="col-12">
                     <div className="space-50"></div>
                     <div className="space-20"></div>
-                    <Slide top>
+                    <Fade top delay={500} >
                         <animated.div 
                             style={{transform:scrollPos.to(transfromSlide_NN1)}}
                             className="display-4 text-bold text-dark text-center text-md-start">
                             Careers
                         </animated.div>
-                    </Slide>
+                    </Fade>
                     <div className="space-50"></div>
                 </div>
                 <div className="col-12 p-2">
-                    <Fade>
+                    <Fade delay={500}>
                         <img style={_style.img_style} className="img-fluid" src={_career_img} alt="" />
                     </Fade>
                 </div>

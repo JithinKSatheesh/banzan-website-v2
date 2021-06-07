@@ -31,7 +31,6 @@ export default function About(props) {
 
     const handleScroll = ()=>{
         const scrollPos = aboutRef.current.scrollTop;
-        console.log("calling",)
         setSpringVal({scrollPos})
 
     }

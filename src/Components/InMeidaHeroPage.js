@@ -1,7 +1,7 @@
 import React from 'react';
 import { animated,useSpring } from 'react-spring';
 import Zoom from 'react-reveal/Zoom';
-import Slide from 'react-reveal/Slide';
+
 import Fade from 'react-reveal/Fade';
 
 import _inmedia_insta from '../Assets/inmedia_insta.png';
@@ -71,11 +71,11 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                     <div className="space-100"></div>
                 </div>
                 <div className="col-12">
-                    <Slide top>
-                        <div className="h1 text-bold text-now text-center text-md-start">
+                    <Fade delay={500} top>
+                        <div className="h1 text-bold text-dark text-center text-md-start">
                            In media
                         </div>
-                    </Slide>
+                    </Fade>
                         
                 </div>
                 <animated.div 
@@ -83,19 +83,19 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                     className="col-12 col-md-6">
                     <div className="space-50"></div>
 
-                    <RenderCard>
+                    {/* <RenderCard>
                         <img className='img-fluid' src={_inmedia_insta} alt="" />
                     </RenderCard>
                     <RenderCard>
                         <img className='img-fluid' src={_inmeida_downloads} alt="" />
-                    </RenderCard>
+                    </RenderCard> */}
                     <RenderCard>
                         <a
                             className=' text-decoration-none' target='_blank' rel='noreffer'
                             href="https://socialgrow.info/how-to-write-effective-captions-for-instagram-posts/">
                             <div className="space-20"></div>
                             <div className="text-center h5 text-white">
-                            Bablah featured in socialgrow &nbsp; {_icon_jump}
+                            Bablah featured in Socialgrow &nbsp; {_icon_jump}
                             </div>
                             <div className="space-20"></div>
                         </a>
@@ -106,7 +106,7 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                             href="https://businessperiscope.com/banzan-ventures/">
                             <div className="space-20"></div>
                             <div className="text-center h5 text-white">
-                            Banzan on buisnessperiscope &nbsp; {_icon_jump}
+                            Banzan on Buisnessperiscope &nbsp; {_icon_jump}
                             </div>
                             <div className="space-20"></div>
                         </a>

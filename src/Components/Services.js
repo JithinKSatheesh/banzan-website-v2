@@ -30,7 +30,6 @@ export default function Services(props) {
     const handleScroll = ()=>{
 
         const scrollPos = serviceRef.current.scrollTop;
-        console.log("calling",)
         setSpringVal({scrollPos})
 
     }

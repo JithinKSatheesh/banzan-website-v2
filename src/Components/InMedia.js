@@ -30,7 +30,6 @@ export default function Inmedia(props) {
 
     const handleScroll = ()=>{
         const scrollPos = comicRef.current.scrollTop;
-        console.log("calling",)
         setSpringVal({scrollPos})
 
     }
