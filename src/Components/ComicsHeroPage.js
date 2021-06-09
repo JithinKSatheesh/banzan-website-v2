@@ -158,7 +158,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     <div className="space-100"></div>
                     <div className="space-100"></div>
                     <div className="h4 text-dark text-center">
-                        The monk who need the Ferrari!
+                        The monk who needs the Ferrari!
                     </div>
                     <div className="space-100"></div>
                     <div className="space-50"></div>
@@ -196,7 +196,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                             cursor:'pointer'
                         }}
                         className="text-center  ">
-                        <Link to={'/contact/us'} className=" h3 text-dark text-decoration-none text-bold " >
+                        <Link to={'/contact/comics'} className=" h3 text-dark text-decoration-none text-bold " >
                             For In Comic Promotions 
                             &nbsp;
                             {_rightSwipeIcon}

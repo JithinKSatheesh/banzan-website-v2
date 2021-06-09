@@ -11,7 +11,7 @@ export const SocialIcons = () => {
       marginLeft:'5px',
       height: '150px',
       width: '50px',
-      zIndex: '1500',
+      zIndex: '1500000',
     },
     icon_wrap: {
       width: '50px',

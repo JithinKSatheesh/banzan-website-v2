@@ -206,7 +206,7 @@ const StoreHeroPage=({scrollPos})=>{
                         className="col-12 text-center">
                         <div className="space-50"></div>
                         <div className="h4 text-dark text-bold">
-                        #fanShots from users
+                        #fanShots
                         </div>
                         <div className="space-20"></div>
                         <animated.img 
@@ -226,7 +226,7 @@ const StoreHeroPage=({scrollPos})=>{
                     </animated.div>
                     <div className="space-20"></div>
                     <div className='text-center' >
-                            <span className='bg-now p-1 shadow'>
+                            <span className='bg-now p-2 shadow border-10'>
                                 < Link to="/contact/store" className='text-white text-decoration-none text-bold' > 
                                     Contact us &nbsp; {_right_icon}
                                 </Link>

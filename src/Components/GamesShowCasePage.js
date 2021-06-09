@@ -4,10 +4,10 @@ import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
-import _numzy_page from '../Assets/numzy_game_app.png';
+import _numzy_page from '../Assets/numzy_game_app.jpg';
 import _numzy_icon from '../Assets/numzy_game_icon.png';
 import _bablah_icon from '../Assets/bablah_game_icon.png';
-import _bablah_app from '../Assets/bablah_game_app.png';
+import _bablah_app from '../Assets/bablah_game_icon.png';
 import _tympass_app from '../Assets/tympass_game_app.png';
 import _tympass_icon from '../Assets/tympass_game_icon.png';
 

@@ -59,15 +59,23 @@ const getMessage = (source)=>{
 
     switch(source){
         case 'games':{
-            message =  "Share your game idea"
+            message =  "Your awesome game idea!"
             break
         }
         case 'labs':{
-            message = 'Share your awesome idea'
+            message = "What's your big idea about?"
+            break
+        }
+        case 'store':{
+            message = "A brief about your products"
+            break
+        }
+        case 'comics':{
+            message = "A brief about your need"
             break
         }
         default :{
-            message = 'Your mesaage'
+            message = 'What are you looking for?'
         }
     }
     return message
@@ -204,11 +212,11 @@ const ContactFormPage = ({scrollPos}) => {
                         <div className="form-group p-3">
                             <input
                                 name='phone'
-                                placeholder="Phone no ( e.g. 9878909878 )"
+                                placeholder="Phone no ( e.g. +919878909878 )"
                                 style={_style.input_field}
                                 value={values.phoneNo}
                                 onChange={handleChange('phoneNo')}
-                                pattern="^[0-9]*"
+                                // pattern="^[0-9]*"
                                 required
                                 type="tel" />
                         </div>

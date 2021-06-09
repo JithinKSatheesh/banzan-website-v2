@@ -145,11 +145,11 @@ export const ServicesFormPage = ({ scrollPos }) => {
                     <div className="form-group p-3">
                         <input
                             name='phone'
-                            placeholder="Phone no ( e.g. 9878909878 )"
+                            placeholder="Phone no ( e.g. +919878909878 )"
                             style={_style.input_field}
                             value={values.phoneNo}
                             onChange={handleChange('phoneNo')}
-                            pattern="^[0-9]*"
+                            // pattern="^[+]*[0-9]*"
                             required
                             type="tel" />
                     </div>
@@ -177,7 +177,7 @@ export const ServicesFormPage = ({ scrollPos }) => {
                         <textarea
                             rows={2}
                             name='message'
-                            placeholder="Message"
+                            placeholder="A brief about your need"
                             style={{ ..._style.input_field, height: '50px' }}
                             value={values.message}
                             onChange={handleChange('message')}

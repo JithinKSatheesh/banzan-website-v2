@@ -23,7 +23,7 @@ export const Footer = () => {
                         </a>
                     </span>
                     <span className="p-2">
-                        <a rel="noreferrer" href="https://www.instagram.com/gobablah/" target="_blank">
+                        <a rel="noreferrer" href="https://www.instagram.com/banzanstudios/" target="_blank">
                             {_instgram_icon}
                         </a>
                     </span>

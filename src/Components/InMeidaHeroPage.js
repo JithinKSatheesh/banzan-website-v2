@@ -95,7 +95,7 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                             href="https://socialgrow.info/how-to-write-effective-captions-for-instagram-posts/">
                             <div className="space-20"></div>
                             <div className="text-center h5 text-white">
-                            Bablah featured in Socialgrow &nbsp; {_icon_jump}
+                            Socialgrow &nbsp; {_icon_jump}
                             </div>
                             <div className="space-20"></div>
                         </a>
@@ -106,7 +106,7 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                             href="https://businessperiscope.com/banzan-ventures/">
                             <div className="space-20"></div>
                             <div className="text-center h5 text-white">
-                            Banzan on Buisnessperiscope &nbsp; {_icon_jump}
+                            Buisnessperiscope &nbsp; {_icon_jump}
                             </div>
                             <div className="space-20"></div>
                         </a>
