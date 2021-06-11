@@ -58,7 +58,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             right: 0,
             height: "100%",
             width: "100%",
-            opacity: 0.10,
+            opacity: 0.004,
             backgroundColor: "black",
         },
         comic_overlay_2: {
@@ -69,7 +69,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             right: 0,
             height: "100%",
             width: "50%",
-            opacity: 0.40,
+            opacity: 0.3,
             backgroundColor: "black",
         }
   

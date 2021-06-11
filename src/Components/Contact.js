@@ -63,11 +63,11 @@ const getMessage = (source)=>{
             break
         }
         case 'labs':{
-            message = "What's your big idea about?"
+            message = "What do you want to talk about?"
             break
         }
         case 'store':{
-            message = "A brief about your products"
+            message = "A brief about your product"
             break
         }
         case 'comics':{

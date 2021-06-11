@@ -155,7 +155,7 @@ export const CareerFormPage = () => {
                         <textarea
                             rows={3}
                             name='message'
-                            placeholder="Why us? (We would definitely want ro know why we matter in your life!.)"
+                            placeholder="Why us? (We would definitely want to know why we matter in your life!.)"
                             style={{ ..._style.input_field, height: '100px' }}
                             value={values.message}
                             onChange={handleChange('message')}

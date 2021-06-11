@@ -187,17 +187,17 @@ const StoreHeroPage=({scrollPos})=>{
                         style={{ transform: scrollPos.to(transfromSlide_N1)}}
                         className="text-center">
                             <div className="space-100"></div>
-                            <RenderImage image={_store_cup}/>
-                            <RenderImage image={_store_cup_2}/>
                             <RenderImage image={_store_shirt_1}/>
+                            <RenderImage image={_store_cup}/>
                             <RenderImage image={_store_shirt_2}/>
+                            <RenderImage image={_store_book}/>
                             <RenderImage image={_store_shirt_6}/>
-                            <RenderImage image={_store_shirt_7}/>
+                            <RenderImage image={_store_badge}/>
+                            <RenderImage image={_store_shirt_5}/>
                             <RenderImage image={_store_shirt_8}/>
+                            <RenderImage image={_store_cup_2}/>
                             <RenderImage image={_store_shirt_3}/>
                             <RenderImage image={_store_shirt_4}/>
-                            <RenderImage image={_store_badge}/>
-                            <RenderImage image={_store_book}/>
                             <RenderImage image={_store_book_2}/>
                     </animated.div>
                     </Fade>
