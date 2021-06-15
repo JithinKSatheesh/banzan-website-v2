@@ -17,7 +17,8 @@ export const NavMenu = ({ toggle, NavList }) => {
             await next({ width_: "100%" });
             await next({ opacity_: 1 });
         },
-        config: { mass: 10, tension: 850, friction: 100 },
+        // config: { mass: 10, tension: 850, friction: 100 },
+        config: { mass: 2, tension: 850, friction: 70 },
     }));
 
     const _style = {

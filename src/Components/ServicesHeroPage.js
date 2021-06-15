@@ -203,7 +203,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
 
                         </div>
                         <div className="col-12 col-md-4">
-                            <RenderServiceList icon={_graphic_icon} name={"Grahic & Design"} />
+                            <RenderServiceList icon={_graphic_icon} name={"Graphics & web design"} />
 
                         </div>
                         <div className="col-12 col-md-4">
@@ -224,7 +224,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                             If ‘Customer Engagement’ is your TOP priority,
                             <div className="space-20"></div> 
                         <div className="h3 text-bold">
-                            let’s talk! &nbsp; {_arrow_down}
+                            let’s talk!
                         </div>
                     </animated.div>
                     <div className="space-100"></div>

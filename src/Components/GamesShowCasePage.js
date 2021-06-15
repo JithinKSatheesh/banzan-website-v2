@@ -119,7 +119,7 @@ export const GamesShowCasePage = ({scrollPos}) => {
                 </div>
                 <div className="col-12 text-center text-md-start">
                     <div className="space-50"></div>
-                    <Link to='/contact/games' className="h3 text-dark text-decoration-none text-bold">
+                    <Link to='/contact/games' className="h6 text-dark bg-white border-10 shadow p-2 text-decoration-none text-bold">
                         Share a Game Idea &nbsp; {_rightSwipeIcon}
                     </Link>
                     <div className="space-100"></div>

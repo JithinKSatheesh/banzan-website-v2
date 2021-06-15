@@ -37,36 +37,36 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
         {
             id: 1,
             topic: 'Bartex',
-            desc: ' A Barter Exchange- Exchange ',
-            desc2: 'products/services without Currency',
+            desc: ' A Barter Exchange- Exchange products/services without Currency',
+            desc2: '',
             image: _labs_bartex,
         },
         {
             id: 2,
             topic: 'Smash',
-            desc: 'An Anonymous  ',
-            desc2: 'Social Media platform',
+            desc: 'An Anonymous Social Media platform ',
+            desc2: '',
             image: _labs_smash
         },
         {
             id: 3,
             topic: 'Dev/Asur',
-            desc: 'A Indian mythology ',
-            desc2: ' based Card Game ',
+            desc: 'A Indian mythology based Card Game',
+            desc2: '  ',
             image : _dev_saur
         },
         {
             id: 4,
             topic: 'Runner',
-            desc: 'The Monk is chasing his ',
-            desc2: 'ferrari...come join him!',
+            desc: 'The Monk is chasing his ferrari...come join him! ',
+            desc2: '',
             image: _labs_runner,
         },
         {
             id: 5,
             topic: 'TriQz',
-            desc: 'A Trivia Game twisted with',
-            desc2: ' BaBlah’s wit & factology',
+            desc: 'A Trivia Game twisted with  BaBlah’s wit & factology',
+            desc2: '',
             image:_labs_triqiz,
         },
     ];
@@ -82,72 +82,63 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
             width: '90%',
         },
         labs_ideas_container: {
-            // overflowX:'scroll',
-            // height: '300px'
+            overflowX:'scroll',
+            width:'100%',
+            display:' inline-flex',
+            // flexWrap:'wrap',
+            touchAction: 'auto',
         },
         labs_idea_box: {
-            // height: isMobile ? '300px' : '400px',
-            // width: isMobile ? '280px' : '350px',
             padding: '20px',
             position:'relative',
+            minWidth:'300px',
         },
         lab_idea_inner: {
-            borderRadius: '5px',
-            border: '20px solid white',
-            height: '100%',
-            backgroundColor: '',
+            // border: '20px solid white',
+            // padding:'10px',
+            backgroundColor: 'white',
+            height:'300px'
         },
-        idea_inner_head: {
-            position: 'absolute',
-            top: '100px',
-            width: isMobile?'100px':'150px',
-            height: '50px',
-            transform: 'translate(-30px,-5px)'
-        },
-        idea_inner_desc: {
-            position: 'absolute',
-            top: '250px',
-            width: isMobile?'100px':'250px',
-            height: '30px',
-            transform: 'translate(-20px,-5px)'
-        }
+       
     };
 
     
 
-    // const _leftarrow = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l9-8v6h15v4h-15v6z"/></svg>
-    // const _rightarrow = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-9-8v6h-15v4h15v6z"/></svg>
-    const Leftarrow = () => (
-        <img style={{ width: isMobile ? '50px' : '100px', padding: '10px' }} src={_leftarrow_img} alt="" />
-    );
+    const _leftarrow = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l9-8v6h15v4h-15v6z"/></svg>
+    const _rightarrow = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-9-8v6h-15v4h15v6z"/></svg>
+    
+    // const Leftarrow = () => (
+    //     <img style={{ width: isMobile ? '50px' : '100px', padding: '10px' }} src={_leftarrow_img} alt="" />
+    // );
 
-    const Rightarrow = () => (
-        <img style={{ width: isMobile ? '50px' : '100px', padding: '10px' }} src={_rightarrow_img} alt="" />
-    );
+    // const Rightarrow = () => (
+    //     <img style={{ width: isMobile ? '50px' : '100px', padding: '10px' }} src={_rightarrow_img} alt="" />
+    // );
 
 
     const IdeaCardsList = (list) => (
         list.map(ele => (
            
             <div style={_style.labs_idea_box}>
-                <div className='shadow p-2 text-center' style={_style.lab_idea_inner}>
+                <div className='shadow  p-2 text-center border-10' style={_style.lab_idea_inner}>
+                    <div className="space-10"></div>
                     <div className="text-center">
-                        <img src={ele.image} style={{height:'150px'}} alt="" />
+                        <img src={ele.image} style={{height:'130px'}} alt="" />
                     </div>
                     <div className="space-10"></div>
                     
-                    <div className="h1 text-white " >
-                       <span className="bg-dark p-1">{ele.topic}</span> 
+                    <div className="h1 text-dark " >
+                       <span className=" p-1">{ele.topic}</span> 
                     </div>
-                    <div className="space-10"></div>
+                    {/* <div className="space-10"></div> */}
                     
-                    <p className={`text-dark   ${isMobile?'small':'h6'} `}>
+                    <p className={`text-dark   small `}>
                         <span className=" p-1">{ele.desc}</span>
                     </p>
                     {/* <div className="space-10"></div> */}
-                    <p  className={`text-dark ${isMobile?'small':'h6'} `}>
+                    {/* <p  className={`text-dark ${isMobile?'small':'h6'} `}>
                     <span className=" p-1">{ele.desc2}</span>
-                    </p>
+                    </p> */}
                 </div>
             </div>
            
@@ -163,27 +154,22 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
                 <div className="col-12">
                     <div className="space-20"></div>
                     <div className="space-20"></div>
-                    <animated.div 
-                        style={{transform: scrollPos.to(transfromSlide_N1)}}
-                        className="text-left small text-white">
-                        <span className="bg-dark p-2"> Drag to left or right</span> 
-                    </animated.div>
-                    <div className="space-20"></div>
-
+                    {/* <div className="space-20"></div> */}
                 </div>
-                <Zoom>
-                    <div className="col-12"  style={_style.labs_ideas_container}>
-                        <ScrollMenu
-                            hideSingleArrow={false}
-                            arrowLeft={<Leftarrow />}
-                            arrowRight={<Rightarrow />}
-                            inertiaScrolling={true}
-                            transition={1.5}
-                            wheel={false}
-                            data={ideacardsdata} />
-                            {/* {ideacardsdata} */}
+                    <div className="text-center">
+                        <animated.div 
+                            style={{transform: scrollPos.to(transfromSlide_N1)}}
+                            className="text-left small text-dark text-bold">
+                            <div >  {isMobile? "Swipe": "Scroll"} left/right</div>
+                            {_leftarrow} &nbsp; {_rightarrow}
+                        </animated.div>
                     </div>
-                </Zoom>
+                    <div className="col-12"  style={_style.labs_ideas_container}>
+                      
+                        <Zoom>
+                            {ideacardsdata}
+                        </Zoom>
+                    </div>
                 <div className="space-100"></div>
                 <div className="space-100"></div>
                 <div className="col-12 col-md-6 ">

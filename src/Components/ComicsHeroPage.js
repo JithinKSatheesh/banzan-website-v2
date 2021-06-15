@@ -136,7 +136,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         <animated.div 
                             style={{transform: scrollPos.to(transfromSlide_N1)}}
                             className="h1 text-center text-dark text-bold">
-                            Presenting Bablah!
+                            Presenting BaBlah!
                         </animated.div>
                     </Fade>
                     
