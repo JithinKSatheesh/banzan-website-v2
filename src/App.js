@@ -30,6 +30,7 @@ import Investors from './Components/Investors'
 import ReactGA from 'react-ga';
 const trackingId = "UA-164605185-1";
 ReactGA.initialize(trackingId);
+ReactGA.pageview('/');
 // ================================
 
 export default function App(props) {

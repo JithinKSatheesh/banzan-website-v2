@@ -102,11 +102,11 @@ const StoreHeroPage=({scrollPos})=>{
     };
 
 
-    const RenderImage=({image})=>{
+    const RenderImage=({image,alt})=>{
 
         return(
             <Fade>
-                <img className='bg-white' style={_style.img_style} src={image} alt="" />
+                <img className='bg-white' style={_style.img_style} src={image} alt={alt} />
             </Fade>
         )
     }
@@ -198,18 +198,18 @@ const StoreHeroPage=({scrollPos})=>{
                         style={{ transform: scrollPos.to(transfromSlide_N1)}}
                         className="text-center">
                             <div className="space-100"></div>
-                                <RenderImage image={_store_shirt_1}/>
-                                <RenderImage image={_store_cup}/>
-                                <RenderImage image={_store_shirt_2}/>
-                                <RenderImage image={_store_book}/>
-                                <RenderImage image={_store_shirt_6}/>
-                                <RenderImage image={_store_badge}/>
-                                <RenderImage image={_store_shirt_5}/>
-                                <RenderImage image={_store_shirt_8}/>
-                                <RenderImage image={_store_cup_2}/>
-                                <RenderImage image={_store_shirt_3}/>
-                                <RenderImage image={_store_shirt_4}/>
-                                <RenderImage image={_store_book_2}/>
+                                <RenderImage image={_store_shirt_1} alt={"bablah printed shirt"}/>
+                                <RenderImage image={_store_cup} alt={"bablah printed cup"} />
+                                <RenderImage image={_store_shirt_2} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_book} alt={"bablah printed book"} />
+                                <RenderImage image={_store_shirt_6} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_badge} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_shirt_5} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_shirt_8} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_cup_2} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_shirt_3} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_shirt_4} alt={"bablah printed shirt"} />
+                                <RenderImage image={_store_book_2} alt={"bablah printed book"} />
                     </animated.div>
                     <animated.div 
                         style={{transform: scrollPos.to(transfromSlide_N1)}}
@@ -221,7 +221,7 @@ const StoreHeroPage=({scrollPos})=>{
                         <div className="space-20"></div>
                         <animated.img 
                             style={{..._style.img_fan }}
-                            src={_store_fans_collage} alt="" />
+                            src={_store_fans_collage} alt="bablah shirt user pics" />
                     </animated.div>
                 </div>
                 <div className="col-12">

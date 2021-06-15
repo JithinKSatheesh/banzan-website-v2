@@ -106,7 +106,7 @@ export const InMeidaHeroPage = ({scrollPos}) => {
                             href="https://businessperiscope.com/banzan-ventures/">
                             <div className="space-20"></div>
                             <div className="text-center h5 text-white">
-                            Buisnessperiscope &nbsp; {_icon_jump}
+                            businessperiscope &nbsp; {_icon_jump}
                             </div>
                             <div className="space-20"></div>
                         </a>

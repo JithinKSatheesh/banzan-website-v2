@@ -146,7 +146,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     <div className="space-100"></div>
                     <Fade>
                         <div className='shadow' style={_style.comic_cartoons_container}>
-                            <img style={{ width: '100%', height: isMobile?'100%':'' }} src={_comic_bg} alt="" />
+                            <img style={{ width: '100%', height: isMobile?'100%':'' }} src={_comic_bg} alt="bablah comics" />
                             <div style={_style.comic_overlay}></div>
                             <div style={_style.comic_overlay_2}></div>
                         </div>
@@ -167,7 +167,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         <animated.img 
                             className='img-fluid'
                             style={{transform: scrollPos.to(transfromSlide_N1)}}
-                            src={_bablah_ferrari} alt="" />
+                            src={_bablah_ferrari} alt="bablah chasing ferrari" />
                     </div>
                    
                     <div className="space-100"></div>
