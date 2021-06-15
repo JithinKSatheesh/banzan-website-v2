@@ -203,7 +203,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
 
                         </div>
                         <div className="col-12 col-md-4">
-                            <RenderServiceList icon={_graphic_icon} name={"Graphics & web design"} />
+                            <RenderServiceList icon={_graphic_icon} name={"Graphics & Web design"} />
 
                         </div>
                         <div className="col-12 col-md-4">

@@ -182,7 +182,7 @@ const StoreHeroPage=({scrollPos})=>{
                         </div>
                         <div className="col-8 col-md-5 offset-2 offset-md-0">
                             <animated.div style={{ transform: scrollPos.to(transfromSlide_N1)}}>
-                                <a href="https://jithinksatheesh.github.io/banzan-website-v2/blahstore.pdf" rel='noreferrer'  target='_blank' download className='text-decoration-none'>
+                                <a href="https://www.banzan.co/blahstore.pdf" rel='noreferrer'  target='_blank' download className='text-decoration-none'>
                                     <div className="p-2 bg-now text-now bg-white text-bold text-center shadow border-10 ">
                                         Brochure&nbsp;{_download_icon}
                                     </div> 

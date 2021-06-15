@@ -13,6 +13,7 @@ import About from './Components/About'
 import Contact from './Components/Contact'
 import Inmedia from './Components/InMedia'
 import Careers from './Components/Careers'
+import Policy from './Components/Policy'
 // import Test from './test2-1'
 
 import LeftSideMenu from './Components/LeftSideMenu'
@@ -23,6 +24,13 @@ import Navbar from './Components/Navbar'
 import { YellowBg, WhiteBg } from './Components/DummyBg'
 import { SocialIcons } from './Components/SocialIcons'
 import Investors from './Components/Investors'
+
+// tracking....
+// ================================
+import ReactGA from 'react-ga';
+const trackingId = "UA-164605185-1";
+ReactGA.initialize(trackingId);
+// ================================
 
 export default function App(props) {
   
@@ -49,6 +57,7 @@ export default function App(props) {
             <Route path="/contact/:source" component={Contact} />
             <Route path="/careers" component={Careers} />
             <Route path="/store" component={Store} />
+            <Route path="/content/policy.html" component={Policy} />
             <Route path="/" component={Home} />
           </Switch>
         <SocialIcons/>

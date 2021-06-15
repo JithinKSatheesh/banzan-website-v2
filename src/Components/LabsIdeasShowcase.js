@@ -51,7 +51,7 @@ export const LabsIdeasShowcase = ({scrollPos}) => {
         {
             id: 3,
             topic: 'Dev/Asur',
-            desc: 'A Indian mythology based Card Game',
+            desc: 'An Indian mythology based Card Game',
             desc2: '  ',
             image : _dev_saur
         },
