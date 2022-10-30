@@ -1,5 +1,7 @@
 import React,{useRef} from 'react'
 import {useSpring} from 'react-spring'
+import {Helmet} from "react-helmet";
+
 
 // import _service_img_3 from '../Assets/service_img_3.png'
 import { ServicesFormPage } from './ServicesFormPage';
@@ -39,6 +41,10 @@ export default function Services(props) {
     return (
         <>
          <div className="Maincontainer">
+            <Helmet>
+                <title>Banzan Studios - Services - Game Development | Web design | Graphics design | Storytelling </title>
+                <link rel="canonical" href="https://www.banzan.co/services" />
+            </Helmet>  
             <div 
                 ref={serviceRef}
                 onScroll={handleScroll}

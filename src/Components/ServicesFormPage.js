@@ -70,7 +70,7 @@ export const ServicesFormPage = ({ scrollPos }) => {
         setVaues({ ...values, sending: true })
 
 
-        fetch(`${Base_URL}/mail/contact?${basic_info}&${work_info}&message=${message}&subject=${subject}`)
+        fetch(`${Base_URL}/mail/service?${basic_info}&${work_info}&message=${message}&subject=${subject}`)
             .then(res => {
                 console.log("res", res)
                 if (res.status === 200) {

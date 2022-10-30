@@ -305,7 +305,7 @@ const PolicyPage = ()=>{
                             personal information from people under the age of 13. We will take immediate steps to delete such
                             Account Information as soon as it is detected.
                             <br/><br/>
-                            <div className="h5 font-weight-bold">Your Rights</div>
+                            {/* <div className="h5 font-weight-bold">Your Rights</div>
                         
                             You have the unrestricted right to withdraw consent, that you have previously provided, to our
                             processing of your data at any time. Withdrawing your consent means that we will stop processing the
@@ -313,6 +313,40 @@ const PolicyPage = ()=>{
                             your consent. However, in some cases, we may continue to use the data where so permitted by having a
                             legitimate reason for doing so.
                             <br/><br/>
+                            <div className="h5 font-weight-bold">Your Rights</div>
+                            Request user data deletion
+                            <br />
+                            When you install and use Banzan Studios mobile applications, we can collect and process some of your data for different legitimate purposes.
+                            You will find below explanations regarding the reasons why we may collect data.
+                            <br /><br />
+                            Why is data collected?
+                            <br />
+                            Banzan Studios and its third-party partners collect data: 
+                            <br />
+                            <ul>
+                                <li>
+                                To provide you with the services you asked for
+                                </li>
+                                <li>
+                                To run analytics and understand how users interact with our product and services to improve them continuously
+                                </li>
+                            </ul>
+
+                            <br/><br/>
+                            The third-party partners that Banzan Studios will share the data with are: 
+                            <br/><br/>
+                            <ul>
+                                <li>GameAnalytics</li>
+                                <li>Facebook Analytics</li>
+                                <li>Adjust</li>
+                                <li>Voodoo</li>
+                            </ul>
+                            Data deletion requests
+                            To delete user data collected by Banzan Studios, please reach out to banzanven@gmail.com.
+                            If you also want to request the deletion of the data that may have been collected about you or your device by our third-party partners that are acting as independent data controllers, you will find below the contact for each partner and the link to the relevant section of their privacy policies:
+
+
+                            <br /><br /> */}
                             <div className="h5 font-weight-bold">Contact Us</div>
                             If you have comments or questions about this Privacy Policy and our privacy practices, you may
                             contact us at <a className='text-now' href="mailto:info@banzan.co">info@banzan.co</a> 

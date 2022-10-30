@@ -4,6 +4,9 @@ import Fade from 'react-reveal/Fade';
 import { Footer } from './Footer';
 import { ZenBg } from './DummyBg';
 
+import {Helmet} from "react-helmet";
+
+
 
 export default function Investors(props) {
 
@@ -23,6 +26,10 @@ export default function Investors(props) {
     return (
         <>
         <div className="Maincontainer">
+            <Helmet>
+                <title>Banzan Studios - Investors   </title>
+                <link rel="canonical" href="https://www.banzan.co/investors" />
+            </Helmet>  
             <ZenBg/>
             <div 
                 style={_style.investors_container}>

@@ -9,6 +9,9 @@ import { ZenBg } from './DummyBg'
 import { Footer } from './Footer'
 import { ProgressBar } from './ProgressBar'
 
+import {Helmet} from "react-helmet";
+
+
 
 const _send_icon = <svg fill='#1b1d1c' width="20" height="20" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z" /></svg>
 const _message_icon = <svg fill='#fbe05a' width="204" height="204" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" /></svg>
@@ -41,6 +44,10 @@ export default function Contact(props) {
     return (
         <>
             <div className="Maincontainer">
+                <Helmet>
+                    <title>Banzan Studios - Contact - India | Kerala | Kochi   </title>
+                    <link rel="canonical" href="https://www.banzan.co/contact" />
+                </Helmet>  
                 <ZenBg />
                 <div
                     ref={msgRef}
@@ -188,8 +195,8 @@ const ContactFormPage = ({scrollPos}) => {
                 </Fade>
                 <div className="space-50"></div>
                 <Fade >
-                    <form onSubmit={sendMail} className="form">
-                        <div className="form-group p-3">
+                    <form onSubmit={sendMail} className="form text-slate-400">
+                        <div className="form-group p-3 text-black">
                             <input
                                 name='name'
                                 placeholder="Your name"
@@ -197,6 +204,7 @@ const ContactFormPage = ({scrollPos}) => {
                                 value={values.name}
                                 onChange={handleChange('name')}
                                 required
+                                className='placeholder:text-slate-400'
                                 type="text" />
                         </div>
                         <div className="form-group p-3">
@@ -268,9 +276,9 @@ const ContactFormPage = ({scrollPos}) => {
                             <div
                                 // onClick={() => sendMail()}
                                 style={{ cursor: 'pointer' }}
-                                className="h4  text-dark text-center text-bold">
+                                className="  text-dark text-center text-bold">
                                 <button
-                                    className='btn btn-warning shadow'
+                                    className='p-3 rounded-2xl justify-center items-center shadow flex w-fit'
                                     role='button' type='submit' >
 
                                     SEND

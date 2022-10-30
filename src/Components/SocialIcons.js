@@ -64,7 +64,7 @@ export const SocialIcons = () => {
           </a>
         </div>
         <div className="mb-3 m-1">
-          <a rel="noreferrer" href="https://www.instagram.com/gobablah/" target="_blank">
+          <a rel="noreferrer" href="https://www.instagram.com/banzanstudios/" target="_blank">
             {_instgram_icon}
           </a>
         </div>

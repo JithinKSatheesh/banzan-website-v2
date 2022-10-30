@@ -9,9 +9,9 @@ export const Footer = () => {
     return (
         <div className="row">
 
-            <div className="col-12">
-                <div className="space-100"></div>
-                <div className="text-center">
+                <div className="pt-[24px]"></div>
+            <div className="w-full ">
+                <div className="text-center flex justify-center">
                     <span className="p-2" >
                         <a rel="noreferrer" href="https://www.facebook.com/BanzanStudios/" target="_blank">
                             {_facebook_icon}
@@ -28,7 +28,7 @@ export const Footer = () => {
                         </a>
                     </span>
                 </div>
-                <div className="space-50"></div>
+                <div className="pt-[24px]"></div>
                 <div className="text-center text-dark">
                     Banzan Studios © 2021
                 </div>

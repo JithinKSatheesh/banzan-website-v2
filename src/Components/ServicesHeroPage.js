@@ -74,9 +74,9 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                         <div className="row">
                             <div className="space-20"></div>
                             <div className="col-12 text-center">
-                                <img src={icon} alt="" /> 
+                                <img src={icon} alt="service icon" /> 
                             </div>
-                            <div  className="col-12  text-center text-dark">
+                            <div itemprop="services"  className="col-12  text-center text-dark">
                                 &nbsp; {name}
                             </div>
                         </div>
@@ -94,25 +94,26 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                     <div className="space-50"></div>
                     <div className="space-20"></div>
                 </div>
-                <div className="col-12 col-md-6 text-center text-md-start">
+                <div temscope itemtype="https://www.banzan.co/services" className="col-12 col-md-6 text-center text-md-start">
                     <Slide top >
-                        <animated.div 
+                        <animated.h1 
                             style={{transform:scrollPos.to(transfromSlide_N1)}}
                             className="display-4 text-bold text-dark">
                             Banzan’s&nbsp;<br />Brand&nbsp;Boutique
-                        </animated.div>
+                        </animated.h1>
                     </Slide>
 
                     <div className="space-20"></div>
                     <Slide bottom >
-                        <animated.div 
+                        <animated.h2 
+                            itemprop="services description"
                             style={{ 
                                 lineHeight: '30px',
                                 transform:scrollPos.to(transfromSlide_S1)
                                  }} 
-                                 className="text-dark text-bold">
+                                 className="text-dark text-bold h6 line-25">
                             We extend our skills & expertise in the niche areas of Content, Creatives, Communication, Development & Consultancy
-                        </animated.div>
+                        </animated.h2>
                     </Slide>
                     <div className="space-20"></div>
                 </div>
@@ -190,7 +191,7 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                     <div className="space-100"></div>
                 </div>
                 <div className="col-8 offset-2  text-white">
-                    <div className="row">
+                    <div temscope itemtype="https://www.banzan.co/services" className="row">
                         <div className="col-12 col-md-4">
                             <RenderServiceList icon={_games_log} name={"Mobile Games"} />
                         </div>

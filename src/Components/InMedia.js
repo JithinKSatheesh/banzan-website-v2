@@ -3,6 +3,7 @@ import {useSpring} from 'react-spring'
 import { ZenBg } from './DummyBg';
 
 import { InMeidaHeroPage } from './InMeidaHeroPage';
+import {Helmet} from "react-helmet";
 
 
 
@@ -39,6 +40,10 @@ export default function Inmedia(props) {
     return (
         <>
         <div className="Maincontainer">
+            <Helmet>
+                <title>Banzan Studios - In media   </title>
+                <link rel="canonical" href="https://www.banzan.co/inmedia" />
+            </Helmet>  
             <ZenBg/>
             <div 
                 onScroll={handleScroll}
