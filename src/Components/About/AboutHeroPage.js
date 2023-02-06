@@ -98,8 +98,8 @@ export const AboutHeroPage = ({ scrollPos }) => {
 
                 </div>
                 <div className="pt-[24px]">
-                    <div className="flex flex-col items-center text-white justify-center  border-[12px] border-[#f8d249] shadow rounded-2xl  h-[300px] w-full text-[24px] font-bold bg-[#c52f48]">
-                        <div> Team photo </div>
+                    <div className="flex flex-col items-center text-white justify-center  border-[12px] border-[#f8d249] shadow rounded-2xl  w-full text-[24px] font-bold bg-[#c52f48]">
+                        <img src={"/assets/team/team.png"} alt="Banzan core team" className='w-full pt-[24px]' />
                     </div>
                 </div>
                 <div className="w-full pt-[50px]">
@@ -120,6 +120,11 @@ export const AboutHeroPage = ({ scrollPos }) => {
                             invert={true} />
                     </animated.div>
 
+                </div>
+                <div className="pt-[24px]">
+                    <div className="flex flex-col items-center text-white justify-center  border-[12px] border-[#f8d249] shadow rounded-2xl  w-full text-[24px] font-bold bg-[#c52f48]">
+                        <img src={"/assets/bablah/about.png"} alt="Banzan core team" className='w-full' />
+                    </div>
                 </div>
                 <div className="space-20"></div>
                 <div style={{ width: '100%', height: '10px', backgroundColor: '#c42f48' }}></div>

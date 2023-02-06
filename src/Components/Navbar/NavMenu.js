@@ -64,7 +64,7 @@ export const NavMenu = ({ toggle, NavList }) => {
         <div style={_style.Menu_container}>
             <animated.div style={_style.animation_container}>
                 <div className="space-20"></div>
-                <div className="text-center">
+                <div className="text-center w-fit mx-auto">
                     <Slide top>
                         <div
                             onClick={() => toggle(false)}

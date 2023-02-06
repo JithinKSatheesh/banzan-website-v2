@@ -100,7 +100,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         <animated.h1
                             style={{ transform: scrollPos.to(transfromSlide_NN1) }}
                             className="display-3 text-bold text-dark text-center">
-                            BaBlah
+                            <img src="assets/bablah/BablahLogo.png" alt="BaBlah logo" className='w-[200px] mx-auto' />
                         </animated.h1>
                     </Slide>
                     <div className="space-20"></div>
@@ -111,7 +111,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                             We met BaBlah in a chance digital encounter and soon realized that we both need to work together, create together & win together. Rest, as they say, is HISTORY in the making!
                         </animated.h2>
                     </Slide>
-                    <Slide bottom >
+                    {/* <Slide bottom >
                         <animated.h2 
                             style={{ transform: scrollPos.to(transfromSlide_N1) }}
                             className=" text-[16px] text-[#c52f48] line-25 text-bold text-center pt-[50px]">
@@ -126,22 +126,18 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                           BaBlah is also India’s FIRST TRANSMEDIA, built ground up.
 
                         </animated.h2>
-                    </Slide>
+                    </Slide> */}
                     <div className="space-50"></div>
                 </div>
-
-                
 
                 <div className="col-12">
                     {/* <div className="space-100"></div> */}
                     <Fade>
-                        <div className="w-full rounded-xl border-[12px] border-[#c52f48]  bg-[#c52f48] flex-col flex">
-                            <img src={"assets/games/lumberjack1.png"} alt="" className='blur-lg'/>
+                        <div className="w-full max-w-[350px] rounded-xl mx-auto border-[12px] border-[#c52f48]  bg-[#c52f48] flex-col flex">
+                            <img src={"/assets/bablah/parttime.jpg"} alt="" className='mx-auto'/>
                         </div>
                     </Fade>
                 </div>
-                
-                    
                 
            
                 <div className="col-12 pt-[50px]">

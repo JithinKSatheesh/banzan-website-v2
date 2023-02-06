@@ -9,37 +9,39 @@ import _logo2 from 'Assets/logo2.png'
 import { NavMenu } from './NavMenu';
 
 const _NavData = [
- 
-    {
-        id:'1',
-        name:'COMICS',
-        to:'/comics'
-    },
-    {
-        id:'2',
-        name:'GAMES',
-        to:'/games'
-    },
-    // {
-    //     id:'3',
-    //     name:'SERVICES',
-    //     to:'/services'
-    // },
     {
         id:'6',
         name:'BABLAH',
         to:'/bablah'
     },
     {
-        id:'4',
-        name:'PARTNERS',
-        to:'/partners'
+        id:'2',
+        name:'GAMES',
+        to:'/games'
     },
+    {
+        id:'1',
+        name:'COMICS',
+        to:'/comics'
+    },
+    
+    // {
+    //     id:'3',
+    //     name:'SERVICES',
+    //     to:'/services'
+    // },
     {
         id:'5',
         name:'LABS',
         to:'/labs'
     },
+   
+    {
+        id:'4',
+        name:'PARTNERS',
+        to:'/partners'
+    },
+    
 ]
 
 const _NavData_bottom = [

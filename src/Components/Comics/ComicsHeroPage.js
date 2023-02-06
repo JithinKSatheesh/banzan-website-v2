@@ -18,6 +18,7 @@ import _icon_facebook from 'Assets/icon_facebook.png';
 import _icon_instgram from 'Assets/icon_instgram.png';
 import _icon_webtoons from 'Assets/icon_webtoons.png';
 import _icon_strippy from 'Assets/icon_strippy.png';
+import _icon_youtube from 'Assets/icon_youtube.png';
 import { Footer } from 'Components/Footer';
 
 const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
@@ -181,10 +182,11 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         {/* <div className="space-20"></div> */}
                         Check out his WebComics
                         {/* <div className="space-20"></div> */}
-                        <div className="flex justify-center pt-[50px]">
+                        <div className="flex justify-center items-center pt-[50px]">
                         <RenderSocialLink image_url={_icon_twitter} link="https://twitter.com/BaBlahComics" />
                         <RenderSocialLink image_url={_icon_facebook} link="https://www.facebook.com/gobablah" />
                         <RenderSocialLink image_url={_icon_instgram} link="https://www.instagram.com/gobablah/" />
+                        <RenderSocialLink image_url={_icon_youtube} link="https://www.youtube.com/channel/UC-spq1K0Qm3MZoKq9q9hMzQ/featured" />
                         <RenderSocialLink image_url={_icon_webtoons} link="https://www.webtoons.com/en/challenge/funshots-by-bablah/list?title_no=640899" />
                         <RenderSocialLink image_url={_icon_strippy} link="https://strippy.app/web/profile/BaBlah" />
                         </div>

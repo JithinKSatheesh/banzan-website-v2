@@ -58,7 +58,7 @@ export const GameHeroPage = ({scrollPos}) => {
                                 style={{transform: scrollPos.to(transfromSlide_S1) }}
                                 className="text-[16px] leading-[32px] text-dark text-bold text-md-start  text-center">
                                 We build Games that are <br />
-                                Sometimes<span className='text-[#c52f48]'>Addictive</span> <br />
+                                Sometimes <span className='text-[#c52f48]'> Addictive</span> <br />
                                 Sometimes <span className='text-[#c52f48]'>Productive</span><br />
                                 Sometimes <span className='text-[#c52f48]'>Educational</span> <br />
                                 But…<br />

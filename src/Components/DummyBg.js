@@ -22,7 +22,7 @@ export const YellowBg = () => {
       setSpringVal({width : '45%'})
     }
     else if(location.pathname === '/partners'){
-      setSpringVal({width : '60%'})
+      setSpringVal({width : '10%'})
     }
     else{
       setSpringVal({width : '50%'})
@@ -65,7 +65,7 @@ export const WhiteBg = () => {
   useEffect(()=>{
 
     if(location.pathname === '/partners'){
-      setSpringVal({width : '35%'})
+      setSpringVal({width : '5%'})
     }
     else{
      

@@ -242,7 +242,7 @@ export const HomeHeroScreen = ({ scrollPos }) => {
 
                 </div>
             </Fade>
-            <div className="relative">
+            {/* <div className="relative">
 
                 <div className="absolute w-full    z-40 top-[10px] ">
                     <div className="max-w-[90%] mx-auto flex justify-center overflow-hidden">
@@ -260,7 +260,7 @@ export const HomeHeroScreen = ({ scrollPos }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
         </div>
     );
