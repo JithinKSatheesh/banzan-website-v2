@@ -60,7 +60,7 @@ export default function RightSideText() {
         <animated.div 
             className="d-none d-md-flex text-bold"
             style={_style.pop_menu_container}>
-                Banzan Studios © 2022
+                Banzan Studios © 2023
         </animated.div>
     );
 };

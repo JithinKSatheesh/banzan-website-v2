@@ -133,8 +133,13 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                 <div className="col-12">
                     {/* <div className="space-100"></div> */}
                     <Fade>
-                        <div className="w-full max-w-[350px] rounded-xl mx-auto border-[12px] border-[#c52f48]  bg-[#c52f48] flex-col flex">
+                        {/* <div className="w-full max-w-[350px] rounded-xl mx-auto border-[12px] border-[#c52f48]  bg-[#c52f48] flex-col flex">
                             <img src={"/assets/bablah/parttime.jpg"} alt="" className='mx-auto'/>
+                        </div> */}
+                        <div className="pt-[0px] px-[10px]">
+                            <div className="container-video bg-black">
+                                <iframe src="https://drive.google.com/file/d/15vxi5txopm8TNzWJG4ycB1BP-H7BdIMU/preview" sandbox="allow-same-origin allow-scripts" className='responsive-iframe' allow="autoplay"></iframe>
+                            </div>
                         </div>
                     </Fade>
                 </div>

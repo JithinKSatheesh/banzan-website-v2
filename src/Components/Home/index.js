@@ -10,6 +10,7 @@ import _home_piller_1 from 'Assets/home_piller_1.png'
 import _home_sky from 'Assets/home_sky.svg'
 // import _home_ground from '../Assets/home_ground.svg'
 import { HomeHeroScreen } from './HomeHeroScreen';
+import Promo from './Promo';
 // import _home_piller_1 from '../Assets/home_piller.svg'
 
 
@@ -45,12 +46,12 @@ export default function Home(props) {
                 Creators of BaBlah Comic Strips and other IP Content. 
                 Original Indian Character based Comics, Games and Quirky Merchandise.
             </h3>
-            <HomeHeroScreen scrollPos={scrollPos} />
-           
+            {/* <HomeHeroScreen scrollPos={scrollPos} /> */}
+           <Promo />
             {/* ============= */}
+            {/* <ScrollBox/>
             <ScrollBox/>
-            <ScrollBox/>
-            <ScrollBox/>
+            <ScrollBox/> */}
         </div>             
         </>
     )

@@ -30,7 +30,10 @@ export const Footer = () => {
                 </div>
                 <div className="pt-[24px]"></div>
                 <div className="text-center text-dark">
-                    Banzan Studios © 2022
+                    Banzan Studios © 2023
+                </div>
+                <div className="w-fit mx-auto pt-[10px]">
+                    Made with ❤️ in 🇮🇳
                 </div>
                 <div className="space-100"></div>
             </div>

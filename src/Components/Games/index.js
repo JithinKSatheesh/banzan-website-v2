@@ -8,6 +8,7 @@ import {useSpring} from 'react-spring'
 import {Helmet} from "react-helmet";
 
 import Popup from 'Components/Popup';
+import { Footer } from 'Components/Footer';
  
 
 export default function Games(props) {
@@ -73,6 +74,7 @@ export default function Games(props) {
                 <GameHeroPage scrollPos={scrollPos}  />
                 <GameShowCase selectGame={selectGame} />
                 {/* <GamesShowCasePage scrollPos={scrollPos} /> */}
+            <Footer />
             </div>
             <Popup item={selectedGame} onClose={unselectGame} />
             {/* ======== */}

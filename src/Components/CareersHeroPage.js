@@ -52,7 +52,7 @@ export const CareersHeroPage = ({ scrollPos }) => {
                         link='https://internshala.com/internship/detail/illustration-comic-art-work-from-home-job-internship-at-banzan-ventures1626613639'
                         />
                 </div> */}
-                <div className="col-12 col-md-6 p-2">
+                {/* <div className="col-12 col-md-6 p-2">
                     <CardApply 
                         text='Unity 3d Developer - Full time'
                         link='https://www.linkedin.com/jobs/view/2721146823/'
@@ -60,7 +60,7 @@ export const CareersHeroPage = ({ scrollPos }) => {
                 </div>
                 <div className="col-12 col-md-6 p-2">
                     
-                </div>
+                </div> */}
                 
                 <div className="col-12">
                     <div className="space-50"></div>
@@ -83,11 +83,11 @@ export const CareersHeroPage = ({ scrollPos }) => {
                         <div className="space-50"></div>
                     </animated.div>
                 </div>
-                <animated.div 
+                {/* <animated.div 
                     style={{transform:scrollPos.to(transfromSlide_S1)}}
                     className="col-12 col-md-6">
                         <CareerFormPage />
-                </animated.div>
+                </animated.div> */}
                 <animated.div 
                     style={{transform:scrollPos.to(transfromSlide_N1)}}
                     className="offset-6 col-md-6 text-center">

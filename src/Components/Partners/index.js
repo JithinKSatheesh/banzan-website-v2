@@ -165,6 +165,11 @@ const StoreHeroPage = ({ scrollPos }) => {
                     </div>
                     <div className=" pt-[24px] ">
                         <div className="border-[12px] border-white h-[150px] w-full rounded-xl bg-white shadow  flex flex-col justify-center">
+                            <img src="assets/partners/stpi.JPG" className=' max-h-[100px] mx-auto ' />
+                        </div>
+                    </div>
+                    <div className=" pt-[24px] ">
+                        <div className="border-[12px] border-white h-[150px] w-full rounded-xl bg-white shadow  flex flex-col justify-center">
                             <img src="assets/partners/image.png" className=' max-h-[100px] mx-auto ' />
                         </div>
                     </div>
