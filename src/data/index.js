@@ -3,7 +3,7 @@ export const data = {
         {
             id :1,
             name : "BaBlah: Jungle Hop",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://junglehop-f7abc.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             playstoreURL : "https://play.google.com/store/apps/details?id=com.banzan.JungleHop",
             coverImage : 'assets/games/jungleHop1.jpg',
@@ -13,7 +13,7 @@ export const data = {
         {
             id : 2,
             name : "BaBlah: Lumber jack",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://lumberjack-banzan.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             coverImage : 'assets/games/lumberjack1.png',
             iconImage : "",
@@ -21,7 +21,7 @@ export const data = {
         {
             id : 3,
             name : "BaBlah: Pie attack",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://banzan-pie-attack.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             coverImage : 'assets/games/pieattack1.png',
             iconImage : "",
@@ -29,7 +29,7 @@ export const data = {
         {
             id : 4,
             name : "BaBlah: Ski slider",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://banzan-ski-game.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             coverImage : 'assets/games/ski1.png',
             iconImage : "",
@@ -37,7 +37,7 @@ export const data = {
         {
             id :5,
             name : "BaBlah: Cat Escape",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://bablah-catescape.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             playstoreURL : 'https://play.google.com/store/apps/details?id=games.banzan.catescape',
             
@@ -48,7 +48,7 @@ export const data = {
         {
             id : 6,
             name : "BaBlah: Space Escape",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : ' https://banzan-space-escape.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             coverImage : 'assets/games/space1.png',
             iconImage : "",
@@ -59,7 +59,7 @@ export const data = {
         {
             id : 4,
             name : "Numzy",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://banzan-numzy.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             playstoreURL : 'https://play.google.com/store/apps/details?id=games.banzan.numzy',
             coverImage : 'assets/games/numzy1.png',
@@ -68,7 +68,7 @@ export const data = {
         {
             id : 3,
             name : "Firefly",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://banzan-firefly.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             coverImage : 'assets/games/firefly1.png',
             iconImage : "",
@@ -76,7 +76,7 @@ export const data = {
         {
             id :4,
             name : "Worm wars",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : ' https://bablah-wormwars.web.app?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             playstoreURL : "https://play.google.com/store/apps/details?id=com.BanzanVentures.WormWars",
             
@@ -87,7 +87,7 @@ export const data = {
         {
             id : 4,
             name : "Squishy cube",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             // webURL : 'https://banzan-ski-game.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             playstoreURL : "https://play.google.com/store/apps/details?id=com.BanzanStudios.Squishy",
             coverImage : 'assets/games/squishy1.png',
@@ -101,7 +101,7 @@ export const data = {
         {
             id :2,
             name : "BaBlah: Cat Escape",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : 'https://bablah-catescape.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             playstoreURL : 'https://play.google.com/store/apps/details?id=games.banzan.catescape',
             coverImage : 'assets/games/cat1.png',
@@ -111,7 +111,7 @@ export const data = {
         {
             id : 3,
             name : "BaBlah: Space Escape",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             webURL : ' https://banzan-space-escape.web.app/?userid=$USER_ID&apikey=$API_KEY&impId=$IMP_ID&glanceId=$GLANCE_ID&gpid=$GPID',
             coverImage : 'assets/games/space1.png',
             iconImage : "",
@@ -119,7 +119,7 @@ export const data = {
         {
             id : 4,
             name : "RoKat!",
-            description : 'description',
+            description : 'Game is designed for mobile version only',
             // webURL : ' https://banzan-space-escape.web.app',
             // coverImage : 'assets/games/space1.png',
             iconImage : "",

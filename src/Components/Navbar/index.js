@@ -41,6 +41,11 @@ const _NavData = [
         name:'PARTNERS',
         to:'/partners'
     },
+    {
+        id:'5',
+        name:'ABOUT',
+        to:'/about'
+    },
     
 ]
 
@@ -55,11 +60,11 @@ const _NavData_bottom = [
     //     name:'IN MEDIA',
     //     to:'/inmedia'
     // },
-    {
-        id:'12',
-        name:'ABOUT',
-        to:'/about'
-    },
+    // {
+    //     id:'12',
+    //     name:'ABOUT',
+    //     to:'/about'
+    // },
     {
         id:'13',
         name:'CAREERS',
