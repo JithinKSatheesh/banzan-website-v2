@@ -225,7 +225,7 @@ const ContactFormPage = ({scrollPos}) => {
                                 value={values.phoneNo}
                                 onChange={handleChange('phoneNo')}
                                 // pattern="^[0-9]*"
-                                required
+                                
                                 type="tel" />
                         </div>
                         <div className="form-group p-3">
@@ -244,7 +244,7 @@ const ContactFormPage = ({scrollPos}) => {
                                 style={_style.input_field}
                                 value={values.company}
                                 onChange={handleChange('company')}
-                                required
+                                
                                 type="text" />
                         </div>
 

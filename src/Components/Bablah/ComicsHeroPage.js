@@ -108,7 +108,17 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         <animated.h2 
                             style={{ transform: scrollPos.to(transfromSlide_N1) }}
                             className="text-dark h6 line-25 text-bold text-center">
-                            We met BaBlah in a chance digital encounter and soon realized that we both need to work together, create together & win together. Rest, as they say, is HISTORY in the making!
+                            We met BaBlah in a chance  encounter and soon realised that we can work together, create together & win together. 
+                            BaBlah is India’s first Transmedia character, and World’s First Virtual Actor.
+
+                        </animated.h2>
+                        <animated.h2 
+                            style={{ transform: scrollPos.to(transfromSlide_N1) }}
+                            className="text-dark text-[14px] italic line-25 text-bold text-center mt-[20px]">
+                           * In his REAL VIRTUAL life, <span className='text-red-500'>BaBlah</span>  is a Part time monk with a crazy aspiration to become an Actor and get that 
+                           <span className='text-red-500'> “Ferrari” </span>   that was sold by the other Monk!
+
+
                         </animated.h2>
                     </Slide>
                     {/* <Slide bottom >

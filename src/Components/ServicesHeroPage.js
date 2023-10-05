@@ -7,27 +7,30 @@ import _service_img_phone from '../Assets/service_img_phone.png';
 import _service_img_palette from '../Assets/service_img_palette.png';
 import _service_img_speaker from '../Assets/service_img_speaker.png';
 
-import _games_log  from '../Assets/service_ico_game.png'
-import _mobile_logo  from '../Assets/service_ico_app.png'
-import _pen_logo  from '../Assets/service_ico_mascot.png'
-import _graphic_icon  from '../Assets/service_ico_design.png'
-import _gamification_icon  from '../Assets/service_ico_puzzle.png'
-import _storytelling_icon  from '../Assets/service_ico_story.png'
+import _games_log from '../Assets/service_ico_game.png'
+import _mobile_logo from '../Assets/service_ico_app.png'
+import _pen_logo from '../Assets/service_ico_mascot.png'
+import _graphic_icon from '../Assets/service_ico_design.png'
+import _gamification_icon from '../Assets/service_ico_puzzle.png'
+import _storytelling_icon from '../Assets/service_ico_story.png'
+
+import { Footer } from './Footer';
+
 
 
 
 import Slide from 'react-reveal/Slide'
 import Fade from 'react-reveal/Fade'
-import {animated} from 'react-spring'
+import { animated } from 'react-spring'
 
-const transfromSlide_S1 = (val)=>(`translate(0px,${val * 0.1}px)`) 
-const transfromSlide_N1 = (val)=>(`translate(0px,-${val * 0.1}px)`)
-const transfromSlide_SS1 = (val)=>(`translate(0px,${val * 0.5}px)`) 
-const transfromSlide_NN1 = (val)=>(`translate(0px,-${val * 0.5}px)`)
+const transfromSlide_S1 = (val) => (`translate(0px,${val * 0.1}px)`)
+const transfromSlide_N1 = (val) => (`translate(0px,-${val * 0.1}px)`)
+const transfromSlide_SS1 = (val) => (`translate(0px,${val * 0.5}px)`)
+const transfromSlide_NN1 = (val) => (`translate(0px,-${val * 0.5}px)`)
 
 
-const _round_icon_down = <svg fill='#1b1d1c' width="34" height="34" viewBox="0 0 24 24"><path d="M17 10.645v-2.29c-1.17-.417-1.907-.533-2.28-1.431-.373-.9.07-1.512.6-2.625l-1.618-1.619c-1.105.525-1.723.974-2.626.6-.9-.373-1.017-1.116-1.431-2.28h-2.29c-.412 1.158-.53 1.907-1.431 2.28h-.001c-.9.374-1.51-.07-2.625-.6l-1.617 1.619c.527 1.11.973 1.724.6 2.625-.375.901-1.123 1.019-2.281 1.431v2.289c1.155.412 1.907.531 2.28 1.431.376.908-.081 1.534-.6 2.625l1.618 1.619c1.107-.525 1.724-.974 2.625-.6h.001c.9.373 1.018 1.118 1.431 2.28h2.289c.412-1.158.53-1.905 1.437-2.282h.001c.894-.372 1.501.071 2.619.602l1.618-1.619c-.525-1.107-.974-1.723-.601-2.625.374-.899 1.126-1.019 2.282-1.43zm-8.5 1.689c-1.564 0-2.833-1.269-2.833-2.834s1.269-2.834 2.833-2.834 2.833 1.269 2.833 2.834-1.269 2.834-2.833 2.834zm15.5 4.205v-1.077c-.55-.196-.897-.251-1.073-.673-.176-.424.033-.711.282-1.236l-.762-.762c-.52.248-.811.458-1.235.283-.424-.175-.479-.525-.674-1.073h-1.076c-.194.545-.25.897-.674 1.073-.424.176-.711-.033-1.235-.283l-.762.762c.248.523.458.812.282 1.236-.176.424-.528.479-1.073.673v1.077c.544.193.897.25 1.073.673.177.427-.038.722-.282 1.236l.762.762c.521-.248.812-.458 1.235-.283.424.175.479.526.674 1.073h1.076c.194-.545.25-.897.676-1.074h.001c.421-.175.706.034 1.232.284l.762-.762c-.247-.521-.458-.812-.282-1.235s.529-.481 1.073-.674zm-4 .794c-.736 0-1.333-.597-1.333-1.333s.597-1.333 1.333-1.333 1.333.597 1.333 1.333-.597 1.333-1.333 1.333zm-4 3.071v-.808c-.412-.147-.673-.188-.805-.505s.024-.533.212-.927l-.572-.571c-.389.186-.607.344-.926.212s-.359-.394-.506-.805h-.807c-.146.409-.188.673-.506.805-.317.132-.533-.024-.926-.212l-.572.571c.187.393.344.609.212.927-.132.318-.396.359-.805.505v.808c.408.145.673.188.805.505.133.32-.028.542-.212.927l.572.571c.39-.186.608-.344.926-.212.318.132.359.395.506.805h.807c.146-.409.188-.673.507-.805h.001c.315-.131.529.025.924.213l.572-.571c-.186-.391-.344-.609-.212-.927s.397-.361.805-.506zm-3 .596c-.552 0-1-.447-1-1s.448-1 1-1 1 .447 1 1-.448 1-1 1z"/></svg>
-const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+const _round_icon_down = <svg fill='#1b1d1c' width="34" height="34" viewBox="0 0 24 24"><path d="M17 10.645v-2.29c-1.17-.417-1.907-.533-2.28-1.431-.373-.9.07-1.512.6-2.625l-1.618-1.619c-1.105.525-1.723.974-2.626.6-.9-.373-1.017-1.116-1.431-2.28h-2.29c-.412 1.158-.53 1.907-1.431 2.28h-.001c-.9.374-1.51-.07-2.625-.6l-1.617 1.619c.527 1.11.973 1.724.6 2.625-.375.901-1.123 1.019-2.281 1.431v2.289c1.155.412 1.907.531 2.28 1.431.376.908-.081 1.534-.6 2.625l1.618 1.619c1.107-.525 1.724-.974 2.625-.6h.001c.9.373 1.018 1.118 1.431 2.28h2.289c.412-1.158.53-1.905 1.437-2.282h.001c.894-.372 1.501.071 2.619.602l1.618-1.619c-.525-1.107-.974-1.723-.601-2.625.374-.899 1.126-1.019 2.282-1.43zm-8.5 1.689c-1.564 0-2.833-1.269-2.833-2.834s1.269-2.834 2.833-2.834 2.833 1.269 2.833 2.834-1.269 2.834-2.833 2.834zm15.5 4.205v-1.077c-.55-.196-.897-.251-1.073-.673-.176-.424.033-.711.282-1.236l-.762-.762c-.52.248-.811.458-1.235.283-.424-.175-.479-.525-.674-1.073h-1.076c-.194.545-.25.897-.674 1.073-.424.176-.711-.033-1.235-.283l-.762.762c.248.523.458.812.282 1.236-.176.424-.528.479-1.073.673v1.077c.544.193.897.25 1.073.673.177.427-.038.722-.282 1.236l.762.762c.521-.248.812-.458 1.235-.283.424.175.479.526.674 1.073h1.076c.194-.545.25-.897.676-1.074h.001c.421-.175.706.034 1.232.284l.762-.762c-.247-.521-.458-.812-.282-1.235s.529-.481 1.073-.674zm-4 .794c-.736 0-1.333-.597-1.333-1.333s.597-1.333 1.333-1.333 1.333.597 1.333 1.333-.597 1.333-1.333 1.333zm-4 3.071v-.808c-.412-.147-.673-.188-.805-.505s.024-.533.212-.927l-.572-.571c-.389.186-.607.344-.926.212s-.359-.394-.506-.805h-.807c-.146.409-.188.673-.506.805-.317.132-.533-.024-.926-.212l-.572.571c.187.393.344.609.212.927-.132.318-.396.359-.805.505v.808c.408.145.673.188.805.505.133.32-.028.542-.212.927l.572.571c.39-.186.608-.344.926-.212.318.132.359.395.506.805h.807c.146-.409.188-.673.507-.805h.001c.315-.131.529.025.924.213l.572-.571c-.186-.391-.344-.609-.212-.927s.397-.361.805-.506zm-3 .596c-.552 0-1-.447-1-1s.448-1 1-1 1 .447 1 1-.448 1-1 1z" /></svg>
+const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z" /></svg>
 
 // ==================================
 
@@ -60,29 +63,29 @@ export const ServicesHeroPage = ({ scrollPos }) => {
         }
     };
 
-    const RenderServiceList=({icon,name})=>{
-        return(
+    const RenderServiceList = ({ icon, name }) => {
+        return (
             <Fade>
-            <div className="p-2 mb-4 ">
-                <animated.div 
-                    style={{
-                        transform:scrollPos.to(transfromSlide_N1),
-                        height:'120px',
-                        borderRadius:'10px'
-                    }}
-                    className="shadow bg-white">
+                <div className="p-2 mb-4 ">
+                    <animated.div
+                        style={{
+                            transform: scrollPos.to(transfromSlide_N1),
+                            height: '120px',
+                            borderRadius: '10px'
+                        }}
+                        className="shadow bg-white">
                         <div className="row">
                             <div className="space-20"></div>
                             <div className="col-12 text-center">
-                                <img src={icon} alt="service icon" /> 
+                                <img src={icon} alt="service icon" />
                             </div>
-                            <div itemprop="services"  className="col-12  text-center text-dark">
+                            <div itemprop="services" className="col-12  text-center text-dark">
                                 &nbsp; {name}
                             </div>
                         </div>
-                </animated.div>
-                
-            </div>
+                    </animated.div>
+
+                </div>
             </Fade>
         )
     }
@@ -96,8 +99,8 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                 </div>
                 <div temscope itemtype="https://www.banzan.co/services" className="col-12 col-md-6 text-center text-md-start">
                     <Slide top >
-                        <animated.h1 
-                            style={{transform:scrollPos.to(transfromSlide_N1)}}
+                        <animated.h1
+                            style={{ transform: scrollPos.to(transfromSlide_N1) }}
                             className="display-4 text-bold text-dark">
                             Banzan’s&nbsp;<br />Brand&nbsp;Boutique
                         </animated.h1>
@@ -105,14 +108,28 @@ export const ServicesHeroPage = ({ scrollPos }) => {
 
                     <div className="space-20"></div>
                     <Slide bottom >
-                        <animated.h2 
+                        <animated.h2
                             itemprop="services description"
-                            style={{ 
+                            style={{
                                 lineHeight: '30px',
-                                transform:scrollPos.to(transfromSlide_S1)
-                                 }} 
-                                 className="text-dark text-bold h6 line-25">
-                            We extend our skills & expertise in the niche areas of Content, Creatives, Communication, Development & Consultancy
+                                transform: scrollPos.to(transfromSlide_S1)
+                            }}
+                            className="text-dark text-bold h6 line-25">
+                            {/* We extend our skills & expertise in the niche areas of Content, Creatives, Communication, Development & Consultancy */}
+                            We offer Gaming & Gamification As A Service (G.A.A.S)
+
+                            <br />
+                            <div className="pt-[20px]">
+
+
+                                We empower brands with significant users to leverage their 'interaction' productively leading to better loyalty, improved referrals &  leads and higher brand recall value.
+                            </div>
+                            <div className="pt-[20px]">
+                                Engage your customer through Entertainment! Gamify your customer journey and create higher retention and better ROI.
+
+
+                            </div>
+
                         </animated.h2>
                     </Slide>
                     <div className="space-20"></div>
@@ -120,61 +137,77 @@ export const ServicesHeroPage = ({ scrollPos }) => {
 
                 <div className="col-6">
                     <Fade>
-                    <div
-                        className="d-none d-md-block"
-                        style={_style.service_img_container}>
-                        <img
-                            style={{
-                                position: 'absolute',
-                            }}
-                            src={_ellipse} alt="" />
-                        <animated.img
-                            style={{
-                                transform:scrollPos.to(transfromSlide_NN1),
-                                position: 'absolute',
-                                marginTop: '50px',
-                                width:'150px',
-                            }}
-                            src={_service_img_speaker} alt="" />
-                        <animated.img
-                            style={{
-                                transform:scrollPos.to(transfromSlide_N1),
-                                position: 'absolute',
-                                marginTop: '10px',
-                                marginLeft: '200px',
-                                width:'150px',
-                            }}
-                            src={_service_img_phone} alt="" />
-                        <animated.img
-                            style={{
-                                transform:scrollPos.to(transfromSlide_S1),
-                                position: 'absolute',
-                                marginTop: '250px',
-                                marginLeft: '100px',
-                                width:'130px',
-                            }}
-                            src={_service_img_palette} alt="" />
+                        <div
+                            className="d-none d-md-block"
+                            style={_style.service_img_container}>
+                            <img
+                                style={{
+                                    position: 'absolute',
+                                }}
+                                src={_ellipse} alt="" />
+                            <animated.img
+                                style={{
+                                    transform: scrollPos.to(transfromSlide_NN1),
+                                    position: 'absolute',
+                                    marginTop: '50px',
+                                    width: '150px',
+                                }}
+                                src={_service_img_speaker} alt="" />
+                            <animated.img
+                                style={{
+                                    transform: scrollPos.to(transfromSlide_N1),
+                                    position: 'absolute',
+                                    marginTop: '10px',
+                                    marginLeft: '200px',
+                                    width: '150px',
+                                }}
+                                src={_service_img_phone} alt="" />
+                            <animated.img
+                                style={{
+                                    transform: scrollPos.to(transfromSlide_S1),
+                                    position: 'absolute',
+                                    marginTop: '250px',
+                                    marginLeft: '100px',
+                                    width: '130px',
+                                }}
+                                src={_service_img_palette} alt="" />
 
-                    </div>
+                        </div>
                     </Fade>
                 </div>
 
-                <div 
+                {/* <div
                     // style={{transform:'translateX(-100px)'}} 
                     className="">
-                    {_round_icon_down}&nbsp; 
+                    {_round_icon_down}&nbsp;
                     <div className="space-20"></div>
                     <div className='hr-dash' />
-                </div>
+                </div> */}
                 <div className="space-20"></div>
 
                 <div className="col-12">
-                    
-                    <div className="d-flex align-items-end">
-                        <animated.img 
-                            style={{transform:scrollPos.to(transfromSlide_S1)}}
-                            src={_down_arrow_big_y} alt="" />
-                        <animated.div 
+                <animated.div
+                        style={{ transform: scrollPos.to(transfromSlide_S1) }}
+                        className="h5  text-dark text-center text-md-start text-bold">
+                        Send in your requirements at <span className='text-red-800'>info@banzan.co</span> ,  <br /> if you are looking for innovative ways to engage your customers.
+
+                        <div className="space-20"></div>
+                        {/* <div className="h3 text-bold">
+                            let’s talk!
+                        </div> */}
+                    </animated.div>
+
+                    <div className="">
+                        <animated.div
+                            style={{ transform: scrollPos.to(transfromSlide_S1) }}
+                            src={_down_arrow_big_y} alt="" 
+                            className="w-fit "
+                            >
+                            
+                            <a href="/Brand.pdf" target='_blank' className=''>
+                                <svg fill='#c42f48' xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24"><path d="M12.819 14.427c.064.267.077.679-.021.948-.128.351-.381.528-.754.528h-.637v-2.12h.496c.474 0 .803.173.916.644zm3.091-8.65c2.047-.479 4.805.279 6.09 1.179-1.494-1.997-5.23-5.708-7.432-6.882 1.157 1.168 1.563 4.235 1.342 5.703zm-7.457 7.955h-.546v.943h.546c.235 0 .467-.027.576-.227.067-.123.067-.366 0-.489-.109-.198-.341-.227-.576-.227zm13.547-2.732v13h-20v-24h8.409c4.858 0 3.334 8 3.334 8 3.011-.745 8.257-.42 8.257 3zm-12.108 2.761c-.16-.484-.606-.761-1.224-.761h-1.668v3.686h.907v-1.277h.761c.619 0 1.064-.277 1.224-.763.094-.292.094-.597 0-.885zm3.407-.303c-.297-.299-.711-.458-1.199-.458h-1.599v3.686h1.599c.537 0 .961-.181 1.262-.535.554-.659.586-2.035-.063-2.693zm3.701-.458h-2.628v3.686h.907v-1.472h1.49v-.732h-1.49v-.698h1.721v-.784z"/></svg>
+                            </a>
+                        {/* <animated.div 
                             style={{
                                 transform:scrollPos.to(transfromSlide_N1),
                                 
@@ -182,15 +215,15 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                             className="h1 text-bold text-dark">
                             OUR SERVICES
                             &nbsp;
-                            {/* {_arrow_down} */}
-                        </animated.div>
+                        </animated.div> */}
+                        </animated.div> 
                     </div>
                 </div>
-                <div className="col-12">
-                
+                {/* <div className="col-12">
+
                     <div className="space-100"></div>
-                </div>
-                <div className="col-8 offset-2  text-white">
+                </div> */}
+                {/* <div className="col-8 offset-2  text-white">
                     <div temscope itemtype="https://www.banzan.co/services" className="row">
                         <div className="col-12 col-md-4">
                             <RenderServiceList icon={_games_log} name={"Mobile Games"} />
@@ -217,20 +250,15 @@ export const ServicesHeroPage = ({ scrollPos }) => {
                         </div>
 
                     </div>
-                </div>
+                </div> */}
                 <div className="col-12">
-                    <animated.div 
-                        style={{transform:scrollPos.to(transfromSlide_S1)}}
-                        className="h5  text-dark text-center text-md-start text-bold">
-                            If ‘Customer Engagement’ is your TOP priority,
-                            <div className="space-20"></div> 
-                        <div className="h3 text-bold">
-                            let’s talk!
-                        </div>
-                    </animated.div>
-                    <div className="space-100"></div>
-                    <div className="space-100"></div>
                     
+                    {/* <div className="space-100"></div> */}
+                    <div className="space-100"></div>
+                    <div className="col-12">
+                        <Footer />
+                    </div>
+
                 </div>
             </div>
         </div>

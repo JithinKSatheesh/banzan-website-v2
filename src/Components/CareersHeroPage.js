@@ -62,26 +62,39 @@ export const CareersHeroPage = ({ scrollPos }) => {
                     
                 </div> */}
                 
-                <div className="col-12">
+                {/* <div className="col-12">
                     <div className="space-50"></div>
+                </div> */}
+                <div className="font-bold">
+                We are always on the lookout for fresh & creative folks. We welcome Misfits & Crazy in the Head nerds & artists who think & act outside the box. If you are an artist, designer, content writer with a 200% HQ (Humor Quotient), developer, marketer, social media animal or don’t fit into any of these categories but see yourself adding value at Banzan, go ahead, write to us!
+
                 </div>
 
-                <div className="col-12 p-2">
+                {/* <div className="col-12 p-2">
                     <Fade >
                         <img style={_style.img_style} className="img-fluid" src={_career_img} alt="" />
                     </Fade>
-                </div>
+                </div> */}
                 <div className="col-12">
                     <div className="space-50"></div>
 
                 </div>
                 <div className="col-12">
+                    <a href="https://linktr.ee/BanzanStudios" target='_blank' className='no-underline'>
+
                     <animated.div 
                         style={{transform:scrollPos.to(transfromSlide_S1)}}
-                        className="h1 text-bold text-dark text-center text-md-start">
-                        Let’s see <span className='text-now'>what you got?!</span>
-                        <div className="space-50"></div>
+                        className="text-[20px] text-bold text-[#fcc812] text-center text-md-start bg-[#c42f48] w-fit rounded-xl p-[10px]">
+                        Current Openings 
+                        
                     </animated.div>
+                            </a>
+                        <div className="space-50"></div>
+                </div>
+                <div className="">
+                If you cannot find an open role, that aligns with your skills, <br/>
+                 get in touch with your resumes/portfolio at <span className='text-red-900'> info@banzan.co</span>
+
                 </div>
                 {/* <animated.div 
                     style={{transform:scrollPos.to(transfromSlide_S1)}}

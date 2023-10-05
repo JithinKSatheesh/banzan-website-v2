@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { animated } from 'react-spring';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
@@ -19,10 +19,18 @@ import _icon_instgram from 'Assets/icon_instgram.png';
 import _icon_webtoons from 'Assets/icon_webtoons.png';
 import _icon_strippy from 'Assets/icon_strippy.png';
 import _icon_youtube from 'Assets/icon_youtube.png';
+import _icon_amazon from './amazon.png';
+
+import _comic_1 from './1.jpeg';
+import _comic_2 from './2.jpeg';
+import _comic_Cover from './facttales.jpg';
+
+
+
 import { Footer } from 'Components/Footer';
 
-const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
-const _rightSwipeIcon = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z" /></svg>
+const _rightSwipeIcon = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" /></svg>
 
 
 export const ComicsHeroPage = ({ scrollPos }) => {
@@ -49,7 +57,7 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             overflow: 'hidden',
             // border: '20px solid white',
             borderRadius: '10px',
-            margin:'auto'
+            margin: 'auto'
         },
         comic_overlay: {
             position: "absolute",
@@ -73,16 +81,16 @@ export const ComicsHeroPage = ({ scrollPos }) => {
             opacity: 0.3,
             backgroundColor: "black",
         }
-  
-    
+
+
     };
 
 
 
-    const RenderSocialLink = ({link,image_url})=>(
+    const RenderSocialLink = ({ link, image_url }) => (
         <a href={link} rel="noreferrer" target="_blank" className='m-2' >
-            <img 
-                style={{width: isMobile?'40px' :'70px'}}
+            <img
+                style={{ width: isMobile ? '40px' : '70px' }}
                 src={image_url} alt="" />
         </a>
     )
@@ -95,24 +103,68 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     <div className="space-20"></div>
                 </div>
             </div>
+            <Slide top>
+                <animated.h1
+                    style={{ transform: scrollPos.to(transfromSlide_NN1) }}
+                    className="display-3 text-bold text-dark text-center">
+                    Comics
+                </animated.h1>
+            </Slide>
             <div className="row">
-                <div className="col-12 col-md-8 offset-md-2">
-                    <Slide top>
-                        <animated.h1
-                            style={{ transform: scrollPos.to(transfromSlide_NN1) }}
-                            className="display-3 text-bold text-dark text-center">
-                            Comics
-                        </animated.h1>
-                    </Slide>
-                    <div className="space-20"></div>
+                <div className="col-12 col-md-6 _offset-md-2">
+                    <div className="pt-[50px]"></div>
                     <Slide bottom >
-                        <animated.h2 
+                        <animated.h2
                             style={{ transform: scrollPos.to(transfromSlide_N1) }}
-                            className="text-dark h6 line-25 text-bold text-center">
-                            BaBlah is a multi-tasker and a multi-entertainer. He also features in Comic strips where he entertains the comic lovers through his wit, wisdom & 100% sarcastic humor laced with Facts, Current Affairs, Pop Culture & everything that means FUN!
+                            className="text-dark text-[18px] line-25 text-bold text-center text-lg-left	">
+                            {/* BaBlah is a multi-tasker and a multi-entertainer. He also features in Comic strips where he entertains the comic lovers through his wit, wisdom & 100% sarcastic humor laced with Facts, Current Affairs, Pop Culture & everything that means FUN! */}
+                            We have published   <br /> 1000+ comic strips across platforms.
                         </animated.h2>
                     </Slide>
-                    <div className="space-50"></div>
+                    {/* <div className="space-50"></div> */}
+                    <div className="relative pt-[30px] w-fit mx-auto lg:mx-0">
+                        <img src={_comic_2} alt="" className='max-w-[200px] border-[10px] border-white _rotate-[-20deg]' />
+                        <img src={_comic_1} alt="" className='max-w-[200px] border-[10px] border-white rotate-[10deg] absolute left-0 top-0 translate-y-[50px] translate-x-[50px]' />
+                    </div>
+
+                    <div className="col-12  pt-[50px]">
+
+                        <animated.div
+                            // style={{transform: scrollPos.to(transfromSlide_N2)}}
+                            className=" text-center text-bold">
+                            {/* <div className="space-20"></div> */}
+                            Check out his Webcomics at
+                            {/* <div className="space-20"></div> */}
+                            <div className="flex justify-center items-center pt-[50px]">
+                                <RenderSocialLink image_url={_icon_twitter} link="https://twitter.com/BaBlahComics" />
+                                <RenderSocialLink image_url={_icon_facebook} link="https://www.facebook.com/gobablah" />
+                                <RenderSocialLink image_url={_icon_instgram} link="https://www.instagram.com/gobablah/" />
+                                <RenderSocialLink image_url={_icon_youtube} link="https://www.youtube.com/channel/UC-spq1K0Qm3MZoKq9q9hMzQ/featured" />
+                                <RenderSocialLink image_url={_icon_webtoons} link="https://www.webtoons.com/en/challenge/funshots-by-bablah/list?title_no=640899" />
+                                <RenderSocialLink image_url={_icon_strippy} link="https://strippy.app/web/profile/BaBlah" />
+                            </div>
+                        </animated.div>
+                    </div>
+                </div>
+                <div className="col-12 col-md-6">
+                    <div className="text-[16px] pt-[40px] text-center font-bold">
+                        Grab the Collectible Edition Comic Book
+                    </div>
+                    <div className="pt-[40px]">
+                        <img src={_comic_Cover} className='max-w-[170px] mx-auto border-grey border-[5px]' alt="" />
+                    </div>
+                    <div className="w-fit mx-auto pt-[20px]">
+                        <div className="font-bold text-[16px]">
+                            Available on Amazon Kindle 
+                        </div>
+                        <div className="max-h-[20px] mx-auto w-fit pt-[55px]">
+                            <a href="https://www.amazon.in/FACTALES-Vol-1-Mukesh-Dev-ebook/dp/B0CK52G78J/ref=sr_1_1?keywords=banzan+studios&nsdOptOutParam=true&sr=8-1" target='_blank'>
+                                <img src={_icon_amazon} alt="" className='max-w-[50px]' />
+                            </a>
+                            {/* <RenderSocialLink image_url={_icon_amazon} link="https://strippy.app/web/profile/BaBlah" /> */}
+                        </div>
+                    </div>
+
                 </div>
 
                 {/* <div className="col-12">
@@ -143,8 +195,8 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     
                 </div> */}
 
-                <div className="col-12">
-                    {/* <div className="space-100"></div> */}
+                {/* <div className="col-12">
+                 
                     <Fade>
                         <div className='shadow' style={_style.comic_cartoons_container}>
                             <img style={{ width: '100%', height: isMobile?'100%':'' }} src={_comic_bg} alt="bablah comics" />
@@ -153,9 +205,9 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                         </div>
                     </Fade>
                 </div>
-                
-                    
-                <div className="col-12 pt-[50px] ">
+                 */}
+
+                <div className="col-12 pt-[80px] ">
                     {/* <div className="space-100"></div>
                     <div className="space-100"></div> */}
                     <div className="h4 text-dark text-center">
@@ -163,53 +215,36 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                     </div>
                     <div className="space-100"></div>
                     {/* <div className="space-50"></div> */}
-                   
+
                     <div className="text-center">
-                        <animated.img 
+                        <animated.img
                             className='img-fluid mx-auto'
-                            style={{transform: scrollPos.to(transfromSlide_N1)}}
+                            style={{ transform: scrollPos.to(transfromSlide_N1) }}
                             src={_bablah_ferrari} alt="bablah chasing ferrari" />
                     </div>
-{/*                    
+                    {/*                    
                     <div className="space-100"></div> */}
                     {/* <div className="space-50"></div> */}
                 </div>
-                <div className="col-12 ">
-                    
-                    <animated.div 
-                        // style={{transform: scrollPos.to(transfromSlide_N2)}}
-                        className=" text-center text-bold">
-                        {/* <div className="space-20"></div> */}
-                        Check out his WebComics
-                        {/* <div className="space-20"></div> */}
-                        <div className="flex justify-center items-center pt-[50px]">
-                        <RenderSocialLink image_url={_icon_twitter} link="https://twitter.com/BaBlahComics" />
-                        <RenderSocialLink image_url={_icon_facebook} link="https://www.facebook.com/gobablah" />
-                        <RenderSocialLink image_url={_icon_instgram} link="https://www.instagram.com/gobablah/" />
-                        <RenderSocialLink image_url={_icon_youtube} link="https://www.youtube.com/channel/UC-spq1K0Qm3MZoKq9q9hMzQ/featured" />
-                        <RenderSocialLink image_url={_icon_webtoons} link="https://www.webtoons.com/en/challenge/funshots-by-bablah/list?title_no=640899" />
-                        <RenderSocialLink image_url={_icon_strippy} link="https://strippy.app/web/profile/BaBlah" />
-                        </div>
-                    </animated.div>
-                </div>
-           
+
+
                 <div className="col-12 pt-[50px]">
-                    <animated.div 
+                    <animated.div
                         style={{
                             // transform: scrollPos.to(transfromSlide_N1),
-                            cursor:'pointer'
+                            cursor: 'pointer'
                         }}
                         className="text-center mx-auto w-fit ">
                         <Link to={'/contact/comics'} className="flex items-center h3 text-dark text-decoration-none text-bold " >
-                            For In Comic Promotions 
+                            For In Comic Promotions
                             &nbsp;
                             {_rightSwipeIcon}
                         </Link>
                     </animated.div>
-                    <Footer/>
-                   
+                    <Footer />
+
                 </div>
-                
+
             </div>
         </div>
 

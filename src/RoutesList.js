@@ -9,6 +9,7 @@ import Games from './Components/Games';
 import Labs from './Components/Labs';
 import Comics from './Components/Comics';
 import Bablah from './Components/Bablah';
+
 // import Store from './Components/Store/Store';
 import Partners from './Components/Partners';
 import About from './Components/About';
@@ -24,6 +25,7 @@ import Navbar from './Components/Navbar';
 import { YellowBg, WhiteBg } from './Components/DummyBg';
 import { SocialIcons } from './Components/SocialIcons';
 import Investors from './Components/Investors';
+import Services from 'Components/Services';
 
 export default function RoutesList() {
   return (
@@ -42,7 +44,7 @@ export default function RoutesList() {
         <Route path="/bablah" component={Bablah} />
         {/* <Route path="/store" component={Store} /> */}
         <Route path="/partners" component={Partners} />
-        {/* <Route path="/services" component={Services} /> */}
+        <Route path="/services" component={Services} />
         <Route path="/about" component={About} />
         {/* <Route path="/investors" component={Investors} /> */}
         {/* <Route path="/inmedia" component={Inmedia} /> */}

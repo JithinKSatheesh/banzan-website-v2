@@ -202,12 +202,12 @@ export const ServicesFormPage = ({ scrollPos }) => {
                             style={{ cursor: 'pointer' }}
                             className="h4  text-dark text-center text-bold">
                             <button 
-                                className='btn btn-warning shadow'
+                                className='btn btn-warning shadow min-w-[200px] flex items-center justify-center'
                                 role='button' type='submit' >
 
                             SEND
-                            &nbsp;
-                                {_send_icon}
+                            {/* &nbsp;
+                                {_send_icon} */}
                             </button>
                         </div>
                     }

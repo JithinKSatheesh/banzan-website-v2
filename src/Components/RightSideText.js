@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 
 import Zoom from 'react-reveal/Zoom';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import {useSpring,animated} from 'react-spring'
 
 export default function RightSideText() {
@@ -60,7 +61,14 @@ export default function RightSideText() {
         <animated.div 
             className="d-none d-md-flex text-bold"
             style={_style.pop_menu_container}>
-                Banzan Studios © 2023
+                <div className="">
+                Banzan Studios © 2023 -
+                </div>
+                <div className="mt-[20px]">
+                    <Link to="/content/policy.html" className="text-black no-underline">
+                    Privacy policy
+                    </Link>
+                </div>
         </animated.div>
     );
 };

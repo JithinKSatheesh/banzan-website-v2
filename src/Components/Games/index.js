@@ -72,7 +72,7 @@ export default function Games(props) {
                 onScroll={handleScroll}
                 style={_style.game_container}>
                 <GameHeroPage scrollPos={scrollPos}  />
-                <GameShowCase selectGame={selectGame} />
+                {/* <GameShowCase selectGame={selectGame} /> */}
                 {/* <GamesShowCasePage scrollPos={scrollPos} /> */}
             <Footer />
             </div>
