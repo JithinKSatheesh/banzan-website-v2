@@ -10,6 +10,8 @@ import Labs from './Components/Labs';
 import Comics from './Components/Comics';
 import Bablah from './Components/Bablah';
 
+import Snackr from "./Components/Snackr"
+
 // import Store from './Components/Store/Store';
 import Partners from './Components/Partners';
 import About from './Components/About';
@@ -42,12 +44,13 @@ export default function RoutesList() {
         <Route path="/labs" component={Labs} />
         <Route path="/comics" component={Comics} />
         <Route path="/bablah" component={Bablah} />
+        <Route path="/snackr" component={Snackr} />
         {/* <Route path="/store" component={Store} /> */}
         <Route path="/partners" component={Partners} />
         <Route path="/services" component={Services} />
         <Route path="/about" component={About} />
         {/* <Route path="/investors" component={Investors} /> */}
-        {/* <Route path="/inmedia" component={Inmedia} /> */}
+        <Route path="/inmedia" component={Inmedia} />
         <Route path="/contact/:source" component={Contact} />
         <Route path="/careers" component={Careers} />
         {/* <Route path="/store" component={Store} /> */}

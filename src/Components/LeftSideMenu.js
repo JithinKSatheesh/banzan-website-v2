@@ -131,11 +131,11 @@ import {useSpring,animated} from 'react-spring'
             style={_style.pop_menu_container}>
             {/* --menu---- */}
             <div style={_style.menu_list_box}>
-                <RenderListItems style={_style.menu_list_items} name={"ABOUT"} url='/about'  />
-                {/* <RenderListItems style={_style.menu_list_items} name={"IN MEDIA"} url='/inmedia'  />
-                <RenderListItems style={_style.menu_list_items} name={"INVESTORS"} url='/investors'  /> */}
-                <RenderListItems style={_style.menu_list_items} name={"CAREERS"} url='/careers'  />
-                <RenderListItems style={_style.menu_list_items} name={"CONTACT"} url='/contact/us'  />
+                {/* <RenderListItems style={_style.menu_list_items} name={"ABOUT"} url='/about'  /> */}
+                {/* <RenderListItems style={_style.menu_list_items} name={"IN MEDIA"} url='/inmedia'  /> */}
+                {/* <RenderListItems style={_style.menu_list_items} name={"INVESTORS"} url='/investors'  /> */}
+                {/* <RenderListItems style={_style.menu_list_items} name={"CAREERS"} url='/careers'  /> */}
+                <RenderListItems style={_style.menu_list_items} name={"CONTACT US"} url='/contact/us'  />
             </div>
             {/* --pull handle---- */}
             <div  

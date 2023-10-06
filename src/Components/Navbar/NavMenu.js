@@ -3,7 +3,57 @@ import { Link } from 'react-router-dom';
 import { animated, useSpring } from 'react-spring';
 import Slide from 'react-reveal/Slide';
 
-export const NavMenu = ({ toggle, NavList }) => {
+export const NavMenu = ({ toggle }) => {
+
+    const NavList = [
+        {
+            id: '6',
+            name: 'BABLAH',
+            to: '/bablah'
+        },
+        {
+            id: '2',
+            name: 'GAMES',
+            to: '/games'
+        },
+        {
+            id: '1',
+            name: 'COMICS',
+            to: '/comics'
+        },
+        {
+            id: '3',
+            name: 'SNACKR',
+            to: '/snackr'
+        },
+        {
+            id: '3',
+            name: 'SERVICES',
+            to: '/services'
+        },
+        {
+            id: '5',
+            name: 'LABS',
+            to: '/labs'
+        },
+    
+        {
+            id: '4',
+            name: 'PARTNERS',
+            to: '/partners'
+        },
+        {
+            id: '5',
+            name: 'ABOUT',
+            to: '/about'
+        },
+    
+        {
+            id: '6',
+            name: 'CAREERS',
+            to: '/careers'
+        },
+    ]
 
     const _close_icon = <svg fill="white" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z" /></svg>;
 

@@ -29,6 +29,11 @@ const _NavData = [
                 name: 'COMICS',
                 to: '/comics'
             },
+            {
+                id: '3',
+                name: 'SNACKR',
+                to: '/snackr'
+            },
 
         ]
     },
@@ -56,6 +61,11 @@ const _NavData = [
         to: '/about'
     },
 
+    {
+        id: '6',
+        name: 'CAREERS',
+        to: '/careers'
+    },
 ]
 
 const _NavData_bottom = [
@@ -185,13 +195,15 @@ export default function Navbar(props) {
         <>
             <div className="_navbar ">
                 {/* <div className="space-20"></div> */}
-                <div className="nav-container flex items-center">
+                <div className="container">
+                    <div className=" flex items-center justify-between max-w-[890px] mx-auto  ">
+
                     <div className="logo   flex flex-col items-center justify-center">
                         <Link to='/'>
                             <img style={{ height: '30px' }} src={_logo} alt="banzan studios brand logo" />
                         </Link>
                     </div>
-                    <div className="w-full max-w-[450px]  ">
+                    <div className=" ">
                         <div className="d-none d-md-flex justify-between w-full ">
                             <RenderNavList data={_NavData} />
                         </div>
@@ -202,6 +214,8 @@ export default function Navbar(props) {
                         </div>
 
                     </div>
+                    </div>
+
                     {toggleMenu && <NavMenu toggle={setToggleMenu} NavList={[..._NavData, ..._NavData_bottom]} />}
                 </div>
             </div>
