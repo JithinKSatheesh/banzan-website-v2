@@ -141,7 +141,7 @@ const ContactFormPage = ({scrollPos}) => {
 
         e.preventDefault()
         // const Base_URL = 'http://localhost:5000'
-        const Base_URL = 'https://aqueous-wildwood-36415.herokuapp.com'
+        const Base_URL = 'https://banzan-mail.onrender.com'
 
         const subject = `${name} send a message through banzan website`
         const basic_info = `name=${name}&email=${email}&phoneNo=${phoneNo}`
@@ -185,7 +185,8 @@ const ContactFormPage = ({scrollPos}) => {
                     <animated.div 
                          style={{transform: scrollPos.to(transfromSlide_N1) }}
                         className="h3 text-dark text-bold text-center text-md-start ">
-                        Drop us a message
+                        Drop us a message at <span className="text-red-600"> info@banzan.co </span> 
+
                     </animated.div>
                 </Fade>
                 <Fade bottom>
@@ -193,8 +194,8 @@ const ContactFormPage = ({scrollPos}) => {
                         & we’d get started soon!
                     </div>
                 </Fade>
-                <div className="space-50"></div>
-                <Fade >
+                {/* <div className="space-50"></div> */}
+                {/* <Fade >
                     <form onSubmit={sendMail} className="form text-slate-400">
                         <div className="form-group p-3 text-black">
                             <input
@@ -217,36 +218,7 @@ const ContactFormPage = ({scrollPos}) => {
                                 required
                                 type="email" />
                         </div>
-                        <div className="form-group p-3">
-                            <input
-                                name='phone'
-                                placeholder="Phone no ( e.g. +919878909878 )"
-                                style={_style.input_field}
-                                value={values.phoneNo}
-                                onChange={handleChange('phoneNo')}
-                                // pattern="^[0-9]*"
-                                
-                                type="tel" />
-                        </div>
-                        <div className="form-group p-3">
-                            <input
-                                name='linkedin'
-                                placeholder="LinkedIn"
-                                style={_style.input_field}
-                                value={values.linkedin}
-                                onChange={handleChange('linkedin')}
-                                type="text" />
-                        </div>
-                        <div className="form-group p-3">
-                            <input
-                                name='work'
-                                placeholder="Company/Product"
-                                style={_style.input_field}
-                                value={values.company}
-                                onChange={handleChange('company')}
-                                
-                                type="text" />
-                        </div>
+                       
 
                         <div className="form-group p-3">
                             <textarea
@@ -288,9 +260,9 @@ const ContactFormPage = ({scrollPos}) => {
                             </div>
                         }
                     </form>
-                </Fade>
+                </Fade> */}
             </div>
-            <animated.div 
+            {/* <animated.div 
                 style={{transform: scrollPos.to(transfromSlide_NN1) }}
                 className="col-6 d-none d-md-block text-center">
                 <div className="space-100"></div>
@@ -302,7 +274,7 @@ const ContactFormPage = ({scrollPos}) => {
                 <div className="space-100"></div>
                 <Footer/>
                 <div className="space-100"></div>
-            </div>
+            </div> */}
 
         </div>
     )

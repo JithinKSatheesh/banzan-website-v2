@@ -93,7 +93,7 @@ export const CareersHeroPage = ({ scrollPos }) => {
                 </div>
                 <div className="">
                 If you cannot find an open role, that aligns with your skills, <br/>
-                 get in touch with your resumes/portfolio at <span className='text-red-900'> info@banzan.co</span>
+                 get in touch with your resumes/portfolio at <span className='text-red-900 font-bold'>  careers@banzan.co  </span>
 
                 </div>
                 {/* <animated.div 

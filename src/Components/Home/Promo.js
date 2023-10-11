@@ -1,7 +1,8 @@
 import React from 'react'
 
 import _promo from './top23.jpg'
-import _promo2 from './Dubai_Creative_Insta.JPG'
+import _promo2 from './Dubai_Creative_Insta.jpeg'
+import Partners from './Partners'
 
 export default function Promo(props) {
     
@@ -17,6 +18,8 @@ export default function Promo(props) {
                         <img src={_promo} alt=""  className='w-full '/>
                     </div>
                 </div>
+                
+                {/* <Partners /> */}
                 <div className="w-fit mx-auto pt-[20px]">
                     Made with ❤️ in 🇮🇳
                 </div>

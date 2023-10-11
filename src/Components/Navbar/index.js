@@ -44,11 +44,11 @@ const _NavData = [
         name: 'SERVICES',
         to: '/services'
     },
-    {
-        id: '5',
-        name: 'LABS',
-        to: '/labs'
-    },
+    // {
+    //     id: '5',
+    //     name: 'LABS',
+    //     to: '/labs'
+    // },
 
     {
         id: '4',
@@ -61,11 +61,16 @@ const _NavData = [
         to: '/about'
     },
 
-    {
-        id: '6',
-        name: 'CAREERS',
-        to: '/careers'
-    },
+    // {
+    //     id: '6',
+    //     name: 'CAREERS',
+    //     to: '/careers'
+    // },
+    // {
+    //     id: '6',
+    //     name: 'MEDIA',
+    //     to: '/inmedia'
+    // },
 ]
 
 const _NavData_bottom = [
@@ -163,14 +168,14 @@ export default function Navbar(props) {
     const RenderNavList = ({ data }) => {
         return (
             data.map(value => (
-                // <div className=''>
-                <div className={`${value.to === location && 'bg-white  shadow '} text-[14px] px-[20px] py-[10px]   hover:bg-white/30 rounded-2xl `}>
+                <div className=' px-[3px]'>
                     <Link
                         key={value.id}
                         className={`no-underline  text-dark 
-                      
-                    text-bold `}
+                       
+                        text-bold `}
                         to={value?.to || ""} >
+                    <div className={`${value.to === location && 'bg-white  shadow '} text-[14px] px-[20px] py-[10px]   hover:bg-white/30 rounded-2xl `}>
                         {
                             value?.child ?
                                 <RenderSubLinks data={value} />
@@ -181,8 +186,9 @@ export default function Navbar(props) {
                                 </div>
                         }
 
-                    </Link>
 
+                </div>
+                    </Link>
                 </div>
             ))
         )

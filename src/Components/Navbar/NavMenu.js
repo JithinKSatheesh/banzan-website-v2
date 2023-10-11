@@ -31,11 +31,11 @@ export const NavMenu = ({ toggle }) => {
             name: 'SERVICES',
             to: '/services'
         },
-        {
-            id: '5',
-            name: 'LABS',
-            to: '/labs'
-        },
+        // {
+        //     id: '5',
+        //     name: 'LABS',
+        //     to: '/labs'
+        // },
     
         {
             id: '4',
@@ -52,6 +52,16 @@ export const NavMenu = ({ toggle }) => {
             id: '6',
             name: 'CAREERS',
             to: '/careers'
+        },
+        {
+            id: '7',
+            name: 'MEDIA',
+            to: '/inmedia'
+        },
+        {
+            id: '7',
+            name: 'CONTACT US',
+            to: '/contact/us'
         },
     ]
 

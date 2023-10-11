@@ -7,21 +7,24 @@ import { Link } from 'react-router-dom'
 import { Helmet } from "react-helmet";
 
 
-import _store_cup from 'Assets/store_cup.png'
-import _store_cup_2 from 'Assets/store_cup_2.png'
-import _store_shirt_1 from 'Assets/store_shirt_1.png'
-import _store_shirt_2 from 'Assets/store_shirt_2.png'
-import _store_shirt_3 from 'Assets/store_shirt_3.png'
-import _store_shirt_4 from 'Assets/store_shirt_4.png'
-import _store_shirt_5 from 'Assets/store_shirt_5.png'
-import _store_shirt_6 from 'Assets/store_shirt_6.png'
-import _store_shirt_7 from 'Assets/store_shirt_7.png'
-import _store_shirt_8 from 'Assets/store_shirt_8.png'
-import _store_book from 'Assets/store_book.png'
-import _store_book_2 from 'Assets/store_book_2.png'
-import _store_badge from 'Assets/store_badge.png'
-import _store_fans_collage from 'Assets/store_fans_collage.png'
+// import _store_cup from 'Assets/store_cup.png'
+// import _store_cup_2 from 'Assets/store_cup_2.png'
+// import _store_shirt_1 from 'Assets/store_shirt_1.png'
+// import _store_shirt_2 from 'Assets/store_shirt_2.png'
+// import _store_shirt_3 from 'Assets/store_shirt_3.png'
+// import _store_shirt_4 from 'Assets/store_shirt_4.png'
+// import _store_shirt_5 from 'Assets/store_shirt_5.png'
+// import _store_shirt_6 from 'Assets/store_shirt_6.png'
+// import _store_shirt_7 from 'Assets/store_shirt_7.png'
+// import _store_shirt_8 from 'Assets/store_shirt_8.png'
+// import _store_book from 'Assets/store_book.png'
+// import _store_book_2 from 'Assets/store_book_2.png'
+// import _store_badge from 'Assets/store_badge.png'
+// import _store_fans_collage from 'Assets/store_fans_collage.png'
+
 import { Footer } from 'Components/Footer'
+
+import _pontaq from "./pontaq.png"
 
 const _right_icon = <svg fill='white' width="24" height="24" viewBox="0 0 24 24"><path d="M24 12l-9-8v6h-15v4h15v6z" /></svg>
 const _coffee_icon = <svg fill='#f8d249' width="104" height="104" viewBox="0 0 24 24"><path d="M13 24h-7c-1.857-3.32-3.742-8.431-4-16h15c-.255 7.504-2.188 12.781-4 16zm5.088-14c-.051.688-.115 1.355-.192 2h1.707c-.51 1.822-1.246 3.331-2.539 4.677-.283 1.173-.601 2.25-.939 3.229 3.261-2.167 5.556-6.389 5.875-9.906h-3.912zm-7.714-3.001c4.737-4.27-.98-4.044.117-6.999-3.783 3.817 1.409 3.902-.117 6.999zm-2.78.001c3.154-2.825-.664-3.102.087-5.099-2.642 2.787.95 2.859-.087 5.099z" /></svg>
@@ -158,9 +161,9 @@ const StoreHeroPage = ({ scrollPos }) => {
             <div>
                 <div className="w-full h-[5px] bg-[#c52f48] mt-[50px]"></div>
             </div>
-            <div className='flex flex-wrap justify-between'>
-                <div className="w-full md:w-fit md:max-w-[250px] bg-slate-100/80 p-3 rounded-xl mt-[20px]">
-                    <div className="pt-[40px] text-[18px] font-bold ">
+            <div className='flex flex-wrap justify-between bg-yellow-200/80 rounded-xl pt-[20px]'>
+                <div className="w-full md:w-fit md:max-w-[250px] _bg-slate-100/80 p-3 rounded-xl mt-[20px]">
+                    <div className="mt-[40px] text-[18px] font-bold bg-white p-[10px] ">
                         Accelerated by:
                     </div>
                     <div className=" pt-[24px] ">
@@ -180,9 +183,9 @@ const StoreHeroPage = ({ scrollPos }) => {
                     </div>
                 </div>
                 <div className="w-full md:w-full md:max-w-[250px] ">
-                    <div className="bg-yellow-100/80 p-3 rounded-xl mt-[20px]">
+                    <div className="_bg-yellow-100/80 p-3 rounded-xl mt-[20px]">
 
-                    <div className="pt-[40px] text-[18px] font-bold ">
+                    <div className="mt-[40px] text-[18px] font-bold  bg-white p-[10px]">
                         Supported by:
                     </div>
                     <div className=" pt-[24px]">
@@ -191,9 +194,9 @@ const StoreHeroPage = ({ scrollPos }) => {
                         </div>
                     </div>
                     </div>
-                    <div className="bg-yellow-100/80 p-3 rounded-xl mt-[20px]">
+                    <div className="_bg-yellow-100/80 p-3 rounded-xl mt-[10px]">
 
-                    <div className="pt-[40px] text-[18px] font-bold ">
+                    <div className="mt-[10px] text-[18px] font-bold bg-white p-[10px] ">
                         Member of:
                     </div>
                     <div className=" pt-[24px]">
@@ -203,9 +206,9 @@ const StoreHeroPage = ({ scrollPos }) => {
                     </div>
                     </div>
                 </div>
-                <div className="w-full md:w-full md:max-w-[250px] bg-yellow-100/80 p-3 rounded-xl mt-[20px]">
-                    <div className="pt-[40px] text-[18px] font-bold ">
-                        Game&nbsp;Publishing&nbsp;Partners:
+                <div className="w-full md:w-full md:max-w-[250px] __bg-yellow-100/80 p-3 rounded-xl mt-[20px]">
+                    <div className="mt-[40px] text-[18px] font-bold  bg-white p-[10px]">
+                        Publishing&nbsp;Partners:
                     </div>
                     <div className=" pt-[24px]">
                         <div className="border-[12px] border-white h-[150px] w-full  rounded-xl bg-white shadow  flex flex-col justify-center">
@@ -215,6 +218,12 @@ const StoreHeroPage = ({ scrollPos }) => {
                             <img src="assets/partners/jio_games.png" className=' max-h-[100px] mx-auto' />
                         </div>
                     </div>
+                    <div className="mt-[40px] text-[18px] font-bold  bg-white p-[10px]">
+                        Investor:
+                    </div>
+                    <div className="mt-[24px] border-[12px] border-white h-[150px] w-full  bg-red-200 rounded-xl bg-white shadow  flex flex-col justify-center">
+                            <img src={_pontaq} className=' max-h-[100px] mx-auto bg-slate-400 p-[10px]' />
+                        </div>
                 </div>
             </div>
             <div className="col-12">

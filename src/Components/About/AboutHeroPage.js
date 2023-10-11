@@ -17,6 +17,8 @@ import _mukesh from "./mukesh.png"
 import _kc from "./kc.png"
 import _disha from "./disha.png"
 
+import _about from "./about.png"
+
 
 const Emoji_smile = () => (<> Awww... <img src={_emoji_bablah_love} alt='emoji love' /></>)
 
@@ -90,7 +92,7 @@ export const AboutHeroPage = ({ scrollPos }) => {
         },
         {
             name : "Nirmal Justin",
-            position : "Lead Artsit",
+            position : "Lead Artist",
             image : _nirmal
         },
         {
@@ -218,7 +220,7 @@ export const AboutHeroPage = ({ scrollPos }) => {
                 </div> */}
                 <div className="pt-[24px]">
                     <div className="flex flex-col items-center text-white justify-center  border-[12px] border-[#f8d249] shadow rounded-2xl  w-full text-[24px] font-bold bg-[#c52f48]">
-                        <img src={"/assets/bablah/about.png"} alt="Banzan core team" className='w-full' />
+                        <img src={_about} alt="Banzan core team" className='w-full' />
                     </div>
                 </div>
                 <div className="space-20"></div>

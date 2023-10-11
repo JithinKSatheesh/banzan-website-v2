@@ -48,6 +48,7 @@ export default function Home(props) {
             </h3>
             {/* <HomeHeroScreen scrollPos={scrollPos} /> */}
            <Promo />
+           
             {/* ============= */}
             {/* <ScrollBox/>
             <ScrollBox/>

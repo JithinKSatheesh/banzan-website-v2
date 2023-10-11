@@ -20,6 +20,8 @@ import _icon_webtoons from 'Assets/icon_webtoons.png';
 import _icon_strippy from 'Assets/icon_strippy.png';
 import { Footer } from 'Components/Footer';
 
+import OriginVideo from "./Origin.mp4"
+
 const _arrow_down = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
 const _rightSwipeIcon = <svg fill='#1b1d1c' width="24" height="24" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
 
@@ -147,10 +149,12 @@ export const ComicsHeroPage = ({ scrollPos }) => {
                             <img src={"/assets/bablah/parttime.jpg"} alt="" className='mx-auto'/>
                         </div> */}
                         <div className="pt-[0px] px-[10px]">
-                            <div className="container-video bg-black">
-                                <iframe src="https://drive.google.com/file/d/15vxi5txopm8TNzWJG4ycB1BP-H7BdIMU/preview" sandbox="allow-same-origin allow-scripts" className='responsive-iframe' allow="autoplay"></iframe>
-                            </div>
+                                <video src={OriginVideo} className='w-full h-fit' controls="controls" autoplay="true" />
+                            {/* <div className="container-video bg-black"> */}
+                                {/* <iframe src="https://drive.google.com/file/d/15vxi5txopm8TNzWJG4ycB1BP-H7BdIMU/preview" sandbox="allow-same-origin allow-scripts" className='responsive-iframe' allow="autoplay"></iframe> */}
+                            {/* </div> */}
                         </div>
+
                     </Fade>
                 </div>
                 

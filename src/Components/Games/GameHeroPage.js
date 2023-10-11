@@ -153,7 +153,7 @@ export const GameHeroPage = ({ scrollPos }) => {
                     {/* <div className="pt-[10px]"></div> */}
                     <div className='font-bold text-[16px] pt-[12px] flex items-center justify-center lg:justify-start'>
 
-                        To play our games on mobile go to
+                        To play our games on mobile go to &nbsp;
                         <Link to="/snackr" className='no-underline text-red-900'> SnackR  </Link>
                     </div>
                     {/* <div className=" flex flex-col sm:flex-row flex-wrap sm:flex-nowrap  pt-[12px]">

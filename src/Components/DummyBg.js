@@ -24,6 +24,15 @@ export const YellowBg = () => {
     else if(location.pathname === '/partners'){
       setSpringVal({width : '10%'})
     }
+    else if(location.pathname === '/comics'){
+      setSpringVal({width : '55%'})
+    }
+    else if(location.pathname === '/services'){
+      setSpringVal({width : '65%'})
+    }
+    else if(location.pathname === '/snackr'){
+      setSpringVal({width : '60%'})
+    }
     else{
       setSpringVal({width : '50%'})
     }
