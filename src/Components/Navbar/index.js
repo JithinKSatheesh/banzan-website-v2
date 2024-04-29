@@ -39,11 +39,11 @@ const _NavData = [
     },
 
 
-    {
-        id: '3',
-        name: 'SERVICES',
-        to: '/services'
-    },
+    // {
+    //     id: '3',
+    //     name: 'SERVICES',
+    //     to: '/services'
+    // },
     // {
     //     id: '5',
     //     name: 'LABS',

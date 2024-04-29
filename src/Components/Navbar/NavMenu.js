@@ -26,11 +26,11 @@ export const NavMenu = ({ toggle }) => {
             name: 'SNACKR',
             to: '/snackr'
         },
-        {
-            id: '3',
-            name: 'SERVICES',
-            to: '/services'
-        },
+        // {
+        //     id: '3',
+        //     name: 'SERVICES',
+        //     to: '/services'
+        // },
         // {
         //     id: '5',
         //     name: 'LABS',

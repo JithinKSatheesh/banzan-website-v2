@@ -115,11 +115,11 @@ export const AboutHeroPage = ({ scrollPos }) => {
             position : "Game Developer",
             image : _yash
         },
-        {
-            name : "Disha Chakraborty",
-            position : "Associate - Artist",
-            image : _disha
-        },
+        // {
+        //     name : "Disha Chakraborty",
+        //     position : "Associate - Artist",
+        //     image : _disha
+        // },
     ]
 
     const MemberCard = ({member = {}}) => {
