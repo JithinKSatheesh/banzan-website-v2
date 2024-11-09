@@ -28,6 +28,7 @@ import { YellowBg, WhiteBg } from './Components/DummyBg';
 import { SocialIcons } from './Components/SocialIcons';
 import Investors from './Components/Investors';
 import Services from 'Components/Services';
+import SnackRHandler from 'Components/SnackRHandler';
 
 export default function RoutesList() {
   return (
@@ -40,6 +41,7 @@ export default function RoutesList() {
       <WhiteBg />
       <YellowBg />
       <Switch>
+        <Route path="/snackR_handler" component={SnackRHandler} />
         <Route path="/games" component={Games} />
         <Route path="/labs" component={Labs} />
         <Route path="/comics" component={Comics} />

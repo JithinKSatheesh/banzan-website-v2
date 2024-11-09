@@ -29,8 +29,13 @@ export const Footer = () => {
                     </span>
                 </div>
                 <div className="pt-[24px]"></div>
+                <div className="w-fit mx-auto p-[20px]">
+                   Banzan Sudios (A unit of Banzan Ventures Private Limited)
+                </div>
                 <div className="text-center text-dark">
-                    Banzan Studios © 2023
+                    Banzan Studios © 2024
+                </div>
+                <div className="text-center text-dark">
                 </div>
                 <div className="w-fit mx-auto pt-[10px]">
                     Made with ❤️ in 🇮🇳
